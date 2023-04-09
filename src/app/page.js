@@ -114,7 +114,7 @@ export default function Home() {
             </div>
             <div className='basis-1/3 flex-1'>
               <Image src={project2} alt="project2" className='rounded-2xl object-cover shadow-lg' width={'100%'} height={'100%'} />
-              <p className='dark:text-white pt-5'><a className="text-blue-500 font-semibold" target="_blank" href="https://github.com/katiaku/my-birthday">The CakePHP Birthday Planner for Kids</a> is a web application designed to help parents plan and manage their children's birthday parties. The app provides an intuitive interface that allows users to organize party details including lists of guests and presents.</p>
+              <p className='dark:text-white pt-5'><a className="text-blue-500 font-semibold" target="_blank" href="https://github.com/katiaku/my-birthday">The CakePHP Birthday Planner for Kids</a> is a web application designed to help parents plan and manage their children&apos;s birthday parties. The app provides an intuitive interface that allows users to organize party details including lists of guests and presents.</p>
             </div>
           </div>
         </section>
