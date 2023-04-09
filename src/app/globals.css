@@ -17,3 +17,11 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+@supports (background-clip: text) {
+  .gradient-text {
+    background-image: linear-gradient(60deg, purple, blue);
+    background-clip: text;
+    color: transparent;
+  }
+}
