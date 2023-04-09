@@ -6,8 +6,7 @@ const nextConfig = {
 }
 
 module.exports = {
-  // Export the site as a static site
-  target: "experimental-serverless-trace",
-  // Specify the output directory for the exported files
-  output: "export"
+  exportPathMap: async function () {
+    return {};
+  },
 };
