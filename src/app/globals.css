@@ -18,6 +18,17 @@ body {
     rgb(var(--background-start-rgb));
 }
 
+.shake:hover {
+  animation: shake 2.0s linear both;
+}
+
+@keyframes shake {
+  0%,100%{transform:rotate(0deg);transform-origin:50% 50%}
+  10%{transform:rotate(8deg)}20%,40%,60%{transform:rotate(-10deg)}
+  30%,50%,70%{transform:rotate(10deg)}80%{transform:rotate(-8deg)}
+  90%{transform:rotate(8deg)}
+}
+
 @supports (background-clip: text) {
   .gradient-text {
     background-image: linear-gradient(60deg, purple, blue);

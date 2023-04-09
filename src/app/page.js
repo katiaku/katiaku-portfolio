@@ -1,16 +1,18 @@
 "use client";
 
 import Head from 'next/head';
-import { BsFillMoonStarsFill } from 'react-icons/bs';
-import { AiFillLinkedin, AiFillGithub, CgWebsite, BsDatabase, MdDesignServices, BiGitBranch } from "react-icons/ai";
+import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
 import Image from 'next/image';
 import dev from '../../public/dev.png';
 import project1 from '../../public/project1.png';
 import project2 from '../../public/project2.png';
 import { useState } from 'react';
+import "@theme-toggles/react/css/Expand.css";
+import { Expand } from "@theme-toggles/react";
 
 export default function Home() {
 
+  const [isToggled, setToggle] = useState(true);
   const [darkMode, setDarkMode] = useState(false);
 
   return (
@@ -23,19 +25,26 @@ export default function Home() {
 
       <main className='bg-white px-10 pb-20 md:px-20 lg:px-40 dark:bg-gray-900'>
         <section className='min-h-screen pb-10'>
-          <nav className='p-10 mb-12'>
+          <nav className='py-10 mb-12'>
             <ul className='flex items-center gap-5'>
-              <li className='mr-auto'>
-                <BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} className='cursor-pointer text-2xl text-gray-800 dark:text-white'/>
+              <li className='mr-auto shake'>
+                <Expand  
+                  toggled={isToggled} 
+                  toggle={() => {
+                    setToggle(!isToggled);
+                    setDarkMode(!darkMode);
+                  }} 
+                  className='mt-2 cursor-pointer text-4xl text-gray-800 dark:text-white'
+                />
               </li>
-              <li><a className="text-gray-800 text-4xl dark:text-white" target="_blank" href="https://www.linkedin.com/in/ekaterina-kushnir-mikhaylova"><AiFillLinkedin /></a></li>
-              <li><a className="text-gray-800 text-4xl dark:text-white" target="_blank" href="https://github.com/katiaku"><AiFillGithub /></a></li>
+              <li className='shake'><a className="text-gray-800 text-4xl dark:text-white" target="_blank" href="https://www.linkedin.com/in/ekaterina-kushnir-mikhaylova"><AiFillLinkedin /></a></li>
+              <li className='shake'><a className="text-gray-800 text-4xl dark:text-white" target="_blank" href="https://github.com/katiaku"><AiFillGithub /></a></li>
             </ul>
           </nav>
-          <div className='text-center p-10'>
+          <div className='text-center p-2 lg:py-24'>
             <h2 className='text-6xl py-2 gradient-text font-bold md:text-7xl'>Ekaterina Kushnir</h2>
-            <h3 className='text-2xl font-bold text-gray-800 pt-5 md:text-3xl dark:text-blue-400'>Web Developer</h3>
-            <p className='text-md py-8 leading-8 text-gray-800 md:text-xl mx-auto dark:text-white'>
+            <h3 className='text-2xl font-bold text-blue-900 pt-5 md:text-3xl dark:text-blue-400'>Web Developer</h3>
+            <p className='text-left text-md py-8 leading-7 lg:leading-9 text-gray-800 md:text-xl mx-auto dark:text-white'>
               If you&apos;re looking for a versatile web developer who can help you take advantage 
               of the latest advancements in the field, you&apos;ve come to the right place. 
               With my proficiency in JavaScript, React, and PHP, coupled with my enthusiasm 
@@ -44,12 +53,12 @@ export default function Home() {
               to complex web applications. Please take a look around this site to find out more 
               about my skills as well as some examples of my work.</p>
             <div className='flex justify-center gap-5 mt-5'>
-              <a className="bg-gradient-to-r from-purple-600 to-blue-500 text-white px-4 py-2 leading-8 rounded-md" href="#">Resume</a>
-              <a className="bg-gradient-to-r from-purple-600 to-blue-500 text-white px-4 py-2 leading-8 rounded-md" href="#">Contact Me</a>
+              <a className="bg-gradient-to-r from-purple-600 to-blue-500 text-white px-4 py-2 leading-8 rounded-md" href="https://drive.google.com/file/d/1yJDllpuZnrlNf6Y9g3uCpQVId2zpXNdc/view?usp=share_link" target="_blank">Resume</a>
+              <a className="bg-gradient-to-r from-purple-600 to-blue-500 text-white px-4 py-2 leading-8 rounded-md" href="mailto:kushnir.ekaterina@gmail.com">Contact Me</a>
             </div>
           </div>
           <div className='flex flex-col items-center pt-3 pb-20'>
-            <Image className="rounded-2xl" src={dev} alt="developer" width="400" height="400"/>
+            <Image className="rounded-2xl mt-10" src={dev} alt="developer" width="500" height="500" />
             <span className='text-xs dark:text-white'>Image by <a href="https://www.freepik.com/free-vector/colorful-illustration-female-programmer-working_5483075.htm#page=2&query=woman%20developer&position=31&from_view=search&track=ais">Freepik</a></span>
           </div>
         </section>
