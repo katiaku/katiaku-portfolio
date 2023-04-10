@@ -5,8 +5,4 @@ const nextConfig = {
   },
 }
 
-module.exports = {
-  exportPathMap: async function () {
-    return {};
-  },
-};
+module.exports = nextConfig
