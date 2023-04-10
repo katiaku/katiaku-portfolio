@@ -47,10 +47,10 @@ export default function Home() {
             <p className='text-left text-md py-8 leading-7 lg:leading-9 text-gray-800 md:text-xl mx-auto dark:text-white'>
               If you&apos;re looking for a versatile web developer who can help you take advantage 
               of the latest advancements in the field, you&apos;ve come to the right place. 
-              With my proficiency in JavaScript, React, and PHP, coupled with my enthusiasm 
+              My proficiency in JavaScript, React and PHP coupled with enthusiasm 
               for crafting user-friendly interfaces and delivering exceptional user experiences, 
-              I possess a solid foundation to build anything from basic static web pages 
-              to complex web applications. Please take a look around this site to find out more 
+              constitute a solid foundation to build anything from basic static web pages 
+              to more complex web applications. Please take a look around this site to find out more 
               about my skills as well as some examples of my work.</p>
             <div className='flex justify-center gap-5 mt-5'>
               <a className="bg-gradient-to-r from-purple-600 to-blue-500 text-white px-4 py-2 leading-8 rounded-md" href="https://drive.google.com/file/d/1yJDllpuZnrlNf6Y9g3uCpQVId2zpXNdc/view?usp=share_link" target="_blank">Resume</a>
@@ -68,7 +68,7 @@ export default function Home() {
             <h3 className='text-3xl py-1 text-purple-600 font-bold text-center'>Technologies and Tools I Use</h3>
           </div>
           <div className='lg:flex lg:justify-center lg:gap-10'>
-            <div className='text-center shadow-lg p-10 rounded-2xl my-10 dark:bg-white'>
+            <div className='wobble text-center shadow-lg p-10 rounded-2xl my-10 dark:bg-white'>
               <h3 className='text-lg font-semibold py-2 text-blue-500'>Frontend</h3>
               {/* <Image src={} width={100} height={100} /> */}
               <p className='text-gray-800 py-1'>HTML</p>
@@ -79,20 +79,20 @@ export default function Home() {
               <p className='text-gray-800 py-1'>JavaScript</p>
               <p className='text-gray-800 py-1'>ReactJS</p>
             </div>
-            <div className='text-center shadow-lg p-10 rounded-2xl my-10 dark:bg-white'>
+            <div className='wobble text-center shadow-lg p-10 rounded-2xl my-10 dark:bg-white'>
               {/* <Image src={} width={100} height={100} /> */}
               <h3 className='text-lg font-semibold py-2 text-blue-500'>Backend</h3>
               <p className='text-gray-800 py-1'>SQL (MySQL, PostgreSQL)</p>
               <p className='text-gray-800 py-1'>PHP</p>
               <p className='text-gray-800 py-1'>CakePHP</p>
             </div>
-            <div className='text-center shadow-lg p-10 rounded-2xl my-10 dark:bg-white'>
+            <div className='wobble text-center shadow-lg p-10 rounded-2xl my-10 dark:bg-white'>
               {/* <Image src={} width={100} height={100} /> */}
               <h3 className='text-lg font-semibold py-2 text-blue-500'>UI/UX</h3>
               <p className='text-gray-800 py-1'>Figma</p>
               <p className='text-gray-800 py-1'>Adobe XD</p>
             </div>
-            <div className='text-center shadow-lg p-10 rounded-2xl my-10 dark:bg-white'>
+            <div className='wobble text-center shadow-lg p-10 rounded-2xl my-10 dark:bg-white'>
               {/* <Image src={} width={100} height={100} /> */}
               <h3 className='text-lg font-semibold py-2 text-blue-500'>Others</h3>
               <p className='text-gray-800 py-1'>Git</p>
