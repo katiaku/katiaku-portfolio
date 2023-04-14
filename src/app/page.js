@@ -53,8 +53,8 @@ export default function Home() {
               to more complex web applications. Please take a look around this site to find out more 
               about my skills as well as some examples of my work.</p>
             <div className='flex justify-center gap-5 mt-5'>
-              <a className="bg-gradient-to-r from-purple-600 to-blue-500 text-white px-4 py-2 leading-8 rounded-md" href="https://drive.google.com/file/d/1-gao6ygjUv6HNikOPWnf_mocNk6Dh9id/view?usp=share_link" target="_blank">Resume</a>
-              <a className="bg-gradient-to-r from-purple-600 to-blue-500 text-white px-4 py-2 leading-8 rounded-md" href="mailto:kushnir.ekaterina@gmail.com">Contact Me</a>
+              <a className="bg-gradient-to-r from-purple-600 to-blue-500 text-white px-4 py-2 leading-8 rounded-md hover:ring-4 hover:ring-indigo-300" href="https://drive.google.com/file/d/1-gao6ygjUv6HNikOPWnf_mocNk6Dh9id/view?usp=share_link" target="_blank">Resume</a>
+              <a className="bg-gradient-to-r from-purple-600 to-blue-500 text-white px-4 py-2 leading-8 rounded-md hover:ring-4 hover:ring-indigo-300" href="mailto:kushnir.ekaterina@gmail.com">Contact Me</a>
             </div>
           </div>
           <div className='flex flex-col items-center pt-3 pb-20'>
