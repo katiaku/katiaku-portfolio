@@ -3,7 +3,6 @@
 import Head from 'next/head';
 import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
 import Image from 'next/image';
-import dev from '../../public/dev.png';
 import project1 from '../../public/project1.png';
 import project2 from '../../public/project2.png';
 import { useState } from 'react';
@@ -24,7 +23,7 @@ export default function Home() {
       </Head>
 
       <main className='bg-white px-10 pb-20 md:px-20 lg:px-40 dark:bg-gray-900'>
-        <section id="top" className='min-h-screen pb-10'>
+        <section id="top" className='min-h-screen pb-20'>
           <nav className='py-10 mb-12'>
             <ul className='flex items-center gap-5'>
               <li className='mr-auto shake'>
@@ -56,10 +55,6 @@ export default function Home() {
               <a className="bg-gradient-to-r from-purple-600 to-blue-500 text-white px-4 py-2 leading-8 rounded-3xl hover:ring-4 hover:ring-indigo-300" href="https://drive.google.com/file/d/1-gao6ygjUv6HNikOPWnf_mocNk6Dh9id/view?usp=share_link" target="_blank">Resume</a>
               <a className="bg-gradient-to-r from-purple-600 to-blue-500 text-white px-4 py-2 leading-8 rounded-3xl hover:ring-4 hover:ring-indigo-300" href="mailto:kushnir.ekaterina@gmail.com">Contact Me</a>
             </div>
-          </div>
-          <div className='flex flex-col items-center pt-3 pb-20'>
-            <Image className="rounded-2xl mt-10" src={dev} alt="developer" width="500" height="500" />
-            <span className='text-xs dark:text-white'>Image by <a href="https://www.freepik.com/free-vector/colorful-illustration-female-programmer-working_5483075.htm#page=2&query=woman%20developer&position=31&from_view=search&track=ais">Freepik</a></span>
           </div>
         </section>
 
@@ -106,7 +101,7 @@ export default function Home() {
 
         <section>
           <div>
-            <h3 className='text-3xl pb-1 pt-18 text-purple-600 text-center font-bold'>My Portfolio</h3>
+            <h3 className='text-3xl pb-6 pt-18 text-purple-600 text-center font-bold'>My Portfolio</h3>
           </div>
           <div className='flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap'>
             <div className='basis-1/3 flex-1'>
