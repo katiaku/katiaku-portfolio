@@ -74,6 +74,7 @@ export default function Home() {
               <p className='text-gray-800 py-1'>JavaScript</p>
               <p className='text-gray-800 py-1'>TypeScript</p>
               <p className='text-gray-800 py-1'>ReactJS</p>
+              <p className='text-gray-800 py-1'>jQuery</p>
             </div>
             <div className='wobble text-center shadow-lg p-10 rounded-2xl my-10 dark:bg-white'>
               {/* <Image src={} width={100} height={100} /> */}
@@ -81,6 +82,8 @@ export default function Home() {
               <p className='text-gray-800 py-1'>SQL (MySQL, PostgreSQL)</p>
               <p className='text-gray-800 py-1'>PHP</p>
               <p className='text-gray-800 py-1'>CakePHP</p>
+              <p className='text-gray-800 py-1'>Node.js (Express)</p>
+              <p className='text-gray-800 py-1'>MongoDB</p>
             </div>
             <div className='wobble text-center shadow-lg p-10 rounded-2xl my-10 dark:bg-white'>
               {/* <Image src={} width={100} height={100} /> */}
