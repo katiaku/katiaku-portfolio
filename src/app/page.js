@@ -59,45 +59,45 @@ export default function Home() {
         </section>
 
         <section className='pt-18 pb-20'>
-          <div>
+          <div className='pb-3'>
             <h3 className='text-3xl py-1 text-purple-600 font-bold text-center'>Technologies and Tools I Use</h3>
           </div>
-          <div className='lg:flex lg:justify-between'>
-            <div className='text-center shadow-lg p-10 rounded-md my-10 dark:bg-white'>
+          <div className='lg:flex lg:justify-between gap-10'>
+            <div className='lg:w-1/4 text-center shadow-lg p-10 rounded-md my-10 dark:bg-gray-700'>
               <h3 className='text-lg font-semibold py-2 text-blue-500'>Frontend</h3>
               {/* <Image src={} width={100} height={100} /> */}
-              <p className='text-gray-800 py-1'>HTML</p>
-              <p className='text-gray-800 py-1'>CSS</p>
-              <p className='text-gray-800 py-1'>Sass</p>
-              <p className='text-gray-800 py-1'>Bootstrap</p>
-              <p className='text-gray-800 py-1'>Tailwind</p>
-              <p className='text-gray-800 py-1'>JavaScript</p>
-              <p className='text-gray-800 py-1'>TypeScript</p>
-              <p className='text-gray-800 py-1'>ReactJS</p>
-              <p className='text-gray-800 py-1'>jQuery</p>
+              <p className='text-gray-800 py-1 dark:text-white'>HTML</p>
+              <p className='text-gray-800 py-1 dark:text-white'>CSS</p>
+              <p className='text-gray-800 py-1 dark:text-white'>Sass</p>
+              <p className='text-gray-800 py-1 dark:text-white'>Bootstrap</p>
+              <p className='text-gray-800 py-1 dark:text-white'>Tailwind</p>
+              <p className='text-gray-800 py-1 dark:text-white'>JavaScript</p>
+              <p className='text-gray-800 py-1 dark:text-white'>TypeScript</p>
+              <p className='text-gray-800 py-1 dark:text-white'>ReactJS</p>
+              <p className='text-gray-800 py-1 dark:text-white'>jQuery</p>
             </div>
-            <div className='text-center shadow-lg p-10 rounded-md my-10 dark:bg-white'>
+            <div className='lg:w-1/4 text-center shadow-lg p-10 rounded-md my-10 dark:bg-gray-700'>
               {/* <Image src={} width={100} height={100} /> */}
               <h3 className='text-lg font-semibold py-2 text-blue-500'>Backend</h3>
-              <p className='text-gray-800 py-1'>SQL (MySQL, PostgreSQL)</p>
-              <p className='text-gray-800 py-1'>PHP</p>
-              <p className='text-gray-800 py-1'>CakePHP</p>
-              <p className='text-gray-800 py-1'>Node.js (Express)</p>
-              <p className='text-gray-800 py-1'>MongoDB</p>
+              <p className='text-gray-800 py-1 dark:text-white'>SQL (MySQL, PostgreSQL)</p>
+              <p className='text-gray-800 py-1 dark:text-white'>PHP</p>
+              <p className='text-gray-800 py-1 dark:text-white'>CakePHP</p>
+              <p className='text-gray-800 py-1 dark:text-white'>Node.js (Express)</p>
+              <p className='text-gray-800 py-1 dark:text-white'>MongoDB</p>
             </div>
-            <div className='text-center shadow-lg p-10 rounded-md my-10 dark:bg-white'>
+            <div className='lg:w-1/4 text-center shadow-lg p-10 rounded-md my-10 dark:bg-gray-700'>
               {/* <Image src={} width={100} height={100} /> */}
               <h3 className='text-lg font-semibold py-2 text-blue-500'>UI/UX</h3>
-              <p className='text-gray-800 py-1'>Figma</p>
-              <p className='text-gray-800 py-1'>Adobe XD</p>
+              <p className='text-gray-800 py-1 dark:text-white'>Figma</p>
+              <p className='text-gray-800 py-1 dark:text-white'>Adobe XD</p>
             </div>
-            <div className='text-center shadow-lg p-10 rounded-md my-10 dark:bg-white'>
+            <div className='lg:w-1/4 text-center shadow-lg p-10 rounded-md my-10 dark:bg-gray-700'>
               {/* <Image src={} width={100} height={100} /> */}
               <h3 className='text-lg font-semibold py-2 text-blue-500'>Others</h3>
-              <p className='text-gray-800 py-1'>Git</p>
-              <p className='text-gray-800 py-1'>GitHub</p>
-              <p className='text-gray-800 py-1'>Trello</p>
-              <p className='text-gray-800 py-1'>Postman</p>
+              <p className='text-gray-800 py-1 dark:text-white'>Git</p>
+              <p className='text-gray-800 py-1 dark:text-white'>GitHub</p>
+              <p className='text-gray-800 py-1 dark:text-white'>Trello</p>
+              <p className='text-gray-800 py-1 dark:text-white'>Postman</p>
             </div>
           </div>
         </section>
