@@ -43,7 +43,7 @@ export default function Home() {
           <div className='text-center p-2 lg:py-24'>
             <h2 className='text-6xl py-2 gradient-text font-extrabold md:text-7xl'>Ekaterina Kushnir</h2>
             <h3 className='text-2xl font-bold text-blue-900 pt-5 md:text-3xl dark:text-blue-400'>Web Developer</h3>
-            <p className='text-left text-md py-8 leading-7 lg:leading-9 text-gray-800 md:text-xl mx-auto dark:text-white'>
+            <p className='text-left text-md py-8 leading-7 lg:leading-8 text-gray-700 md:text-xl mx-auto dark:text-white'>
               If you&apos;re looking for a versatile web developer who can help you take advantage 
               of the latest advancements in the field, you&apos;ve come to the right place. 
               My proficiency in JavaScript, React and PHP coupled with enthusiasm 
