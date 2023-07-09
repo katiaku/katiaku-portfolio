@@ -43,7 +43,7 @@ export default function Home() {
           <div className='text-center p-2 lg:py-24'>
             <h2 className='text-6xl py-2 gradient-text font-extrabold md:text-7xl'>Ekaterina Kushnir</h2>
             <h3 className='text-2xl font-bold text-purple-700 pt-5 md:text-3xl dark:text-blue-400'>Web Developer</h3>
-            <p className='text-left text-md py-8 leading-7 lg:leading-8 text-gray-700 md:text-xl mx-auto dark:text-white'>
+            <p className='text-left text-md py-10 leading-7 lg:leading-8 text-gray-700 md:text-xl mx-auto dark:text-white'>
               If you&apos;re looking for a versatile web developer who can help you take advantage 
               of the latest advancements in the field, you&apos;ve come to the right place. 
               My proficiency in JavaScript, React and PHP coupled with enthusiasm 
@@ -62,8 +62,8 @@ export default function Home() {
           <div>
             <h3 className='text-3xl py-1 text-purple-600 font-bold text-center'>Technologies and Tools I Use</h3>
           </div>
-          <div className='lg:flex lg:justify-center lg:gap-10'>
-            <div className='wobble text-center shadow-lg p-10 rounded-md my-10 dark:bg-white'>
+          <div className='lg:flex lg:justify-between'>
+            <div className='text-center shadow-lg p-10 rounded-md my-10 dark:bg-white'>
               <h3 className='text-lg font-semibold py-2 text-blue-500'>Frontend</h3>
               {/* <Image src={} width={100} height={100} /> */}
               <p className='text-gray-800 py-1'>HTML</p>
@@ -76,7 +76,7 @@ export default function Home() {
               <p className='text-gray-800 py-1'>ReactJS</p>
               <p className='text-gray-800 py-1'>jQuery</p>
             </div>
-            <div className='wobble text-center shadow-lg p-10 rounded-md my-10 dark:bg-white'>
+            <div className='text-center shadow-lg p-10 rounded-md my-10 dark:bg-white'>
               {/* <Image src={} width={100} height={100} /> */}
               <h3 className='text-lg font-semibold py-2 text-blue-500'>Backend</h3>
               <p className='text-gray-800 py-1'>SQL (MySQL, PostgreSQL)</p>
@@ -85,13 +85,13 @@ export default function Home() {
               <p className='text-gray-800 py-1'>Node.js (Express)</p>
               <p className='text-gray-800 py-1'>MongoDB</p>
             </div>
-            <div className='wobble text-center shadow-lg p-10 rounded-md my-10 dark:bg-white'>
+            <div className='text-center shadow-lg p-10 rounded-md my-10 dark:bg-white'>
               {/* <Image src={} width={100} height={100} /> */}
               <h3 className='text-lg font-semibold py-2 text-blue-500'>UI/UX</h3>
               <p className='text-gray-800 py-1'>Figma</p>
               <p className='text-gray-800 py-1'>Adobe XD</p>
             </div>
-            <div className='wobble text-center shadow-lg p-10 rounded-md my-10 dark:bg-white'>
+            <div className='text-center shadow-lg p-10 rounded-md my-10 dark:bg-white'>
               {/* <Image src={} width={100} height={100} /> */}
               <h3 className='text-lg font-semibold py-2 text-blue-500'>Others</h3>
               <p className='text-gray-800 py-1'>Git</p>
@@ -106,7 +106,7 @@ export default function Home() {
           <div>
             <h3 className='text-3xl pb-6 pt-18 text-purple-700 text-center font-bold'>My Portfolio</h3>
           </div>
-          <div className='flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap'>
+          <div className='flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap mx-auto'>
             <div className='basis-1/3 flex-1'>
               <Image src={project1} alt="project1" className='rounded-md object-cover shadow-lg' width={'100%'} height={'100%'} />
               <p className='dark:text-white pt-5'><a className="text-blue-500 font-semibold" target="_blank" href="https://github.com/katiaku/task-manager">The Task Manager React App</a> is a web app that allows users to manage their tasks in a simple and efficient way. Users can add new tasks to the list, edit or remove existing tasks. Each task in the app includes a description and a priority level that indicates its relative importance or urgency.</p>
@@ -118,7 +118,7 @@ export default function Home() {
           </div>
         </section>
 
-        <footer className='my-2 flex justify-center'>
+        <footer className='my-2 mt-8 flex justify-center'>
           <a className="bg-gradient-to-r from-purple-600 to-blue-500 text-white px-4 py-1 leading-8 rounded-3xl hover:ring-4 hover:ring-indigo-200" href="#">Back To Top</a>
         </footer>
       </main>
