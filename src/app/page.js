@@ -51,9 +51,9 @@ export default function Home() {
               constitute a solid foundation to build anything from basic static web pages 
               to more complex web applications. Please take a look around this site to find out more 
               about my skills as well as some examples of my work.</p>
-            <div className='flex justify-center gap-5 mt-5'>
-              <a className="bg-gradient-to-r from-purple-700 to-blue-500 text-white px-4 py-2 leading-8 rounded-3xl hover:ring-4 hover:ring-indigo-300" href="https://drive.google.com/file/d/1-gao6ygjUv6HNikOPWnf_mocNk6Dh9id/view?usp=share_link" target="_blank">Resume</a>
-              <a className="bg-gradient-to-r from-purple-700 to-blue-500 text-white px-4 py-2 leading-8 rounded-3xl hover:ring-4 hover:ring-indigo-300" href="mailto:kushnir.ekaterina@gmail.com">Contact Me</a>
+            <div className='flex justify-center gap-7 mt-5'>
+              <a className="bg-gradient-to-r from-purple-700 to-blue-500 text-white px-4 py-1 leading-8 rounded-3xl hover:ring-4 hover:ring-indigo-200" href="https://drive.google.com/file/d/1-gao6ygjUv6HNikOPWnf_mocNk6Dh9id/view?usp=share_link" target="_blank">Resume</a>
+              <a className="bg-gradient-to-r from-purple-700 to-blue-500 text-white px-4 py-1 leading-8 rounded-3xl hover:ring-4 hover:ring-indigo-200" href="mailto:kushnir.ekaterina@gmail.com">Contact Me</a>
             </div>
           </div>
         </section>
@@ -116,7 +116,7 @@ export default function Home() {
         </section>
 
         <footer className='my-2 flex justify-center'>
-          <a className="bg-gradient-to-r from-purple-600 to-blue-500 text-white px-4 py-2 leading-8 rounded-3xl hover:ring-4 hover:ring-indigo-300" href="#">Back To Top</a>
+          <a className="bg-gradient-to-r from-purple-600 to-blue-500 text-white px-4 py-1 leading-8 rounded-3xl hover:ring-4 hover:ring-indigo-200" href="#">Back To Top</a>
         </footer>
       </main>
     </div>
