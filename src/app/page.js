@@ -33,11 +33,11 @@ export default function Home() {
                     setToggle(!isToggled);
                     setDarkMode(!darkMode);
                   }} 
-                  className='mt-2 cursor-pointer text-4xl text-gray-800 dark:text-white'
+                  className='mt-2 cursor-pointer text-3xl text-gray-800 dark:text-white'
                 />
               </li>
-              <li className='shake'><a className="text-gray-800 text-4xl dark:text-white" target="_blank" href="https://www.linkedin.com/in/ekaterina-kushnir-mikhaylova"><AiFillLinkedin /></a></li>
-              <li className='shake'><a className="text-gray-800 text-4xl dark:text-white" target="_blank" href="https://github.com/katiaku"><AiFillGithub /></a></li>
+              <li className='shake'><a className="text-gray-800 text-3xl dark:text-white" target="_blank" href="https://www.linkedin.com/in/ekaterina-kushnir-mikhaylova"><AiFillLinkedin /></a></li>
+              <li className='shake'><a className="text-gray-800 text-3xl dark:text-white" target="_blank" href="https://github.com/katiaku"><AiFillGithub /></a></li>
             </ul>
           </nav>
           <div className='text-center p-2 lg:py-24'>
