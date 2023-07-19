@@ -97,6 +97,7 @@ export default function Home() {
               <p className='text-gray-800 py-1 dark:text-white'>Git</p>
               <p className='text-gray-800 py-1 dark:text-white'>GitHub</p>
               <p className='text-gray-800 py-1 dark:text-white'>Trello</p>
+              <p className='text-gray-800 py-1 dark:text-white'>Jira</p>
               <p className='text-gray-800 py-1 dark:text-white'>Postman</p>
             </div>
           </div>
