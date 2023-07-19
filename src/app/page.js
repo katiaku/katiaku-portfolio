@@ -5,6 +5,7 @@ import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
 import Image from 'next/image';
 import project1 from '../../public/project1.png';
 import project2 from '../../public/project2.png';
+import logo from '../../public/logo.png';
 import { useState } from 'react';
 import "@theme-toggles/react/css/Expand.css";
 import { Expand } from "@theme-toggles/react";
@@ -25,24 +26,35 @@ export default function Home() {
       <main className='bg-white px-10 pb-20 md:px-20 lg:px-40 dark:bg-gray-900'>
         <section id="top" className='min-h-screen pb-20'>
           <nav className='py-10 mb-12'>
-            <ul className='flex items-center gap-5'>
-              <li className='mr-auto shake'>
-                <Expand  
-                  toggled={isToggled} 
-                  toggle={() => {
-                    setToggle(!isToggled);
-                    setDarkMode(!darkMode);
-                  }} 
-                  className='mt-2 cursor-pointer text-3xl text-gray-800 dark:text-white'
-                />
+            <ul className='flex flex-col sm:flex-row sm:items-center gap-5'>
+              <li>
+                <Image src={logo} width={30} height={30} className='mb-4' />
               </li>
-              <li className='shake'><a className="text-gray-800 text-3xl dark:text-white" target="_blank" href="https://www.linkedin.com/in/ekaterina-kushnir-mikhaylova"><AiFillLinkedin /></a></li>
-              <li className='shake'><a className="text-gray-800 text-3xl dark:text-white" target="_blank" href="https://github.com/katiaku"><AiFillGithub /></a></li>
+              <ul className='flex justify-center items-center gap-4 sm:ml-auto'>
+                <li className='hover:text-purple-900 cursor-pointer'><a href="#about">About</a></li>
+                <li className='hover:text-purple-900 cursor-pointer'><a href="#tools">Tools</a></li>
+                <li className='hover:text-purple-900 cursor-pointer'><a href="#portfolio">Portfolio</a></li>
+              </ul>
+              <ul className='flex justify-center items-center items-right gap-4'>
+                <li className='shake'><a className="text-gray-800 text-2xl dark:text-white" target="_blank" href="https://www.linkedin.com/in/ekaterina-kushnir-mikhaylova"><AiFillLinkedin /></a></li>
+                <li className='shake'><a className="text-gray-800 text-2xl dark:text-white" target="_blank" href="https://github.com/katiaku"><AiFillGithub /></a></li>
+                <li className='shake'>
+                  <Expand  
+                    toggled={isToggled} 
+                    toggle={() => {
+                      setToggle(!isToggled);
+                      setDarkMode(!darkMode);
+                    }} 
+                    className='mt-2 cursor-pointer text-2xl text-gray-800 dark:text-white'
+                  />
+                </li>
+              </ul>
+
             </ul>
           </nav>
           <div className='text-center p-2 lg:py-24'>
             <h2 className='text-6xl py-2 gradient-text font-extrabold md:text-7xl'>Ekaterina Kushnir</h2>
-            <h3 className='text-2xl font-bold text-purple-700 pt-5 md:text-3xl dark:text-blue-400'>Web Developer</h3>
+            <h3 className='text-2xl font-bold text-purple-700 pt-5 dark:text-blue-400'>Web Developer</h3>
             <p className='text-left text-md py-10 leading-7 lg:leading-8 text-gray-700 md:text-xl mx-auto dark:text-white'>
               If you&apos;re looking for a versatile web developer who can help you take advantage 
               of the latest advancements in the field, you&apos;ve come to the right place. 
@@ -60,7 +72,7 @@ export default function Home() {
 
         <section className='pt-18 pb-20'>
           <div className='pb-3'>
-            <h3 className='text-3xl py-1 text-purple-600 font-bold text-center'>Technologies and Tools I Use</h3>
+            <h3 className='text-3xl py-1 text-purple-600 font-bold text-center' id='tools'>Technologies and Tools I Use</h3>
           </div>
           <div className='lg:flex lg:justify-between gap-10'>
             <div className='lg:w-1/4 text-center shadow-lg p-10 rounded-md my-10 dark:bg-gray-700'>
@@ -105,7 +117,7 @@ export default function Home() {
 
         <section>
           <div>
-            <h3 className='text-3xl pb-6 pt-18 text-purple-700 text-center font-bold'>My Portfolio</h3>
+            <h3 className='text-3xl pb-6 pt-18 text-purple-700 text-center font-bold' id='portfolio'>My Portfolio</h3>
           </div>
           <div className='flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap mx-auto'>
             <div className='basis-1/3 flex-1'>
