@@ -69,7 +69,7 @@ export default function Home() {
           <p className='text-left text-md py-10 leading-7 lg:leading-8 text-gray-700 md:text-xl mx-auto dark:text-white'>
                 If you&apos;re looking for a versatile web developer who can help you take advantage 
                 of the latest advancements in the field, you&apos;ve come to the right place. 
-                My proficiency in JavaScript, React and PHP coupled with enthusiasm 
+                My proficiency in full stack development coupled with enthusiasm 
                 for crafting user-friendly interfaces and delivering exceptional user experiences, 
                 constitute a solid foundation to build anything from basic static web pages 
                 to more complex web applications. Please take a look around this site to find out more 
@@ -91,16 +91,19 @@ export default function Home() {
               <p className='text-gray-800 py-1 dark:text-white'>Tailwind</p>
               <p className='text-gray-800 py-1 dark:text-white'>JavaScript</p>
               <p className='text-gray-800 py-1 dark:text-white'>TypeScript</p>
-              <p className='text-gray-800 py-1 dark:text-white'>ReactJS</p>
+              <p className='text-gray-800 py-1 dark:text-white'>React</p>
               <p className='text-gray-800 py-1 dark:text-white'>jQuery</p>
+              <p className='text-gray-800 py-1 dark:text-white'>Three.js</p>
             </div>
             <div className='lg:w-1/4 text-center shadow-lg p-10 rounded-md my-10 dark:bg-gray-700'>
               {/* <Image src={} width={100} height={100} /> */}
               <h3 className='text-lg font-semibold py-2 text-blue-500'>Backend</h3>
-              <p className='text-gray-800 py-1 dark:text-white'>SQL (MySQL, PostgreSQL)</p>
               <p className='text-gray-800 py-1 dark:text-white'>PHP</p>
               <p className='text-gray-800 py-1 dark:text-white'>CakePHP</p>
-              <p className='text-gray-800 py-1 dark:text-white'>Node.js (Express)</p>
+              <p className='text-gray-800 py-1 dark:text-white'>Node.js</p>
+              <p className='text-gray-800 py-1 dark:text-white'>Express</p>
+              <p className='text-gray-800 py-1 dark:text-white'>MySQL</p>
+              <p className='text-gray-800 py-1 dark:text-white'>PostgreSQL</p>
               <p className='text-gray-800 py-1 dark:text-white'>MongoDB</p>
             </div>
             <div className='lg:w-1/4 text-center shadow-lg p-10 rounded-md my-10 dark:bg-gray-700'>
@@ -108,15 +111,16 @@ export default function Home() {
               <h3 className='text-lg font-semibold py-2 text-blue-500'>UI/UX</h3>
               <p className='text-gray-800 py-1 dark:text-white'>Figma</p>
               <p className='text-gray-800 py-1 dark:text-white'>Adobe XD</p>
+              <p className='text-gray-800 py-1 dark:text-white'>Spline</p>
             </div>
             <div className='lg:w-1/4 text-center shadow-lg p-10 rounded-md my-10 dark:bg-gray-700'>
               {/* <Image src={} width={100} height={100} /> */}
               <h3 className='text-lg font-semibold py-2 text-blue-500'>Others</h3>
+              <p className='text-gray-800 py-1 dark:text-white'>Postman</p>
               <p className='text-gray-800 py-1 dark:text-white'>Git</p>
               <p className='text-gray-800 py-1 dark:text-white'>GitHub</p>
               <p className='text-gray-800 py-1 dark:text-white'>Trello</p>
               <p className='text-gray-800 py-1 dark:text-white'>Jira</p>
-              <p className='text-gray-800 py-1 dark:text-white'>Postman</p>
             </div>
           </div>
         </section>
