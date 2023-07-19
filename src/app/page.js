@@ -26,7 +26,7 @@ export default function Home() {
       <main className='bg-white px-10 pb-20 md:px-20 lg:px-40 dark:bg-gray-900'>
         <section id="top" className='min-h-screen pb-20'>
           <nav className='py-10 mb-12'>
-            <ul className='flex flex-col sm:flex-row sm:items-center gap-5'>
+            <ul className='flex flex-col sm:flex-row sm:items-center gap-8'>
               <li>
                 <Image src={logo} width={30} height={30} className='mb-4' />
               </li>
@@ -49,30 +49,36 @@ export default function Home() {
                   />
                 </li>
               </ul>
-
             </ul>
           </nav>
-          <div className='text-center p-2 lg:py-24'>
-            <h2 className='text-6xl py-2 gradient-text font-extrabold md:text-7xl'>Ekaterina Kushnir</h2>
+
+          <div className='text-center p-2 sm:py-24'>
+            <h2 className='py-2 gradient-text font-extrabold text-6xl sm:text-7xl'>Ekaterina Kushnir</h2>
             <h3 className='text-2xl font-bold text-purple-700 pt-5 dark:text-blue-400'>Web Developer</h3>
-            <p className='text-left text-md py-10 leading-7 lg:leading-8 text-gray-700 md:text-xl mx-auto dark:text-white'>
-              If you&apos;re looking for a versatile web developer who can help you take advantage 
-              of the latest advancements in the field, you&apos;ve come to the right place. 
-              My proficiency in JavaScript, React and PHP coupled with enthusiasm 
-              for crafting user-friendly interfaces and delivering exceptional user experiences, 
-              constitute a solid foundation to build anything from basic static web pages 
-              to more complex web applications. Please take a look around this site to find out more 
-              about my skills as well as some examples of my work.</p>
-            <div className='flex justify-center gap-7 mt-5'>
+            <div className='flex flex-col sm:flex-row justify-center gap-7 mt-20'>
               <a className="bg-gradient-to-r from-purple-700 to-blue-500 text-white px-8 py-1 leading-8 rounded-3xl hover:ring-4 hover:ring-indigo-200" href="https://drive.google.com/file/d/1-gao6ygjUv6HNikOPWnf_mocNk6Dh9id/view?usp=share_link" target="_blank">Resume</a>
               <a className="bg-gradient-to-r from-purple-700 to-blue-500 text-white px-5 py-1 leading-8 rounded-3xl hover:ring-4 hover:ring-indigo-200" href="mailto:kushnir.ekaterina@gmail.com">Contact Me</a>
             </div>
           </div>
         </section>
 
+        <section className='pb-20'>
+          <div className='pb-3'>
+            <h3 className='text-3xl py-1 text-purple-700 font-bold text-center' id='about'>About Me</h3>
+          </div>
+          <p className='text-left text-md py-10 leading-7 lg:leading-8 text-gray-700 md:text-xl mx-auto dark:text-white'>
+                If you&apos;re looking for a versatile web developer who can help you take advantage 
+                of the latest advancements in the field, you&apos;ve come to the right place. 
+                My proficiency in JavaScript, React and PHP coupled with enthusiasm 
+                for crafting user-friendly interfaces and delivering exceptional user experiences, 
+                constitute a solid foundation to build anything from basic static web pages 
+                to more complex web applications. Please take a look around this site to find out more 
+                about my skills as well as some examples of my work.</p>
+        </section>
+
         <section className='pt-18 pb-20'>
           <div className='pb-3'>
-            <h3 className='text-3xl py-1 text-purple-600 font-bold text-center' id='tools'>Technologies and Tools I Use</h3>
+            <h3 className='text-3xl py-1 text-purple-700 font-bold text-center' id='tools'>Technologies And Tools I Use</h3>
           </div>
           <div className='lg:flex lg:justify-between gap-10'>
             <div className='lg:w-1/4 text-center shadow-lg p-10 rounded-md my-10 dark:bg-gray-700'>
