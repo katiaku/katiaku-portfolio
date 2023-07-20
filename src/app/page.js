@@ -31,9 +31,9 @@ export default function Home() {
                 <Image src={logo} width={30} height={30} className='mb-4' />
               </li>
               <ul className='flex justify-center items-center gap-4 sm:ml-auto'>
-                <li className='hover:text-purple-900 cursor-pointer'><a href="#about">About</a></li>
-                <li className='hover:text-purple-900 cursor-pointer'><a href="#tools">Tools</a></li>
-                <li className='hover:text-purple-900 cursor-pointer'><a href="#portfolio">Portfolio</a></li>
+                <li className='hover:text-purple-900 hover:underline cursor-pointer'><a href="#about">About</a></li>
+                <li className='hover:text-purple-900 hover:underline cursor-pointer'><a href="#tools">Tools</a></li>
+                <li className='hover:text-purple-900 hover:underline cursor-pointer'><a href="#portfolio">Portfolio</a></li>
               </ul>
               <ul className='flex justify-center items-center items-right gap-4'>
                 <li className='shake'><a className="text-gray-800 text-2xl dark:text-white" target="_blank" href="https://www.linkedin.com/in/ekaterina-kushnir-mikhaylova"><AiFillLinkedin /></a></li>
@@ -55,7 +55,7 @@ export default function Home() {
           <div className='text-center p-2 sm:py-24'>
             <h2 className='py-2 gradient-text font-extrabold text-6xl sm:text-7xl'>Ekaterina Kushnir</h2>
             <h3 className='text-2xl font-bold text-purple-700 pt-5 dark:text-blue-400'>Web Developer</h3>
-            <div className='flex flex-col sm:flex-row justify-center gap-7 mt-20'>
+            <div className='flex flex-col sm:flex-row items-center justify-center gap-7 mt-20'>
               <a className="bg-gradient-to-r from-purple-700 to-blue-500 text-white px-8 py-1 leading-8 rounded-3xl hover:ring-4 hover:ring-indigo-200" href="https://drive.google.com/file/d/1-gao6ygjUv6HNikOPWnf_mocNk6Dh9id/view?usp=share_link" target="_blank">Resume</a>
               <a className="bg-gradient-to-r from-purple-700 to-blue-500 text-white px-5 py-1 leading-8 rounded-3xl hover:ring-4 hover:ring-indigo-200" href="mailto:kushnir.ekaterina@gmail.com">Contact Me</a>
             </div>
