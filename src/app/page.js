@@ -26,18 +26,18 @@ export default function Home() {
       <main className='bg-white px-10 pb-20 md:px-20 lg:px-40 dark:bg-gray-900'>
         <section id="top" className='min-h-screen pb-20'>
           <nav className='py-10 mb-12'>
-            <ul className='flex flex-col sm:flex-row sm:items-center gap-4'>
+            <ul className='flex flex-col sm:flex-row sm:items-center gap-8'>
               <li>
                 <Image src={logo} width={30} height={30} className='mb-4' />
               </li>
-              <ul className='flex justify-center items-center gap-4 sm:ml-auto'>
+              <ul className='flex justify-center items-center gap-10 sm:ml-auto'>
                 <li className='hover:text-purple-900 dark:text-white font-bold hover:underline cursor-pointer'><a href="#about">About</a></li>
                 <li className='hover:text-purple-900 dark:text-white font-bold hover:underline cursor-pointer'><a href="#tools">Tools</a></li>
                 <li className='hover:text-purple-900 dark:text-white font-bold hover:underline cursor-pointer'><a href="#portfolio">Portfolio</a></li>
               </ul>
-              <ul className='flex justify-center items-center items-right gap-4'>
-                <li className='shake'><a className="text-gray-800 text-xl dark:text-white" target="_blank" href="https://www.linkedin.com/in/ekaterina-kushnir-mikhaylova"><AiFillLinkedin /></a></li>
-                <li className='shake'><a className="text-gray-800 text-xl dark:text-white" target="_blank" href="https://github.com/katiaku"><AiFillGithub /></a></li>
+              <ul className='flex justify-center items-center items-right gap-6'>
+                <li className='shake'><a className="text-gray-800 hover:text-purple-900 text-xl dark:text-white" target="_blank" href="https://www.linkedin.com/in/ekaterina-kushnir-mikhaylova"><AiFillLinkedin /></a></li>
+                <li className='shake'><a className="text-gray-800 hover:text-purple-900 text-xl dark:text-white" target="_blank" href="https://github.com/katiaku"><AiFillGithub /></a></li>
                 <li className='shake'>
                   <Expand  
                     toggled={isToggled} 
@@ -45,7 +45,7 @@ export default function Home() {
                       setToggle(!isToggled);
                       setDarkMode(!darkMode);
                     }} 
-                    className='mt-2 cursor-pointer text-xl text-gray-800 dark:text-white'
+                    className='mt-2 cursor-pointer text-xl text-gray-800 hover:text-purple-900 dark:text-white'
                   />
                 </li>
               </ul>
