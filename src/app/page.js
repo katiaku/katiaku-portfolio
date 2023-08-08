@@ -9,6 +9,7 @@ import logo from '../../public/logo.png';
 import { useState } from 'react';
 import "@theme-toggles/react/css/Expand.css";
 import { Expand } from "@theme-toggles/react";
+import Footer from '@/components/Footer';
 
 export default function Home() {
 
@@ -24,7 +25,7 @@ export default function Home() {
       </Head>
 
       <main className='bg-white px-10 pb-20 md:px-20 lg:px-40 dark:bg-gray-900'>
-        <section id="top" className='min-h-screen pb-20'>
+        <section id="top" className='h-screen pb-20'>
           <nav className='py-10 mb-12'>
             <ul className='flex flex-col sm:flex-row sm:items-center gap-8'>
               <li>
@@ -141,9 +142,7 @@ export default function Home() {
           </div>
         </section>
 
-        <footer className='my-2 mt-8 flex justify-center'>
-          <a className="font-bold bg-gradient-to-r from-purple-600 to-blue-500 text-white px-5 py-1 leading-8 rounded-3xl hover:ring-4 hover:ring-indigo-200" href="#">Back To Top</a>
-        </footer>
+        <Footer />
       </main>
     </div>
   )
