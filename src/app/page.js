@@ -24,7 +24,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className='bg-white px-10 pb-20 md:px-20 lg:px-40 dark:bg-gray-900'>
+      <main className='bg-white px-10 pb-20 md:px-20 lg:px-40 dark:bg-gray-900 transition delay-100'>
         <section id="top" className='h-screen pb-20'>
           <nav className='py-10 mb-12'>
             <ul className='flex flex-col sm:flex-row sm:items-center gap-8'>
