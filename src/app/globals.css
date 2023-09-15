@@ -5,11 +5,26 @@
 @layer base {
   html {
     font-family: Proxima Nova, system-ui, sans-serif;
+    scroll-behavior: smooth;
   }
 }
 
-html {
-  scroll-behavior: smooth;
+@layer components {
+  .btn {
+    @apply font-bold bg-gradient-to-r from-purple-600 to-blue-500 text-white px-5 py-1 leading-8 rounded-3xl hover:ring-4 hover:ring-indigo-200 transition-all duration-300
+  }
+
+  .menu-item {
+    @apply hover:text-purple-900 dark:text-white font-bold hover:underline cursor-pointer
+  }
+
+  .icon-link {
+    @apply text-gray-800 hover:text-purple-900 text-xl dark:text-white
+  }
+
+  .tech-item {
+    @apply text-gray-800 py-1 dark:text-white
+  }
 }
 
 /* ----------------------------------------------

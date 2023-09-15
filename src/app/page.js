@@ -32,13 +32,13 @@ export default function Home() {
                 <Image src={logo} width={30} height={30} className='mb-4' />
               </li>
               <ul className='flex justify-center items-center gap-10 sm:ml-auto'>
-                <li className='hover:text-purple-900 dark:text-white font-bold hover:underline cursor-pointer'><a href="#about">About</a></li>
-                <li className='hover:text-purple-900 dark:text-white font-bold hover:underline cursor-pointer'><a href="#tools">Tools</a></li>
-                <li className='hover:text-purple-900 dark:text-white font-bold hover:underline cursor-pointer'><a href="#portfolio">Portfolio</a></li>
+                <li className='menu-item'><a href="#about">About</a></li>
+                <li className='menu-item'><a href="#tools">Tools</a></li>
+                <li className='menu-item'><a href="#portfolio">Portfolio</a></li>
               </ul>
               <ul className='flex justify-center items-center items-right gap-6'>
-                <li className='shake'><a className="text-gray-800 hover:text-purple-900 text-xl dark:text-white" target="_blank" href="https://www.linkedin.com/in/ekaterina-kushnir-mikhaylova"><AiFillLinkedin /></a></li>
-                <li className='shake'><a className="text-gray-800 hover:text-purple-900 text-xl dark:text-white" target="_blank" href="https://github.com/katiaku"><AiFillGithub /></a></li>
+                <li className='shake'><a className="icon-link" target="_blank" href="https://www.linkedin.com/in/ekaterina-kushnir-mikhaylova"><AiFillLinkedin /></a></li>
+                <li className='shake'><a className="icon-link" target="_blank" href="https://github.com/katiaku"><AiFillGithub /></a></li>
                 <li className='shake'>
                   <Expand  
                     toggled={isToggled} 
@@ -46,7 +46,7 @@ export default function Home() {
                       setToggle(!isToggled);
                       setDarkMode(!darkMode);
                     }} 
-                    className='mt-2 cursor-pointer text-xl text-gray-800 hover:text-purple-900 dark:text-white'
+                    className='mt-2 cursor-pointer icon-link'
                   />
                 </li>
               </ul>
@@ -57,8 +57,8 @@ export default function Home() {
             <h2 className='py-2 gradient-text font-extrabold text-6xl sm:text-7xl'>Ekaterina Kushnir</h2>
             <h3 className='text-3xl font-bold text-purple-700 pt-5 dark:text-blue-400'>Web Developer</h3>
             <div className='flex flex-col sm:flex-row items-center justify-center gap-7 mt-20'>
-              <a className="bg-gradient-to-r from-purple-700 to-blue-500 text-white font-bold px-8 py-1 leading-8 rounded-3xl hover:ring-4 hover:ring-indigo-200 transition-all duration-300" href="https://drive.google.com/file/d/1aEOmRYnP0JytDgkhKy0Ycg3YBtrjG3Vt/view?usp=drive_link" target="_blank">Resume</a>
-              <a className="bg-gradient-to-r from-purple-700 to-blue-500 text-white font-bold px-5 py-1 leading-8 rounded-3xl hover:ring-4 hover:ring-indigo-200 transition-all duration-300" href="mailto:kushnir.ekaterina@gmail.com">Contact Me</a>
+              <a className="btn" href="https://drive.google.com/file/d/1aEOmRYnP0JytDgkhKy0Ycg3YBtrjG3Vt/view?usp=drive_link" target="_blank">Resume</a>
+              <a className="btn" href="mailto:kushnir.ekaterina@gmail.com">Contact Me</a>
             </div>
           </div>
         </section>
@@ -85,43 +85,43 @@ export default function Home() {
             <div className='lg:w-1/4 text-center shadow-lg p-10 rounded-md my-10 dark:bg-gray-700'>
               <h3 className='text-lg font-bold py-2 text-blue-500 dark:text-blue-400'>Frontend</h3>
               {/* <Image src={} width={100} height={100} /> */}
-              <p className='text-gray-800 py-1 dark:text-white'>HTML</p>
-              <p className='text-gray-800 py-1 dark:text-white'>CSS</p>
-              <p className='text-gray-800 py-1 dark:text-white'>Sass</p>
-              <p className='text-gray-800 py-1 dark:text-white'>Bootstrap</p>
-              <p className='text-gray-800 py-1 dark:text-white'>Tailwind</p>
-              <p className='text-gray-800 py-1 dark:text-white'>JavaScript</p>
-              <p className='text-gray-800 py-1 dark:text-white'>TypeScript</p>
-              <p className='text-gray-800 py-1 dark:text-white'>React</p>
-              <p className='text-gray-800 py-1 dark:text-white'>jQuery</p>
-              <p className='text-gray-800 py-1 dark:text-white'>Three.js</p>
+              <p className='tech-item'>HTML</p>
+              <p className='tech-item'>CSS</p>
+              <p className='tech-item'>Sass</p>
+              <p className='tech-item'>Bootstrap</p>
+              <p className='tech-item'>Tailwind</p>
+              <p className='tech-item'>JavaScript</p>
+              <p className='tech-item'>TypeScript</p>
+              <p className='tech-item'>React</p>
+              <p className='tech-item'>jQuery</p>
+              <p className='tech-item'>Three.js</p>
             </div>
             <div className='lg:w-1/4 text-center shadow-lg p-10 rounded-md my-10 dark:bg-gray-700'>
               {/* <Image src={} width={100} height={100} /> */}
               <h3 className='text-lg font-bold py-2 text-blue-500 dark:text-blue-400'>Backend</h3>
-              <p className='text-gray-800 py-1 dark:text-white'>PHP</p>
-              <p className='text-gray-800 py-1 dark:text-white'>CakePHP</p>
-              <p className='text-gray-800 py-1 dark:text-white'>Node.js</p>
-              <p className='text-gray-800 py-1 dark:text-white'>Express</p>
-              <p className='text-gray-800 py-1 dark:text-white'>MySQL</p>
-              <p className='text-gray-800 py-1 dark:text-white'>PostgreSQL</p>
-              <p className='text-gray-800 py-1 dark:text-white'>MongoDB</p>
+              <p className='tech-item'>PHP</p>
+              <p className='tech-item'>CakePHP</p>
+              <p className='tech-item'>Node.js</p>
+              <p className='tech-item'>Express</p>
+              <p className='tech-item'>MySQL</p>
+              <p className='tech-item'>PostgreSQL</p>
+              <p className='tech-item'>MongoDB</p>
             </div>
             <div className='lg:w-1/4 text-center shadow-lg p-10 rounded-md my-10 dark:bg-gray-700'>
               {/* <Image src={} width={100} height={100} /> */}
               <h3 className='text-lg font-bold py-2 text-blue-500 dark:text-blue-400'>UI/UX</h3>
-              <p className='text-gray-800 py-1 dark:text-white'>Figma</p>
-              <p className='text-gray-800 py-1 dark:text-white'>Adobe XD</p>
-              <p className='text-gray-800 py-1 dark:text-white'>Spline</p>
+              <p className='tech-item'>Figma</p>
+              <p className='tech-item'>Adobe XD</p>
+              <p className='tech-item'>Spline</p>
             </div>
             <div className='lg:w-1/4 text-center shadow-lg p-10 rounded-md my-10 dark:bg-gray-700'>
               {/* <Image src={} width={100} height={100} /> */}
               <h3 className='text-lg font-bold py-2 text-blue-500 dark:text-blue-400'>Others</h3>
-              <p className='text-gray-800 py-1 dark:text-white'>Postman</p>
-              <p className='text-gray-800 py-1 dark:text-white'>Git</p>
-              <p className='text-gray-800 py-1 dark:text-white'>GitHub</p>
-              <p className='text-gray-800 py-1 dark:text-white'>Trello</p>
-              <p className='text-gray-800 py-1 dark:text-white'>Jira</p>
+              <p className='tech-item'>Postman</p>
+              <p className='tech-item'>Git</p>
+              <p className='tech-item'>GitHub</p>
+              <p className='tech-item'>Trello</p>
+              <p className='tech-item'>Jira</p>
             </div>
           </div>
         </section>
