@@ -10,6 +10,7 @@ import { useState } from 'react';
 import "@theme-toggles/react/css/Expand.css";
 import { Expand } from "@theme-toggles/react";
 import Footer from '@/components/Footer';
+import { motion } from "framer-motion";
 
 export default function Home() {
 
