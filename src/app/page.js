@@ -24,7 +24,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className='bg-white px-10 pb-20 md:px-20 lg:px-40 dark:bg-gray-900 transition delay-100'>
+      <main className='bg-white px-10 pb-20 md:px-20 lg:px-40 dark:bg-gray-900 transition-all duration-300'>
         <section id="top" className='h-screen pb-20'>
           <nav className='py-10 mb-12'>
             <ul className='flex flex-col sm:flex-row sm:items-center gap-8'>
@@ -57,8 +57,8 @@ export default function Home() {
             <h2 className='py-2 gradient-text font-extrabold text-6xl sm:text-7xl'>Ekaterina Kushnir</h2>
             <h3 className='text-3xl font-bold text-purple-700 pt-5 dark:text-blue-400'>Web Developer</h3>
             <div className='flex flex-col sm:flex-row items-center justify-center gap-7 mt-20'>
-              <a className="bg-gradient-to-r from-purple-700 to-blue-500 text-white font-bold px-8 py-1 leading-8 rounded-3xl hover:ring-4 hover:ring-indigo-200" href="https://drive.google.com/file/d/1aEOmRYnP0JytDgkhKy0Ycg3YBtrjG3Vt/view?usp=drive_link" target="_blank">Resume</a>
-              <a className="bg-gradient-to-r from-purple-700 to-blue-500 text-white font-bold px-5 py-1 leading-8 rounded-3xl hover:ring-4 hover:ring-indigo-200" href="mailto:kushnir.ekaterina@gmail.com">Contact Me</a>
+              <a className="bg-gradient-to-r from-purple-700 to-blue-500 text-white font-bold px-8 py-1 leading-8 rounded-3xl hover:ring-4 hover:ring-indigo-200 transition-all duration-300" href="https://drive.google.com/file/d/1aEOmRYnP0JytDgkhKy0Ycg3YBtrjG3Vt/view?usp=drive_link" target="_blank">Resume</a>
+              <a className="bg-gradient-to-r from-purple-700 to-blue-500 text-white font-bold px-5 py-1 leading-8 rounded-3xl hover:ring-4 hover:ring-indigo-200 transition-all duration-300" href="mailto:kushnir.ekaterina@gmail.com">Contact Me</a>
             </div>
           </div>
         </section>
