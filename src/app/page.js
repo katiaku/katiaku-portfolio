@@ -28,7 +28,11 @@ export default function Home() {
       <main className='bg-white px-10 pb-10 md:px-20 lg:px-40 dark:bg-gray-900 transition-all duration-300'>
 
         <section id="top" className='h-screen pb-20'>
-          <nav className='py-10 mb-12'>
+          <motion.nav
+            initial={{ y: "-100vw"}}
+            animate={{ y: "0"}}
+            className='py-10 mb-12'
+          >
             <ul className='flex flex-col sm:flex-row sm:items-center gap-8'>
               <li>
                 <Image src={logo} width={30} height={30} className='mb-4' />
@@ -53,14 +57,14 @@ export default function Home() {
                 </li>
               </ul>
             </ul>
-          </nav>
+          </motion.nav>
           <div className='text-center p-2 sm:py-24'>
-            <h2 className='py-2 gradient-text font-extrabold text-6xl sm:text-7xl'>Ekaterina Kushnir</h2>
-            <h3 className='text-3xl font-bold text-purple-700 pt-5 dark:text-blue-400'>Web Developer</h3>
-            <div className='flex flex-col sm:flex-row items-center justify-center gap-7 mt-20'>
+            <motion.h2 initial={{ x: "-100vw"}} animate={{ x: "0"}} transition={{ duration: 1.2 }} className='py-2 gradient-text font-extrabold text-6xl sm:text-7xl'>Ekaterina Kushnir</motion.h2>
+            <motion.h3 initial={{ x: "100vw"}} animate={{ x: "0"}} transition={{ duration: 1.2 }} className='text-3xl font-bold text-purple-700 pt-5 dark:text-blue-400'>Web Developer</motion.h3>
+            <motion.div initial={{ opacity: 0, scale: 0.5 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.7 }} className='flex flex-col sm:flex-row items-center justify-center gap-7 mt-20'>
               <a className="btn" href="https://drive.google.com/file/d/1aEOmRYnP0JytDgkhKy0Ycg3YBtrjG3Vt/view?usp=drive_link" target="_blank">Resume</a>
               <a className="btn" href="mailto:kushnir.ekaterina@gmail.com">Contact Me</a>
-            </div>
+            </motion.div>
           </div>
         </section>
 
@@ -79,20 +83,11 @@ export default function Home() {
         </section>
 
         <section className='pt-18 pb-20'>
-          <motion.div
-          initial={{ x: "-100vw"}}
-          animate={{ x: "0"}}
-          exit={{ y: "-100vw"}}
-          className='pb-3'
-          >
+          <div className='pb-3'>
             <h3 className='section-title' id='tools'>Technologies And Tools I Use</h3>
-          </motion.div>
+          </div>
           <div className='lg:flex lg:justify-between gap-10'>
-            <motion.div
-                initial={{ opacity: 0, scale: 0.5 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.5 }}
-            className='tech-group'>
+            <div className='tech-group'>
               <h3 className='tech-group-title'>Frontend</h3>
               {/* <Image src={} width={100} height={100} /> */}
               <p className='tech-item'>HTML</p>
@@ -105,7 +100,7 @@ export default function Home() {
               <p className='tech-item'>React</p>
               <p className='tech-item'>jQuery</p>
               <p className='tech-item'>Three.js</p>
-            </motion.div>
+            </div>
             <div className='tech-group'>
               {/* <Image src={} width={100} height={100} /> */}
               <h3 className='tech-group-title'>Backend</h3>
