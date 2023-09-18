@@ -5,7 +5,7 @@ import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
 import Image from 'next/image';
 import project1 from '../../public/project1.png';
 import project2 from '../../public/project2.png';
-import logo from '../../public/logo.png';
+import logo from './icon.png';
 import { useState } from 'react';
 import "@theme-toggles/react/css/Expand.css";
 import { Expand } from "@theme-toggles/react";
@@ -22,7 +22,7 @@ export default function Home() {
       <Head>
         <title>Ekaterina Kushnir Portfolio</title>
         <meta name="description" content="Developer Portfolio" />
-        <link rel="icon" href="../../public/logo.png" />
+        <link rel="icon" href="icon.png" />
       </Head>
 
       <main className='bg-white px-10 pb-10 md:px-20 lg:px-40 dark:bg-gray-900 transition-all duration-300'>
