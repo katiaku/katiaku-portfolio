@@ -10,7 +10,7 @@ import { useState } from 'react';
 import "@theme-toggles/react/css/Expand.css";
 import { Expand } from "@theme-toggles/react";
 import Footer from '@/components/Footer';
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 
 export default function Home() {
 
@@ -21,11 +21,12 @@ export default function Home() {
     <div className={darkMode ? "dark" : ""}>
       <Head>
         <title>Ekaterina Kushnir Portfolio</title>
-        <meta name="description" content="Web Developer Portfolio" />
-        <link rel="icon" href="/favicon.ico" />
+        <meta name="description" content="Developer Portfolio" />
+        <link rel="icon" href="../../public/logo.png" />
       </Head>
 
-      <main className='bg-white px-10 pb-20 md:px-20 lg:px-40 dark:bg-gray-900 transition-all duration-300'>
+      <main className='bg-white px-10 pb-10 md:px-20 lg:px-40 dark:bg-gray-900 transition-all duration-300'>
+
         <section id="top" className='h-screen pb-20'>
           <nav className='py-10 mb-12'>
             <ul className='flex flex-col sm:flex-row sm:items-center gap-8'>
@@ -53,7 +54,6 @@ export default function Home() {
               </ul>
             </ul>
           </nav>
-
           <div className='text-center p-2 sm:py-24'>
             <h2 className='py-2 gradient-text font-extrabold text-6xl sm:text-7xl'>Ekaterina Kushnir</h2>
             <h3 className='text-3xl font-bold text-purple-700 pt-5 dark:text-blue-400'>Web Developer</h3>
@@ -66,7 +66,7 @@ export default function Home() {
 
         <section className='pb-20'>
           <div className='pb-3'>
-            <h3 className='text-3xl py-1 text-purple-700 dark:text-blue-400 font-bold text-center' id='about'>About Me</h3>
+            <h3 className='section-title' id='about'>About Me</h3>
           </div>
           <p className='text-left text-md py-10 leading-7 lg:leading-8 text-gray-700 md:text-xl mx-auto dark:text-white'>
                 If you&apos;re looking for a versatile web developer who can help you take advantage 
@@ -79,12 +79,21 @@ export default function Home() {
         </section>
 
         <section className='pt-18 pb-20'>
-          <div className='pb-3'>
-            <h3 className='text-3xl py-1 text-purple-700 dark:text-blue-400 font-bold text-center' id='tools'>Technologies And Tools I Use</h3>
-          </div>
+          <motion.div
+          initial={{ x: "-100vw"}}
+          animate={{ x: "0"}}
+          exit={{ y: "-100vw"}}
+          className='pb-3'
+          >
+            <h3 className='section-title' id='tools'>Technologies And Tools I Use</h3>
+          </motion.div>
           <div className='lg:flex lg:justify-between gap-10'>
-            <div className='lg:w-1/4 text-center shadow-lg p-10 rounded-md my-10 dark:bg-gray-700'>
-              <h3 className='text-lg font-bold py-2 text-blue-500 dark:text-blue-400'>Frontend</h3>
+            <motion.div
+                initial={{ opacity: 0, scale: 0.5 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.5 }}
+            className='tech-group'>
+              <h3 className='tech-group-title'>Frontend</h3>
               {/* <Image src={} width={100} height={100} /> */}
               <p className='tech-item'>HTML</p>
               <p className='tech-item'>CSS</p>
@@ -96,10 +105,10 @@ export default function Home() {
               <p className='tech-item'>React</p>
               <p className='tech-item'>jQuery</p>
               <p className='tech-item'>Three.js</p>
-            </div>
-            <div className='lg:w-1/4 text-center shadow-lg p-10 rounded-md my-10 dark:bg-gray-700'>
+            </motion.div>
+            <div className='tech-group'>
               {/* <Image src={} width={100} height={100} /> */}
-              <h3 className='text-lg font-bold py-2 text-blue-500 dark:text-blue-400'>Backend</h3>
+              <h3 className='tech-group-title'>Backend</h3>
               <p className='tech-item'>PHP</p>
               <p className='tech-item'>CakePHP</p>
               <p className='tech-item'>Node.js</p>
@@ -108,16 +117,16 @@ export default function Home() {
               <p className='tech-item'>PostgreSQL</p>
               <p className='tech-item'>MongoDB</p>
             </div>
-            <div className='lg:w-1/4 text-center shadow-lg p-10 rounded-md my-10 dark:bg-gray-700'>
+            <div className='tech-group'>
               {/* <Image src={} width={100} height={100} /> */}
-              <h3 className='text-lg font-bold py-2 text-blue-500 dark:text-blue-400'>UI/UX</h3>
+              <h3 className='tech-group-title'>UI/UX</h3>
               <p className='tech-item'>Figma</p>
               <p className='tech-item'>Adobe XD</p>
               <p className='tech-item'>Spline</p>
             </div>
-            <div className='lg:w-1/4 text-center shadow-lg p-10 rounded-md my-10 dark:bg-gray-700'>
+            <div className='tech-group'>
               {/* <Image src={} width={100} height={100} /> */}
-              <h3 className='text-lg font-bold py-2 text-blue-500 dark:text-blue-400'>Others</h3>
+              <h3 className='tech-group-title'>Others</h3>
               <p className='tech-item'>Postman</p>
               <p className='tech-item'>Git</p>
               <p className='tech-item'>GitHub</p>
@@ -129,7 +138,7 @@ export default function Home() {
 
         <section>
           <div>
-            <h3 className='text-3xl pb-6 pt-18 text-purple-700 dark:text-blue-400 text-center font-bold' id='portfolio'>My Portfolio</h3>
+            <h3 className='section-title' id='portfolio'>My Portfolio</h3>
           </div>
           <div className='flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap mx-auto'>
             <div className='basis-1/3 flex-1'>
