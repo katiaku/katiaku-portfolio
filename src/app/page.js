@@ -40,7 +40,7 @@ export default function Home() {
               <ul className='flex justify-center items-center gap-10 sm:ml-auto'>
                 <li className='menu-item'><a href="#about">About</a></li>
                 <li className='menu-item'><a href="#tools">Tools</a></li>
-                <li className='menu-item'><a href="#portfolio">Portfolio</a></li>
+                <li className='menu-item'><a href="#projects">Projects</a></li>
               </ul>
               <ul className='flex justify-center items-center items-right gap-6'>
                 <li className='shake'><a className="icon-link" target="_blank" href="https://www.linkedin.com/in/ekaterina-kushnir-mikhaylova"><AiFillLinkedin /></a></li>
@@ -133,7 +133,7 @@ export default function Home() {
 
         <section>
           <div>
-            <h3 className='section-title' id='portfolio'>My Portfolio</h3>
+            <h3 className='section-title' id='projects'>My Projects</h3>
           </div>
           <div className='flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap mx-auto'>
             <div className='basis-1/3 flex-1'>
