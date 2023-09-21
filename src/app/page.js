@@ -11,6 +11,7 @@ import "@theme-toggles/react/css/Expand.css";
 import { Expand } from "@theme-toggles/react";
 import Footer from '@/components/Footer';
 import { motion, AnimatePresence } from "framer-motion";
+import Cursor from '@/components/Cursor';
 
 export default function Home() {
 
@@ -27,6 +28,8 @@ export default function Home() {
 
       <main className='bg-white px-10 pb-10 md:px-20 lg:px-40 dark:bg-gray-900 transition-all duration-300'>
 
+        <Cursor />
+        
         <section id="top" className='h-screen pb-20'>
           <motion.nav
             initial={{ y: "-100vw"}}
