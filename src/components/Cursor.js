@@ -8,10 +8,10 @@ export default function Cursor() {
     const [cursorWidth, setCursorWidth] = useState(0);
     const [cursorHeight, setCursorHeight] = useState(0);
 
-    const speedFactor = 1;
-    const easingFactor = 0.1;
-    const xOffset = 100;
-    const yOffset = -80;
+    const speedFactor = 5;
+    const easingFactor = 0.2;
+    const xOffset = 150;
+    const yOffset = 0;
 
     useEffect(() => {
         const cursor = document.getElementById('cursor');
@@ -53,5 +53,7 @@ export default function Cursor() {
         };
     }, [mouseX, mouseY, xPos, yPos, cursorWidth, cursorHeight]);
 
-    return <div id="cursor"></div>;
+    return(
+        <div id="cursor"></div>
+    );
 }

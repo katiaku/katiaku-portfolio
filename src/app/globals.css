@@ -4,12 +4,14 @@
 
 #cursor {
   position: absolute;
-  width: 60px;
-  height: 60px;
+  width: 80px;
+  height: 80px;
   border-radius: 50%;
-  background: rgb(252, 182, 42);
+  border-color: rgb(62,127,245);
+  border-width: 2px;
+  background-color: transparent;
   pointer-events: none;
-  mix-blend-mode: darken;
+  transition: cubic-bezier(0.215, 0.610, 0.355, 1)
 }
 
 @layer base {
