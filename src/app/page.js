@@ -29,7 +29,7 @@ export default function Home() {
       <main className='bg-white px-10 pb-10 md:px-20 lg:px-40 dark:bg-gray-900 transition-all duration-300'>
 
         <Cursor />
-        
+
         <section id="top" className='h-screen pb-20'>
           <motion.nav
             initial={{ y: "-100vw"}}
@@ -65,7 +65,7 @@ export default function Home() {
             <motion.h2 initial={{ x: "-100vw"}} animate={{ x: "0"}} transition={{ duration: 1.2 }} className='py-2 gradient-text font-extrabold text-6xl sm:text-7xl'>Ekaterina Kushnir</motion.h2>
             <motion.h3 initial={{ x: "100vw"}} animate={{ x: "0"}} transition={{ duration: 1.2 }} className='text-3xl font-bold text-purple-700 pt-5 dark:text-blue-400'>Web Developer</motion.h3>
             <motion.div initial={{ opacity: 0, scale: 0.5 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.7 }} className='flex flex-col sm:flex-row items-center justify-center gap-7 mt-20'>
-              <a className="btn" href="https://drive.google.com/file/d/1aEOmRYnP0JytDgkhKy0Ycg3YBtrjG3Vt/view?usp=drive_link" target="_blank">Resume</a>
+              <a className="btn" href="" target="_blank">Resume</a>
               <a className="btn" href="mailto:kushnir.ekaterina@gmail.com">Contact Me</a>
             </motion.div>
           </div>
