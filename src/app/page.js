@@ -67,7 +67,7 @@ export default function Home() {
             <motion.h3 initial={{ x: "100vw"}} animate={{ x: "0"}} transition={{ duration: 1.2 }} className='text-3xl font-bold text-purple-700 pt-5 dark:text-blue-400'>Full Stack Developer</motion.h3>
             <motion.div initial={{ opacity: 0, scale: 0.5 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.7 }} className='flex flex-col sm:flex-row items-center justify-center gap-7 mt-20'>
               <a className="btn" href="mailto:kushnir.ekaterina@gmail.com">Contact Me</a>
-              <a className="btn" href="" target="_blank">Resume</a>
+              <a className="btn" href="https://github.com/katiaku/katiaku/blob/main/Ekaterina_Kushnir_CV_EN.pdf" target="_blank">Resume</a>
             </motion.div>
           </div>
         </section>
