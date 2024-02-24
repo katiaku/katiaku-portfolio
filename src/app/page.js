@@ -10,9 +10,9 @@ import logo from './icon.png';
 import { useState } from 'react';
 import "@theme-toggles/react/css/Expand.css";
 import { Expand } from "@theme-toggles/react";
-import Footer from '@/components/Footer';
 import { motion } from "framer-motion";
 import Cursor from '@/components/Cursor';
+import background from '../../public/bg.png';
 
 export default function Home() {
 
@@ -27,26 +27,31 @@ export default function Home() {
         <link rel="icon" href="icon.png" />
       </Head>
 
-      <main className='bg-white px-10 pb-10 md:px-20 lg:px-40 dark:bg-gray-900 transition-all duration-300'>
+      {/* <main id="main" className='bg-white px-10 pb-10 md:px-20 lg:px-40 dark:bg-gray-900 transition-all duration-300'> */}
+      <main id="main" className='relative bg-white pb-10 dark:bg-gray-900 transition-all duration-300'>
 
-        <Cursor />
+        <div id="background">
+          <Image src={background} alt="background" />
+        </div>
+        
+        {/* <Cursor /> */}
 
-        <section id="top" className='h-screen pb-20'>
+        <section id="top" className='h-screen pb-20 mb-20'>
           <motion.nav
             initial={{ y: "-100vw"}}
             animate={{ y: "0"}}
-            className='py-10 mb-12'
+            className='pt-0 pb-10 mb-12'
           >
-            <ul className='flex flex-col sm:flex-row sm:items-center gap-8'>
+            <ul className='flex flex-col sm:flex-row sm:items-center gap-8 bg-slate-300/40'>
               <li>
-                <Image src={logo} alt="logo" width={30} height={30} className='mb-4' />
+                <Image src={logo} alt="logo" width={30} height={30} className='m-3' />
               </li>
               <ul className='flex justify-center items-center gap-10 sm:ml-auto'>
                 <li className='menu-item'><a href="#about">ABOUT</a></li>
                 <li className='menu-item'><a href="#tools">TOOLS</a></li>
                 <li className='menu-item'><a href="#projects">PROJECTS</a></li>
               </ul>
-              <ul className='flex justify-center items-center items-right gap-6'>
+              <ul className='flex justify-center items-center items-right gap-6 mr-3'>
                 <li className='shake'><a className="icon-link" target="_blank" href="https://www.linkedin.com/in/ekaterina-kushnir-mikhaylova"><AiFillLinkedin /></a></li>
                 <li className='shake'><a className="icon-link" target="_blank" href="https://github.com/katiaku"><AiFillGithub /></a></li>
                 <li className='shake'>
@@ -66,17 +71,17 @@ export default function Home() {
             <motion.h2 initial={{ x: "-100vw"}} animate={{ x: "0"}} transition={{ duration: 1.2 }} className='py-2 gradient-text font-extrabold text-6xl sm:text-7xl'>Ekaterina Kushnir</motion.h2>
             <motion.h3 initial={{ x: "100vw"}} animate={{ x: "0"}} transition={{ duration: 1.2 }} className='text-3xl font-bold text-purple-700 pt-5 dark:text-blue-400'>Full Stack Developer</motion.h3>
             <motion.div initial={{ opacity: 0, scale: 0.5 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.7 }} className='flex flex-col sm:flex-row items-center justify-center gap-7 mt-20'>
-              <a className="btn" href="mailto:kushnir.ekaterina@gmail.com">Contact Me</a>
-              <a className="btn" href="https://github.com/katiaku/katiaku/blob/main/Ekaterina_Kushnir_CV_EN.pdf" target="_blank">Resume</a>
+              <a className="btn z-10" href="mailto:kushnir.ekaterina@gmail.com">Contact Me</a>
+              <a className="btn z-10" href="https://github.com/katiaku/katiaku/blob/main/Ekaterina_Kushnir_CV_EN.pdf" target="_blank">Resume</a>
             </motion.div>
           </div>
         </section>
 
-        <section className='pb-20'>
+        <section className='pb-20 pt-20 mx-20'>
           <div className='pb-3'>
             <h3 className='section-title' id='about'>About Me</h3>
           </div>
-          <div className='about-card'>
+          <div className='about-card bg-slate-200/40'>
             <p className={`text-left text-md py-10 leading-7 lg:leading-8 text-gray-700 md:text-xl mx-auto dark:text-white`}>
                   Looking for a versatile web developer who can help you take advantage 
                   of the latest advancements in the field? You&apos;ve come to the right place! 
@@ -89,12 +94,11 @@ export default function Home() {
           </div>
         </section>
         
-
-        <section className='pt-18 pb-20'>
+        <section className='pt-18 pb-20 mx-20'>
           <div className='pb-3'>
             <h3 className='section-title' id='tools'>Technologies And Tools I Use</h3>
           </div>
-          <div className='lg:flex lg:justify-between gap-4'>
+          <div className='lg:flex lg:justify-between gap-6'>
             <div className='tech-group'>
               <h3 className='tech-group-title'>Frontend</h3>
               {/* <Image src={} width={100} height={100} /> */}
@@ -137,7 +141,7 @@ export default function Home() {
           <div>
             <h3 className='section-title' id='projects'>My Projects</h3>
           </div>
-          <div className='flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap mx-auto'>
+          <div className='flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap mx-20'>
             <div className='basis-1/3 flex-1'>
               <Image src={jscodegamer} alt="jscodegamer" className='hover-scale rounded-md object-cover shadow-lg' width={'100%'} height={'100%'} />
               <div className='flex gap-2 pt-4'>
@@ -145,7 +149,7 @@ export default function Home() {
                 <span className='bg-blue-500 text-white text-xs rounded-xl px-2 py-1'>Express.js</span>
                 <span className='bg-blue-500 text-white text-xs rounded-xl px-2 py-1'>MySQL</span>
               </div>
-              <p className='dark:text-white pt-2'><a className="text-blue-500 dark:text-blue-400 font-bold" target="_blank" href="https://jscodegamer.vercel.app">JSCODEGAMER</a> facilitates learning programming by providing interactive lessons and practical challenges in JavaScript. Its space-inspired environment creates an educational and motivating experience for users who want to embark on their programming journey. Tha app includes 9 levels that unlock progressively based on the user&apos;s progress, along with diverse challenges and an integrated code editor.</p>
+              <p className='dark:text-white pt-2'><a className="text-blue-500 dark:text-blue-400 font-bold" target="_blank" href="https://jscodegamer.vercel.app">JSCODEGAMER</a> facilitates learning programming by providing interactive lessons and practical challenges in JavaScript. Its space-inspired environment creates an educational and motivating experience for users who want to embark on their programming journey. The app includes 9 levels that unlock progressively based on the user&apos;s progress, along with diverse challenges and an integrated code editor.</p>
             </div>
             <div className='basis-1/3 flex-1'>
               <Image src={project1} alt="project1" className='hover-scale rounded-md object-cover shadow-lg' width={'100%'} height={'100%'} />
@@ -176,7 +180,10 @@ export default function Home() {
           </div>
         </section>
 
-        <Footer />
+        <footer className='mt-8 flex flex-col gap-6 items-center dark:text-gray-200'>
+            <a className="btn" href="#">Back To Top</a>
+            <p>Ekaterina Kushnir | Portfolio 2023-2024 &copy;</p>
+        </footer>
       </main>
     </div>
   )
