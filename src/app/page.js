@@ -16,6 +16,12 @@ import background from '../../public/bg.png';
 import front from '../../public/front-end.png';
 import back from '../../public/backend.png';
 import others from '../../public/web-design.png';
+import ellipse1 from '../../public/Ellipse 1.png';
+import ellipse2 from '../../public/Ellipse 2.png';
+import ellipse3 from '../../public/Ellipse 3.png';
+import vector1 from '../../public/Vector 1.png';
+import vector2 from '../../public/Vector 2.png';
+import vector3 from '../../public/Vector 3.png';
 
 export default function Home() {
 
@@ -31,7 +37,7 @@ export default function Home() {
       </Head>
 
       {/* <main id="main" className='bg-white px-10 pb-10 md:px-20 lg:px-40 dark:bg-gray-900 transition-all duration-300'> */}
-      <main id="main" className='relative bg-slate-100 pb-10 dark:bg-gray-900 transition-all duration-300'>
+      <main id="main" className='relative bg-slate-100 pb-10 dark:bg-gray-900 transition-all duration-300 w-screen'>
 
         <div id="background">
           <Image src={background} alt="background" />
@@ -75,7 +81,7 @@ export default function Home() {
             initial={{ x: "-100vw", y: "-100vw" }} 
             animate={{ x: "0", y: "0" }} 
             transition={{ duration: 1.2 }} 
-            className='glass text-center place-self-center px-4 py-12 w-11/12 lg:w-3/5 md:w-3/4'
+            className='glass text-center place-self-center px-4 py-12 w-10/12 lg:w-3/5 md:w-3/4'
           >
             <h2 className=' py-2 gradient-text font-extrabold text-6xl sm:text-7xl'>Ekaterina Kushnir</h2>
             <h3 className='text-3xl font-bold text-slate-900 dark:text-teal-100 pt-5'>Full Stack Developer</h3>
@@ -86,7 +92,9 @@ export default function Home() {
           </motion.div>
         </section>
 
-        <section className='pb-20 pt-20 mx-20' id='about'>
+        <section className='mt-10 mb-3 py-20 mx-20 relative' id='about'>
+          <Image src={ellipse1} alt="ellipse1" width="800" height="800" className="ellipse1 absolute" />
+          {/* <Image src={ellipse2} alt="ellipse2" width="700" height="700" className="ellipse2 absolute" /> */}
           <div className='pb-3'>
             <h3 className='section-title'>About Me</h3>
           </div>
@@ -108,12 +116,14 @@ export default function Home() {
           </div>
         </section>
         
-        <section className='pt-18 pb-20 px-20' id='tools'>
+        <section className='pt-18 mb-5 pb-20 px-20 relative' id='tools'>
+          <Image src={ellipse3} alt="ellipse3" width="800" height="800" className="ellipse3 absolute" />
+          <Image src={vector2} alt="vector2" width="700" height="700" className="vector2 absolute" />
           <div className='pb-3'>
             <h3 className='section-title'>Technologies And Tools I Use</h3>
           </div>
           <div className='lg:flex lg:justify-between gap-6'>
-            <div className='tech-group'>
+            <div className='tech-group glass'>
               <Image src={front} width={100} height={100} />
               <h3 className='tech-group-title'>Frontend</h3>
               <p className='tech-item'>HTML</p>
@@ -129,7 +139,7 @@ export default function Home() {
               <p className='tech-item'>jQuery</p>
               <p className='tech-item'>Three.js</p>
             </div>
-            <div className='tech-group'>
+            <div className='tech-group glass'>
               <Image src={back} width={100} height={100} />
               <h3 className='tech-group-title'>Backend</h3>
               <p className='tech-item'>PHP</p>
@@ -139,7 +149,7 @@ export default function Home() {
               <p className='tech-item'>MySQL</p>
               <p className='tech-item'>MongoDB</p>
             </div>
-            <div className='tech-group'>
+            <div className='tech-group glass'>
               <Image src={others} width={90} height={90} className="pt-1" />
               <h3 className='tech-group-title'>Others</h3>
               <p className='tech-item'>Jest</p>
@@ -154,7 +164,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="projects">
+        <section id="projects" className="relative">
           <div>
             <h3 className='section-title'>My Projects</h3>
           </div>
