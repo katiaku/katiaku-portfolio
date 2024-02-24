@@ -31,7 +31,7 @@ export default function Home() {
       </Head>
 
       {/* <main id="main" className='bg-white px-10 pb-10 md:px-20 lg:px-40 dark:bg-gray-900 transition-all duration-300'> */}
-      <main id="main" className='relative bg-white pb-10 dark:bg-gray-900 transition-all duration-300'>
+      <main id="main" className='relative bg-slate-100 pb-10 dark:bg-gray-900 transition-all duration-300'>
 
         <div id="background">
           <Image src={background} alt="background" />
@@ -39,12 +39,12 @@ export default function Home() {
         
         {/* <Cursor /> */}
 
-        <section id="top" className='h-screen pb-20 mb-20'>
+        <section id="top" className='flex flex-col h-screen pb-20 mb-20'>
           <motion.nav
             initial={{ x: "1000vw" }}
             animate={{ x: "0" }}
             transition={{ duration: 1.5 }}
-            className='py-5 mb-20 bg-slate-300/60'
+            className='header-glass py-5 mb-20'
           >
             <ul className='flex flex-col sm:flex-row sm:items-center gap-8 '>
               <li>
@@ -75,10 +75,10 @@ export default function Home() {
             initial={{ x: "-100vw", y: "-100vw" }} 
             animate={{ x: "0", y: "0" }} 
             transition={{ duration: 1.2 }} 
-            className='text-center mx-20 p-2 sm:py-24 lg:bg-slate-200/60 md:bg-slate-200/60 rounded-3xl'
+            className='glass text-center place-self-center px-4 py-12 w-11/12 lg:w-3/5 md:w-3/4'
           >
             <h2 className=' py-2 gradient-text font-extrabold text-6xl sm:text-7xl'>Ekaterina Kushnir</h2>
-            <h3 className='text-3xl font-bold text-purple-700 pt-5'>Full Stack Developer</h3>
+            <h3 className='text-3xl font-bold text-slate-900 dark:text-teal-100 pt-5'>Full Stack Developer</h3>
             <div className='flex flex-col sm:flex-row items-center justify-center gap-7 mt-20'>
               <a className="btn z-10" href="mailto:kushnir.ekaterina@gmail.com">Contact Me</a>
               <a className="btn z-10" href="https://github.com/katiaku/katiaku/blob/main/Ekaterina_Kushnir_CV_EN.pdf" target="_blank">Resume</a>
@@ -86,11 +86,11 @@ export default function Home() {
           </motion.div>
         </section>
 
-        <section className='pb-20 pt-20 mx-20'>
+        <section className='pb-20 pt-20 mx-20' id='about'>
           <div className='pb-3'>
-            <h3 className='section-title' id='about'>About Me</h3>
+            <h3 className='section-title'>About Me</h3>
           </div>
-          <div className='about-card bg-slate-200/40'>
+          <div className='about-card glass'>
             <p className={`text-left text-md pt-10 leading-7 lg:leading-8 text-gray-700 md:text-xl lg:mx-20 dark:text-white`}>
                   Looking for a versatile web developer who can help you take advantage 
                   of the latest advancements in the field? You&apos;ve come to the right place! 
@@ -108,9 +108,9 @@ export default function Home() {
           </div>
         </section>
         
-        <section className='pt-18 pb-20 px-20'>
+        <section className='pt-18 pb-20 px-20' id='tools'>
           <div className='pb-3'>
-            <h3 className='section-title' id='tools'>Technologies And Tools I Use</h3>
+            <h3 className='section-title'>Technologies And Tools I Use</h3>
           </div>
           <div className='lg:flex lg:justify-between gap-6'>
             <div className='tech-group'>
@@ -154,7 +154,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section>
+        <section id="projects">
           <div>
             <h3 className='section-title'>My Projects</h3>
           </div>
@@ -198,7 +198,7 @@ export default function Home() {
         </section>
 
         <footer className='mt-8 flex flex-col gap-6 items-center dark:text-gray-200'>
-            <a className="btn" href="#">Back To Top</a>
+            <a className="btn" href="#">Back</a>
             <p>Ekaterina Kushnir | Portfolio 2023-2024 &copy;</p>
         </footer>
       </main>
