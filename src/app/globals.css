@@ -68,7 +68,7 @@
 
 @layer components {
   .btn {
-    @apply w-32 font-bold bg-gradient-to-t from-teal-400 to-transparent border-2 border-teal-400 text-teal-900 dark:text-teal-100 px-5 py-1 leading-8 rounded-3xl hover:ring-4 hover:ring-teal-500 transition-all duration-300 text-center
+    @apply w-40 font-bold bg-gradient-to-t from-teal-400 to-transparent border-2 border-teal-400 text-teal-900 dark:text-teal-100 px-5 py-1 leading-8 rounded-3xl hover:ring-4 hover:ring-teal-500 transition-all duration-300 text-center
   }
 
   .menu-item {

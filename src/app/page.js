@@ -52,7 +52,7 @@ export default function Home() {
             initial={{ x: "1000vw" }}
             animate={{ x: "0" }}
             transition={{ duration: 1.5 }}
-            className='header-glass py-5 mb-20'
+            className='header-glass py-5 px-3 mb-20'
           >
             <ul className='flex flex-col sm:flex-row sm:items-center gap-8 '>
               <li>
