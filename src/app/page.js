@@ -89,7 +89,7 @@ export default function Home() {
             <h3 className='text-3xl font-bold text-slate-900 dark:text-teal-100 pt-5'>Full Stack Developer</h3>
             <div className='flex flex-col sm:flex-row items-center justify-center gap-7 mt-20'>
               <a className="btn z-10" href="mailto:kushnir.ekaterina@gmail.com">Contact Me</a>
-              <a className="btn z-10" href="https://github.com/katiaku/katiaku/blob/main/Ekaterina_Kushnir_Mikhaylova_CV_EN.pdf" target="_blank">Resume</a>
+              <a className="btn z-10" href="" target="_blank">Resume</a>
             </div>
           </motion.div>
         </section>
