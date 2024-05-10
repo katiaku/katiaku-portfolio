@@ -35,15 +35,15 @@ export default function Home() {
   return (
     <div className={darkMode ? "dark" : ""}>
       <Head>
-        <title>Ekaterina Kushnir Portfolio</title>
-        <meta name="description" content="Developer Portfolio" />
+        <title>Web Developer Portfolio</title>
+        <meta name="description" content="Web developer portfolio, modern web development with React, Angular and Vue" />
         <link rel="icon" href="icon.png" />
       </Head>
 
       <main id="main" className='relative bg-slate-100 pb-10 dark:bg-gray-900 transition-all duration-300 w-screen'>
 
         <div id="background">
-          <Image src={background} alt="futuristic background of colored elements" />
+          <Image src={background} alt="futuristic background of colored elements" className='opacity-90' />
         </div>
         
         {/* <Cursor /> */}
@@ -53,20 +53,20 @@ export default function Home() {
             initial={{ x: "1000vw" }}
             animate={{ x: "0" }}
             transition={{ duration: 1.5 }}
-            className='header-glass py-5 px-3 mb-20'
+            className='header-glass py-1 px-3 lg:mb-[150px] md:mb-[100px] mb-[50px]'
           >
             <ul className='flex flex-col sm:flex-row sm:items-center gap-8 '>
               <li>
                 <Image src={logo} alt="personal EK logo" width={30} height={30} className='m-3' />
               </li>
               <ul className='flex justify-center items-center gap-10 sm:ml-auto'>
-                <li className='menu-item'><a href="#about">ABOUT</a></li>
-                <li className='menu-item'><a href="#tools">TOOLS</a></li>
-                <li className='menu-item'><a href="#projects">PROJECTS</a></li>
+                <li className='menu-item text-slate-800 dark:text-teal-100'><a href="#about">ABOUT</a></li>
+                <li className='menu-item text-slate-800 dark:text-teal-100'><a href="#tools">TOOLS</a></li>
+                <li className='menu-item text-slate-800 dark:text-teal-100'><a href="#projects">MY WORK</a></li>
               </ul>
               <ul className='flex justify-center items-center items-right gap-6 mr-3'>
-                <li className='shake'><a className="icon-link" target="_blank" href="https://www.linkedin.com/in/ekaterina-kushnir-mikhaylova"><AiFillLinkedin /></a></li>
-                <li className='shake'><a className="icon-link" target="_blank" href="https://github.com/katiaku"><AiFillGithub /></a></li>
+                <li className='shake'><a className="icon-link text-slate-800 dark:text-teal-100" target="_blank" href="https://www.linkedin.com/in/ekaterina-kushnir-mikhaylova"><AiFillLinkedin /></a></li>
+                <li className='shake'><a className="icon-link text-slate-800 dark:text-teal-100" target="_blank" href="https://github.com/katiaku"><AiFillGithub /></a></li>
                 <li className='shake'>
                   <Expand  
                     toggled={isToggled} 
@@ -74,7 +74,7 @@ export default function Home() {
                       setToggle(!isToggled);
                       setDarkMode(!darkMode);
                     }} 
-                    className='mt-2 cursor-pointer icon-link'
+                    className='mt-2 cursor-pointer icon-link text-slate-800 dark:text-teal-100'
                   />
                 </li>
               </ul>
@@ -84,11 +84,11 @@ export default function Home() {
             initial={{ x: "-100vw", y: "-100vw" }} 
             animate={{ x: "0", y: "0" }} 
             transition={{ duration: 1.2 }} 
-            className='glass text-center place-self-center px-4 py-12 w-10/12 lg:w-3/5 md:w-3/4'
+            className='glass place-self-center pl-8 pr-4 py-12 w-10/12 lg:w-3/5 md:w-3/4'
           >
-            <h2 className=' py-2 gradient-text font-extrabold text-6xl sm:text-7xl'>Ekaterina Kushnir</h2>
-            <h3 className='text-3xl font-bold text-slate-900 dark:text-teal-100 pt-5'>Full Stack Developer</h3>
-            <div className='flex flex-col sm:flex-row items-center justify-center gap-7 mt-20'>
+            <h2 className=' py-2 gradient-text font-extrabold text-6xl sm:text-7xl text-left'>Crafting seamless digital experiences</h2>
+            <h3 className='text-3xl font-bold text-slate-800 dark:text-teal-100 pt-5 text-left'>Web Development | React | Angular | Vue</h3>
+            <div className='flex flex-col sm:flex-row items-center justify-start gap-7 mt-20'>
               <a className="btn z-10" href="mailto:kushnir.ekaterina@gmail.com">Contact Me</a>
               <a className="btn z-10" href="https://github.com/katiaku/katiaku/blob/main/Ekaterina_Kushnir_CV_EN.pdf" target="_blank">Resume</a>
             </div>
@@ -96,10 +96,10 @@ export default function Home() {
         </section>
 
         <section className='mt-10 mb-3 py-20 mx-20 relative' id='about'>
-          <Image src={ellipse1} alt="colored decorative ellipse" width="800" height="800" className="ellipse1 absolute" />
+          <Image src={ellipse1} alt="colored decorative ellipse" width="800" height="800" className="ellipse1 absolute opacity-40" />
           {/* <Image src={ellipse2} alt="ellipse2" width="700" height="700" className="ellipse2 absolute" /> */}
           <div className='pb-3'>
-            <h3 className='section-title'>About Me</h3>
+            <h3 className='section-title'>ABOUT ME</h3>
           </div>
           <div className='about-card glass'>
             <p className={`text-left text-md pt-10 leading-7 lg:leading-8 text-gray-700 md:text-xl lg:mx-20 dark:text-white`}>
@@ -120,10 +120,10 @@ export default function Home() {
         </section>
         
         <section className='pt-18 mb-5 pb-20 px-20 relative' id='tools'>
-          <Image src={ellipse3} alt="colored decorative ellipse" width="800" height="800" className="ellipse3 absolute" />
-          <Image src={vector2} alt="colored decorative ellipse" width="700" height="700" className="vector2 absolute" />
+          <Image src={ellipse3} alt="colored decorative ellipse" width="800" height="800" className="ellipse3 absolute opacity-80" />
+          <Image src={vector2} alt="colored decorative ellipse" width="700" height="700" className="vector2 absolute opacity-50" />
           <div className='pb-3'>
-            <h3 className='section-title'>Technologies And Tools I Use</h3>
+            <h3 className='section-title'>TECHNOLOGIES AND TOOLS I USE</h3>
           </div>
           <div className='lg:flex lg:justify-between gap-6'>
             <div className='tech-group glass'>
@@ -170,9 +170,9 @@ export default function Home() {
 
         <section id="projects" className="relative">
           <div>
-            <h3 className='section-title'>My Projects</h3>
+            <h3 className='section-title'>CHECK OUT MY FAVORITE PIECES</h3>
           </div>
-          <div className='flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap mx-20'>
+          <div className='flex flex-col gap-14 py-10 lg:flex-row lg:flex-wrap mx-20'>
 
             <div className='basis-1/3 flex-1'>
               <Image src={jscodegamer} alt="jscodegamer app screenshot" className='hover-scale rounded-3xl object-cover shadow-lg' width={'100%'} height={'100%'} />
