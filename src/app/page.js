@@ -1,7 +1,7 @@
 "use client";
 
 import Head from 'next/head';
-import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
+import { AiFillLinkedin, AiFillGithub, AiFillCheckCircle } from "react-icons/ai";
 import { IoLogoCss3, IoLogoAngular, IoLogoHtml5 } from "react-icons/io";
 import { FaBootstrap, FaSass, FaJira, FaReact, FaFigma, FaVuejs, FaPhp, FaNodeJs, FaGitAlt, FaGithub, FaGitlab } from "react-icons/fa";
 import { SiJest, SiCypress, SiPostman, SiStorybook, SiTailwindcss, SiTypescript, SiJavascript, SiJquery, SiThreedotjs, SiCakephp, SiExpress, SiMysql, SiMongodb } from "react-icons/si";
@@ -98,24 +98,31 @@ export default function Home() {
         <section className='mt-10 mb-3 py-20 mx-20 relative' id='about'>
           <Image src={ellipse1} alt="colored decorative ellipse" width="800" height="800" className="ellipse1 absolute opacity-40" />
           {/* <Image src={ellipse2} alt="ellipse2" width="700" height="700" className="ellipse2 absolute" /> */}
-          <div className='pb-3'>
+          <div className='pb-2 mb-10'>
             <h3 className='section-title'>ABOUT ME</h3>
           </div>
-          <div className='about-card glass'>
-            <p className={`text-left text-md pt-10 leading-7 lg:leading-8 text-gray-700 md:text-xl lg:mx-20 dark:text-white`}>
-                  Looking for a versatile web developer who can help you take advantage 
-                  of the latest advancements in the field? You&apos;ve come to the right place! 
-            </p>
-            <p className={`text-left text-md py-6 leading-7 lg:leading-8 text-gray-700 md:text-xl lg:mx-20 dark:text-white`}>
-                  My proficiency in full stack development coupled with enthusiasm 
-                  for crafting user-friendly interfaces and delivering exceptional user experiences, 
-                  constitute a solid foundation to build anything from static web pages 
-                  to complex web applications.
-            </p>
-            <p className={`text-left text-md pb-10 leading-7 lg:leading-8 text-gray-700 md:text-xl lg:mx-20 dark:text-white`}>
-                  Please take a look around this site to find out more 
-                  about my skills as well as some examples of my work.
-            </p>
+          <div className='glass flex flex-col lg:flex-row p-10 gap-6'>
+            <div className={`lg:w-1/3 text-left leading-7 lg:leading-8 text-gray-700 md:text-xl dark:text-white`}>
+                <div className='flex pb-2 items-center gap-4'>
+                  <AiFillCheckCircle className="text-xl shrink-0 text-blue-500 dark:text-teal-100"/>
+                  <h6 className='font-bold uppercase text-blue-500 dark:text-teal-100'>Attention to Detail</h6>
+                </div>
+                <p>Every pixel counts in the digital realm. From layout alignment to color schemes, I thrive on perfecting the smallest details to create the best user experiences.</p>
+            </div>
+            <div className={`lg:w-1/3 text-left text-md leading-7 lg:leading-8 text-gray-700 md:text-xl dark:text-white`}>
+                <div className='flex pb-2 items-center gap-4'>
+                  <AiFillCheckCircle className="text-xl shrink-0 text-blue-500 dark:text-teal-100"/>
+                  <h6 className='font-bold uppercase text-blue-500 dark:text-teal-100'>Innovative Problem-Solving</h6>
+                </div>
+                <p>Challenges are opportunities in disguise. Whether troubleshooting bugs or optimizing performance, I thrive on finding creative solutions that push the boundaries of possibility.</p>
+            </div>
+            <div className={`lg:w-1/3 text-left text-md leading-7 lg:leading-8 text-gray-700 md:text-xl dark:text-white`}>
+                <div className='flex pb-2 items-center gap-4'>
+                  <AiFillCheckCircle className="text-xl shrink-0 text-blue-500 dark:text-teal-100"/>
+                  <h6 className='font-bold uppercase text-blue-500 dark:text-teal-100'>Adaptability</h6>
+                </div>
+                <p>From mastering the latest JavaScript libraries to staying ahead of emerging design trends, I embrace change as an opportunity for growth and improvement.</p>
+            </div>
           </div>
         </section>
         
@@ -128,7 +135,7 @@ export default function Home() {
           <div className='lg:flex lg:justify-between gap-6'>
             <div className='tech-group glass'>
               <Image src={front} width={100} height={100} alt="frontend development icon" />
-              <h3 className='tech-group-title'>Frontend</h3>
+              <h3 className='tech-group-title uppercase'>Frontend</h3>
               <div className="tech-subj"><IoLogoHtml5 className="text-xl"/><p className='tech-item'>HTML</p></div>
               <div className="tech-subj"><IoLogoCss3 className="text-xl" /><p className='tech-item'>CSS</p></div>
               <div className="tech-subj"><FaSass className="text-xl" /><p className='tech-item'>Sass</p></div>
@@ -144,7 +151,7 @@ export default function Home() {
             </div>
             <div className='tech-group glass'>
               <Image src={back} width={100} height={100} alt="backend developmen icon" />
-              <h3 className='tech-group-title'>Backend</h3>
+              <h3 className='tech-group-title uppercase'>Backend</h3>
               <div className="tech-subj"><FaPhp className="text-xl" /><p className='tech-item'>PHP</p></div>
               <div className="tech-subj"><SiCakephp className="text-l" /><p className='tech-item'>CakePHP</p></div>
               <div className="tech-subj"><FaNodeJs className="text-xl" /><p className='tech-item'>Node.js</p></div>
@@ -154,7 +161,7 @@ export default function Home() {
             </div>
             <div className='tech-group glass'>
               <Image src={others} width={90} height={90} className="pt-1" alt="web development icon" />
-              <h3 className='tech-group-title'>Others</h3>
+              <h3 className='tech-group-title uppercase'>Others</h3>
               <div className="tech-subj"><SiJest className="text-x" /><p className='tech-item'>Jest</p></div>
               <div className="tech-subj"><SiCypress className="text-x" /><p className='tech-item'>Cypress</p></div>
               <div className="tech-subj"><SiPostman className="text-x" /><p className='tech-item'>Postman</p></div>
