@@ -127,7 +127,7 @@ export default function Home() {
         </section>
         
         <section className='pt-18 mb-5 pb-20 px-20 relative' id='tools'>
-          <Image src={ellipse3} alt="colored decorative ellipse" width="800" height="800" className="ellipse3 absolute opacity-80" />
+          <Image src={ellipse3} alt="colored decorative ellipse" width="800" height="800" className="ellipse3 absolute opacity-60" />
           <Image src={vector2} alt="colored decorative ellipse" width="700" height="700" className="vector2 absolute opacity-50" />
           <div className='pb-3'>
             <h3 className='section-title'>TECHNOLOGIES AND TOOLS I USE</h3>
