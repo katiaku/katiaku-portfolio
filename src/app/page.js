@@ -222,9 +222,10 @@ export default function Home() {
           </div>
         </section>
 
-        <footer className='mt-8 flex flex-col gap-6 items-center dark:text-gray-200'>
+        <footer className='mt-10 flex flex-col items-center dark:text-gray-200'>
             <a className="btn" href="#">Back</a>
-            <p>Ekaterina Kushnir | Portfolio 2023-2024 &copy;</p>
+            <p className='mt-10 text-sm'>Making you vision reality</p>
+            <p className='text-sm'>&copy; 2024 Ekaterina Kushnir. All rights reserved.</p>
         </footer>
       </main>
     </div>
