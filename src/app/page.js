@@ -6,9 +6,9 @@ import { IoLogoCss3, IoLogoAngular, IoLogoHtml5 } from "react-icons/io";
 import { FaBootstrap, FaSass, FaJira, FaReact, FaFigma, FaVuejs, FaPhp, FaNodeJs, FaGitAlt, FaGithub, FaGitlab } from "react-icons/fa";
 import { SiJest, SiCypress, SiPostman, SiStorybook, SiTailwindcss, SiTypescript, SiJavascript, SiJquery, SiThreedotjs, SiCakephp, SiExpress, SiMysql, SiMongodb } from "react-icons/si";
 import Image from 'next/image';
-import project1 from '../../public/project1.png';
-import project2 from '../../public/project2.png';
-import jscodegamer from '../../public/jscodegamer_game.png';
+import taskManager from '../../public/taskManager.png';
+import birthdayPlanner from '../../public/birthdayPlanner.png';
+import jsCodeGamer from '../../public/jscodegamer_game.png';
 import kanbanVue from '../../public/kanbanVue.png';
 import logo from './icon.png';
 import { useState } from 'react';
@@ -16,16 +16,16 @@ import "@theme-toggles/react/css/Expand.css";
 import { Expand } from "@theme-toggles/react";
 import { motion } from "framer-motion";
 import Cursor from '@/components/Cursor';
-import background from '../../public/bg.png';
+import background from '../../public/background.png';
 import front from '../../public/front-end.png';
-import back from '../../public/backend.png';
-import others from '../../public/web-design.png';
-import ellipse1 from '../../public/Ellipse 1.png';
-import ellipse2 from '../../public/Ellipse 2.png';
-import ellipse3 from '../../public/Ellipse 3.png';
-import vector1 from '../../public/Vector 1.png';
-import vector2 from '../../public/Vector 2.png';
-import vector3 from '../../public/Vector 3.png';
+import back from '../../public/back-end.png';
+import webDesign from '../../public/web-design.png';
+import ellipsePurple from '../../public/ellipsePurple.png';
+import ellipseViolet from '../../public/ellipseViolet.png';
+import ellipseYellow from '../../public/ellipseYellow.png';
+import vectorYellow from '../../public/vectorYellow.png';
+import vectorCyan from '../../public/vectorCyan.png';
+import vectorPurple from '../../public/vectorPurple.png';
 import Footer from '@/components/Footer';
 
 export default function Home() {
@@ -155,7 +155,7 @@ export default function Home() {
           id='about'
         >
           <Image
-            src={ellipse1}
+            src={ellipsePurple}
             alt="Decorative purple ellipse."
             width="800"
             height="800"
@@ -194,15 +194,15 @@ export default function Home() {
           id='tools'
         >
           <Image
-            src={ellipse3}
+            src={ellipseYellow}
             alt="Decorative yellow ellipse."
             width="800"
             height="800"
             className="ellipse3 absolute opacity-60"
           />
           <Image
-            src={vector2}
-            alt="Decorative cyan ellipse."
+            src={vectorCyan}
+            alt="Decorative cyan vector."
             width="700"
             height="700"
             className="vector2 absolute opacity-50"
@@ -238,7 +238,7 @@ export default function Home() {
               <div className="tech-subj"><SiMongodb className="text-xl" /><p className='tech-item'>MongoDB</p></div>
             </div>
             <div className='tech-group glass'>
-              <Image src={others} width={90} height={90} className="pt-1" alt="Web development illustration." />
+              <Image src={webDesign} width={90} height={90} className="pt-1" alt="Web development illustration." />
               <h6 className='tech-group-title uppercase'>Others</h6>
               <div className="tech-subj"><SiJest className="text-x" /><p className='tech-item'>Jest</p></div>
               <div className="tech-subj"><SiCypress className="text-x" /><p className='tech-item'>Cypress</p></div>
@@ -264,7 +264,7 @@ export default function Home() {
 
             <div className='basis-1/3 flex-1'>
               <Image
-                src={jscodegamer}
+                src={jsCodeGamer}
                 alt="Jscodegamer app screenshot."
                 className='hover-scale rounded-3xl object-cover shadow-lg'
                 width={'100%'}
@@ -288,7 +288,7 @@ export default function Home() {
 
             <div className='basis-1/3 flex-1'>
               <Image
-                src={project1}
+                src={taskManager}
                 alt="Task manager app screenshot."
                 className='hover-scale rounded-3xl object-cover shadow-lg'
                 width={'100%'}
@@ -307,7 +307,7 @@ export default function Home() {
 
             <div className='basis-1/3 flex-1'>
               <Image
-                src={project2}
+                src={birthdayPlanner}
                 alt="Birthday planner app screenshot."
                 className='hover-scale rounded-3xl object-cover shadow-lg'
                 width={'100%'}
@@ -350,12 +350,6 @@ export default function Home() {
             </div>
           </div>
         </section>
-
-        {/* <footer className='px-20 mt-20 pt-4 flex flex-col items-center dark:text-gray-200'>
-            <a className="btn" href="#">Back</a>
-            <p className='mt-10 text-sm cursor-default'>Making you vision reality</p>
-            <p className='text-sm cursor-default'>&copy; 2024 Ekaterina Kushnir. All rights reserved.</p>
-        </footer> */}
 
         <Footer />
       </main>
