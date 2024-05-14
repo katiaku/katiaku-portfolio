@@ -5,7 +5,7 @@ import ellipsePurple from '../../public/ellipsePurple.png';
 export default function About() {
     return (
         <section
-            className='mt-10 mb-20 pb-20 px-10 md:px-20 relative cursor-default scroll-mt-20 snap-start'
+            className='mt-10 mb-20 pb-20 px-10 md:px-20 relative cursor-default scroll-mt-28 snap-start'
             id='about'
         >
             <Image
@@ -15,10 +15,12 @@ export default function About() {
                 height="800"
                 className="ellipse-purple absolute opacity-40"
             />
+
             <div className='pb-2 mb-10'>
                 <h3 className='section-title uppercase'>about me</h3>
             </div>
-            <div className='glass flex flex-col lg:flex-row p-10 gap-6'>
+
+            <div className='glass flex flex-col lg:flex-row p-10 gap-10 lg:gap-6'>
                 <div className={`lg:w-1/3 text-left leading-7 lg:leading-8 text-gray-700 md:text-xl dark:text-white`}>
                     <div className='flex pb-2 items-start gap-4'>
                     <AiFillCheckCircle className="mt-[4px] text-xl shrink-0 text-blue-500 dark:text-teal-100"/>

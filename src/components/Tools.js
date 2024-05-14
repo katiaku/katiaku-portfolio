@@ -11,7 +11,7 @@ import { SiJest, SiCypress, SiPostman, SiStorybook, SiTailwindcss, SiTypescript,
 export default function Tools() {
     return (
         <section
-            className='pt-18 mb-10 pb-20 px-10 md:px-20 relative scroll-mt-20 snap-start'
+            className='pt-18 mb-10 pb-20 px-10 md:px-20 relative scroll-mt-28 snap-start'
             id='tools'
         >
             <Image
