@@ -109,9 +109,13 @@
   }
 }
 
-.hover-scale:hover {
+.hover-scale {
+  transition: transform 1s ease-in-out;
+}
+
+.hover-scale:hover,
+.hover-scale:active {
   transform: scale(1.1);
-  transition: transform 0.3s ease-in-out;
 }
 
 /* ----------------------------------------------

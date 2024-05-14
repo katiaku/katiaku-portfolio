@@ -3,9 +3,9 @@ import { motion } from "framer-motion";
 export default function Hero() {
     return (
         <motion.div 
-            initial={{ x: "-100vw", y: "-100vw" }} 
-            animate={{ x: "0", y: "0" }} 
-            transition={{ duration: 1.2 }} 
+            initial={{ opacity: 0, scale: 0.6 }} 
+            whileInView={{ opacity: 1, scale: 1 }} 
+            transition={{ ease: "easeOut", duration: 3 }} 
             className='glass place-self-center p-12 mx-20 mt-[120px] md:mt-[200px] lg:w-3/5 cursor-default'
         >
             <h2 className=' py-2 gradient-text font-extrabold text-6xl sm:text-7xl text-left'>Crafting seamless digital experiences</h2>

@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import Image from 'next/image';
 import logo from '../app/icon.png';
-import { motion } from 'framer-motion';
 import { AiFillLinkedin, AiFillGithub } from 'react-icons/ai';
 import { Expand } from "@theme-toggles/react";
 
@@ -10,12 +9,7 @@ export default function Header({ darkMode, toggleDarkMode }) {
     const [isToggled, setToggle] = useState(true);
 
     return (
-        <motion.nav
-            initial={{ x: "1000vw" }}
-            animate={{ x: "0" }}
-            transition={{ duration: 1.5 }}
-            className='header-glass fixed w-full z-10 py-1 px-3 lg:mb-[150px] md:mb-[130px] mb-[100px]'
-        >
+        <nav className='header-glass fixed w-full z-10 py-1 px-3 lg:mb-[150px] md:mb-[130px] mb-[100px]'>
             <ul className='flex items-center gap-6 md:gap-8'>
                 <li>
                     <Image
@@ -74,6 +68,6 @@ export default function Header({ darkMode, toggleDarkMode }) {
                     </li>
                 </ul>
             </ul>
-        </motion.nav>
+        </nav>
     );
 };

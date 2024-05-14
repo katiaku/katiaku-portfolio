@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import { AiFillCheckCircle } from "react-icons/ai";
 import ellipsePurple from '../../public/ellipsePurple.png';
+import { motion } from "framer-motion";
 
 export default function About() {
     return (
@@ -20,7 +21,12 @@ export default function About() {
                 <h3 className='section-title uppercase'>about me</h3>
             </div>
 
-            <div className='glass flex flex-col lg:flex-row p-10 gap-10'>
+            <motion.div
+                initial={{ opacity: 0, scale: 0.8 }} 
+                whileInView={{ opacity: 1, scale: 1 }} 
+                transition={{ ease: "easeOut", duration: 3 }} 
+                className='glass flex flex-col lg:flex-row p-10 gap-10'
+            >
                 <div className={`lg:w-1/3 text-left leading-7 lg:leading-8 text-gray-700 md:text-xl dark:text-white`}>
                     <div className='flex pb-2 items-start gap-4'>
                     <AiFillCheckCircle className="mt-[4px] text-xl shrink-0 text-blue-500 dark:text-teal-100"/>
@@ -44,7 +50,7 @@ export default function About() {
                     </div>
                     <p>From mastering the latest JavaScript libraries to staying ahead of emerging design trends, I embrace change as an opportunity for growth and improvement.</p>
                 </div>
-            </div>
+            </motion.div>
         </section>
     )
 }
