@@ -20,7 +20,7 @@ export default function About() {
                 <h3 className='section-title uppercase'>about me</h3>
             </div>
 
-            <div className='glass flex flex-col lg:flex-row p-10 gap-10 lg:gap-6'>
+            <div className='glass flex flex-col lg:flex-row p-10 gap-10'>
                 <div className={`lg:w-1/3 text-left leading-7 lg:leading-8 text-gray-700 md:text-xl dark:text-white`}>
                     <div className='flex pb-2 items-start gap-4'>
                     <AiFillCheckCircle className="mt-[4px] text-xl shrink-0 text-blue-500 dark:text-teal-100"/>

@@ -19,7 +19,7 @@ export default function Projects() {
                     <Image
                         src={kanbanVue}
                         alt="KanbanVue app screenshot."
-                        className='hover-scale rounded-3xl object-cover shadow-lg'
+                        className='glass-project hover-scale object-cover'
                         width={'100%'}
                         height={'100%'}
                     />
@@ -43,7 +43,7 @@ export default function Projects() {
                     <Image
                         src={jsCodeGamer}
                         alt="Jscodegamer app screenshot."
-                        className='hover-scale rounded-3xl object-cover shadow-lg'
+                        className='glass-project hover-scale object-cover'
                         width={'100%'}
                         height={'100%'}
                     />
@@ -67,7 +67,7 @@ export default function Projects() {
                     <Image
                         src={taskManager}
                         alt="Task manager app screenshot."
-                        className='hover-scale rounded-3xl object-cover shadow-lg'
+                        className='glass-project hover-scale object-cover'
                         width={'100%'}
                         height={'100%'}
                     />
@@ -88,7 +88,7 @@ export default function Projects() {
                     <Image
                         src={birthdayPlanner}
                         alt="Birthday planner app screenshot."
-                        className='hover-scale rounded-3xl object-cover shadow-lg'
+                        className='glass-project hover-scale object-cover'
                         width={'100%'}
                         height={'100%'}
                     />
