@@ -5,7 +5,7 @@ import ellipsePurple from '../../public/ellipsePurple.png';
 export default function About() {
     return (
         <section
-            className='mt-10 mb-20 py-20 mx-20 relative cursor-default'
+            className='mt-10 mb-20 pb-20 px-10 md:px-20 relative cursor-default scroll-mt-20 snap-start'
             id='about'
         >
             <Image

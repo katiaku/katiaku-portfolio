@@ -8,7 +8,7 @@ export default function Projects() {
     return (
         <section
             id="projects"
-            className="relative"
+            className="relative scroll-mt-20 snap-start"
         >
             <div>
                 <h3 className='section-title uppercase'>check out my favorite pieces</h3>
