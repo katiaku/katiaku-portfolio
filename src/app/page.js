@@ -28,6 +28,7 @@ import vectorCyan from '../../public/vectorCyan.png';
 // import vectorPurple from '../../public/vectorPurple.png';
 import Footer from '@/components/Footer';
 import Hero from '@/components/Hero';
+import About from '@/components/About';
 
 export default function Home() {
 
@@ -152,7 +153,7 @@ export default function Home() {
           <Hero />
         </section>
 
-        <section
+        {/* <section
           className='mt-10 mb-20 py-20 mx-20 relative cursor-default'
           id='about'
         >
@@ -189,7 +190,9 @@ export default function Home() {
                 <p>From mastering the latest JavaScript libraries to staying ahead of emerging design trends, I embrace change as an opportunity for growth and improvement.</p>
             </div>
           </div>
-        </section>
+        </section> */}
+        <About />
+
         
         <section
           className='pt-18 mb-10 pb-20 px-20 relative'
