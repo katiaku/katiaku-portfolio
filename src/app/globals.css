@@ -34,27 +34,19 @@
   backdrop-filter: blur( 4px );
   -webkit-backdrop-filter: blur( 4px );
   border-bottom: 1px solid rgba( 255, 255, 255, 0.18 );
-  position: fixed;
-  z-index: 9;
-  width: 100%;
 }
 
-.ellipse1 {
+.ellipse-purple {
   right: -10rem;
   top: 0;
 }
 
-.ellipse3 {
+.ellipse-yellow {
   left: -1rem;
   top: -10rem;
 }
 
-.vector2 {
-  right: 2rem;
-  top: 30rem;
-}
-
-.vector3 {
+.vector-cyan {
   right: 2rem;
   top: 30rem;
 }
@@ -63,6 +55,7 @@
   html {
     font-family: Proxima Nova, system-ui, sans-serif;
     scroll-behavior: smooth;
+    overflow-x: hidden;
   }
 }
 
@@ -81,6 +74,10 @@
 
   .tech-item {
     @apply text-gray-800 py-1 dark:text-gray-200
+  }
+
+  .tech-used {
+    @apply bg-blue-500 text-white text-xs cursor-default rounded-xl px-2 py-1
   }
 
   .tech-subj {
@@ -129,7 +126,7 @@
 
 @supports (background-clip: text) {
   .gradient-text {
-    background-image: linear-gradient(60deg, rgb(91, 0, 91), rgb(0, 0, 200));
+    background-image: linear-gradient(60deg, #5b005b, #0000c8);
     background-clip: text;
     color: transparent;
   }

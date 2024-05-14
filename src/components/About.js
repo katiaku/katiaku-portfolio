@@ -13,7 +13,7 @@ export default function About() {
                 alt="Decorative purple ellipse."
                 width="800"
                 height="800"
-                className="ellipse1 absolute opacity-40"
+                className="ellipse-purple absolute opacity-40"
             />
             <div className='pb-2 mb-10'>
                 <h3 className='section-title uppercase'>about me</h3>
@@ -26,6 +26,7 @@ export default function About() {
                     </div>
                     <p>Every pixel counts in the digital realm. From layout alignment to color schemes, I thrive on perfecting the smallest details to create the best user experiences.</p>
                 </div>
+
                 <div className={`lg:w-1/3 text-left text-md leading-7 lg:leading-8 text-gray-700 md:text-xl dark:text-white`}>
                     <div className='flex pb-2 items-start gap-4'>
                     <AiFillCheckCircle className="mt-[4px] text-xl shrink-0 text-blue-500 dark:text-teal-100"/>
@@ -33,6 +34,7 @@ export default function About() {
                     </div>
                     <p>Challenges are opportunities in disguise. Whether troubleshooting bugs or optimizing performance, I thrive on finding creative solutions that push the boundaries of possibility.</p>
                 </div>
+
                 <div className={`lg:w-1/3 text-left text-md leading-7 lg:leading-8 text-gray-700 md:text-xl dark:text-white`}>
                     <div className='flex pb-2 items-start gap-4'>
                     <AiFillCheckCircle className="mt-[4px] text-xl shrink-0 text-blue-500 dark:text-teal-100"/>
