@@ -29,6 +29,7 @@ import vectorCyan from '../../public/vectorCyan.png';
 import Footer from '@/components/Footer';
 import Hero from '@/components/Hero';
 import About from '@/components/About';
+import Tools from '@/components/Tools';
 
 export default function Home() {
 
@@ -194,7 +195,7 @@ export default function Home() {
         <About />
 
         
-        <section
+        {/* <section
           className='pt-18 mb-10 pb-20 px-20 relative'
           id='tools'
         >
@@ -256,7 +257,8 @@ export default function Home() {
               <div className="tech-subj"><FaJira className="text-x" /><p className='tech-item'>JIRA</p></div>
             </div>
           </div>
-        </section>
+        </section> */}
+        <Tools />
 
         <section
           id="projects"
