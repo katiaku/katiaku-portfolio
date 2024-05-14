@@ -30,6 +30,7 @@ import Footer from '@/components/Footer';
 import Hero from '@/components/Hero';
 import About from '@/components/About';
 import Tools from '@/components/Tools';
+import Projects from '@/components/Projects';
 
 export default function Home() {
 
@@ -260,7 +261,7 @@ export default function Home() {
         </section> */}
         <Tools />
 
-        <section
+        {/* <section
           id="projects"
           className="relative"
         >
@@ -356,7 +357,8 @@ export default function Home() {
               <p className='dark:text-white pt-2 cursor-default'><a className="text-blue-500 dark:text-blue-400 font-bold" target="_blank" href="https://kanban-vue-ruby.vercel.app/">KanbanVue</a> is a kanban board application for work management. Inspired by the principles of Agile methodologies, I wanted to build my own tool to easily visualize work and prioritize tickets. The user can customize columns and tickets and easily drag them around the board.</p>
             </div>
           </div>
-        </section>
+        </section> */}
+        <Projects />
 
         <Footer />
       </main>
