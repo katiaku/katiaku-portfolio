@@ -15,18 +15,19 @@ import { useState } from 'react';
 import "@theme-toggles/react/css/Expand.css";
 import { Expand } from "@theme-toggles/react";
 import { motion } from "framer-motion";
-import Cursor from '@/components/Cursor';
+// import Cursor from '@/components/Cursor';
 import background from '../../public/background.png';
 import front from '../../public/front-end.png';
 import back from '../../public/back-end.png';
 import webDesign from '../../public/web-design.png';
 import ellipsePurple from '../../public/ellipsePurple.png';
-import ellipseViolet from '../../public/ellipseViolet.png';
+// import ellipseViolet from '../../public/ellipseViolet.png';
 import ellipseYellow from '../../public/ellipseYellow.png';
-import vectorYellow from '../../public/vectorYellow.png';
+// import vectorYellow from '../../public/vectorYellow.png';
 import vectorCyan from '../../public/vectorCyan.png';
-import vectorPurple from '../../public/vectorPurple.png';
+// import vectorPurple from '../../public/vectorPurple.png';
 import Footer from '@/components/Footer';
+import Hero from '@/components/Hero';
 
 export default function Home() {
 
@@ -124,7 +125,7 @@ export default function Home() {
             </ul>
           </motion.nav>
 
-          <motion.div 
+          {/* <motion.div 
             initial={{ x: "-100vw", y: "-100vw" }} 
             animate={{ x: "0", y: "0" }} 
             transition={{ duration: 1.2 }} 
@@ -147,7 +148,8 @@ export default function Home() {
                   Resume
               </a>
             </div>
-          </motion.div>
+          </motion.div> */}
+          <Hero />
         </section>
 
         <section
