@@ -14,15 +14,15 @@
 
 @layer components {
   .btn {
-    @apply w-full md:w-36 font-bold bg-teal-200 dark:bg-teal-100 text-slate-800 py-1 leading-8 rounded-3xl transition-all duration-300 text-center
+    @apply w-full md:w-36 font-bold bg-teal-200 dark:bg-teal-100 dark:hover:bg-teal-200 hover:bg-teal-300 text-slate-800 py-1 leading-8 rounded-3xl transition-all duration-300 text-center
   }
 
   .menu-item {
-    @apply hover:text-purple-900 dark:text-gray-200 font-bold hover:underline cursor-pointer
+    @apply text-slate-800 hover:text-purple-900 dark:text-teal-100 dark:hover:text-teal-200 font-bold cursor-pointer transition-all duration-300
   }
 
   .icon-link {
-    @apply text-gray-800 hover:text-purple-900 text-xl dark:text-gray-200
+    @apply text-slate-800 hover:text-purple-900 text-xl dark:text-teal-100 dark:hover:text-teal-200 transition-all duration-300
   }
 
   .tech-item {
