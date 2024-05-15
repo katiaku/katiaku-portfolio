@@ -13,34 +13,34 @@ export default function Header({ darkMode, toggleDarkMode }) {
             <ul className='flex items-center gap-6 md:gap-8'>
                 <li>
                     <Image
-                    src={logo}
-                    alt="personal EK logo"
-                    width={30}
-                    height={30}
-                    className='m-3'
+                        src={logo}
+                        alt="personal EK logo"
+                        width={30}
+                        height={30}
+                        className='m-3'
                     />
                 </li>
 
                 <ul className='flex justify-center items-center gap-6 md:gap-10 ml-auto'>
                     <li className='menu-item text-slate-800 dark:text-teal-100'>
-                    <a className='uppercase' href="#about">
-                        about
-                    </a>
+                        <a className='uppercase' href="#about">
+                            about
+                        </a>
                     </li>
                     <li className='menu-item text-slate-800 dark:text-teal-100'>
-                    <a className='uppercase' href="#tools">
-                        tools
-                    </a>
+                        <a className='uppercase' href="#tools">
+                            tools
+                        </a>
                     </li>
                     <li className='menu-item text-slate-800 dark:text-teal-100'>
-                    <a className='uppercase' href="#projects">
-                        my work
-                    </a>
+                        <a className='uppercase' href="#projects">
+                            my work
+                        </a>
                     </li>
                 </ul>
 
                 <ul className='flex justify-center items-center gap-4 md:gap-6 mr-3'>
-                    <li className='shake'>
+                    <li>
                         <a
                             className="icon-link text-slate-800 dark:text-teal-100"
                             target="_blank"
@@ -48,7 +48,7 @@ export default function Header({ darkMode, toggleDarkMode }) {
                             <AiFillLinkedin />
                         </a>
                     </li>
-                    <li className='shake'>
+                    <li>
                         <a
                             className="icon-link text-slate-800 dark:text-teal-100"
                             target="_blank"
@@ -56,7 +56,7 @@ export default function Header({ darkMode, toggleDarkMode }) {
                             <AiFillGithub />
                         </a>
                     </li>
-                    <li className='shake'>
+                    <li>
                         <Expand  
                             toggled={isToggled} 
                             toggle={() => {

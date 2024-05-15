@@ -6,15 +6,15 @@ import { motion } from "framer-motion";
 export default function About() {
     return (
         <section
-            className='mt-10 mb-20 pb-20 px-10 md:px-20 relative cursor-default scroll-mt-28 snap-start'
+            className='mt-10 mb-20 pb-20 px-8 md:px-20 relative cursor-default scroll-mt-28 snap-start'
             id='about'
         >
             <Image
                 src={ellipsePurple}
                 alt="Decorative purple ellipse."
-                width="800"
-                height="800"
-                className="ellipse-purple absolute opacity-40"
+                width="1000"
+                height="1000"
+                className="ellipse-purple absolute opacity-30"
             />
 
             <div className='pb-2 mb-10'>

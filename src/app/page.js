@@ -26,7 +26,7 @@ export default function Home() {
 
       <main
         id="main"
-        className='scroll-smooth snap-y relative select-none bg-slate-100 pb-10 dark:bg-gray-900 transition-all duration-300 w-screen'
+        className='scroll-smooth snap-y relative select-none bg-slate-100 pb-10 dark:bg-gray-900 transition-all duration-300 w-screen overflow-hidden'
       >
 
         <div id="background" className='absolute w-full z-0'>
@@ -39,19 +39,12 @@ export default function Home() {
         
         {/* <Cursor /> */}
 
-        <section
-          id="top"
-          className='flex flex-col h-screen pb-20 mb-[10rem] md:mb-[2rem] relative'
-        >
-          <Header
+        <Header
             darkMode={ darkMode }
             toggleDarkMode={ () => setDarkMode(prevMode => !prevMode) }
-          />
+        />
 
-          <Hero />
-
-        </section>
-
+        <Hero />
         <About />
         <Tools />
         <Projects />

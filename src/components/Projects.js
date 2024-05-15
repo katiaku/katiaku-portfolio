@@ -8,13 +8,13 @@ export default function Projects() {
     return (
         <section
             id="projects"
-            className="relative scroll-mt-28 snap-start px-10 md:px-20"
+            className="relative scroll-mt-28 snap-start px-8 md:px-20"
         >
             <div>
                 <h3 className='section-title uppercase'>check out my favorite pieces</h3>
             </div>
 
-            <div className='flex flex-col gap-14 py-10 lg:flex-row lg:flex-wrap'>
+            <div className='flex flex-col gap-20 lg:gap-12 py-10 lg:flex-row lg:flex-wrap'>
                 <div className='basis-1/3 flex-1'>
                     <Image
                         src={kanbanVue}
@@ -23,7 +23,7 @@ export default function Projects() {
                         width={'100%'}
                         height={'100%'}
                     />
-                    <div className='flex gap-2 pt-6'>
+                    <div className='flex gap-2 pt-8 pb-2'>
                         <span className='tech-used'>
                             Nuxt3
                         </span>
@@ -47,16 +47,16 @@ export default function Projects() {
                         width={'100%'}
                         height={'100%'}
                     />
-                    <div className='flex gap-2 pt-6'>
-                    <span className='tech-used'>
-                        Angular
-                    </span>
-                    <span className='tech-used'>
-                        Express.js
-                    </span>
-                    <span className='tech-used'>
-                        MySQL
-                    </span>
+                    <div className='flex gap-2 pt-8 pb-2'>
+                        <span className='tech-used'>
+                            Angular
+                        </span>
+                        <span className='tech-used'>
+                            Express.js
+                        </span>
+                        <span className='tech-used'>
+                            MySQL
+                        </span>
                     </div>
                     <p className='dark:text-white pt-2 cursor-default'>
                         <a className="text-blue-500 dark:text-blue-400 font-bold" target="_blank" href="https://jscodegamer.vercel.app">JSCODEGAMER </a> facilitates learning programming by providing interactive lessons and practical challenges in JavaScript. Its space-inspired environment creates an educational and motivating experience for users who want to embark on their programming journey. The app includes 9 levels that unlock progressively based on the user&apos;s progress, along with diverse challenges and an integrated code editor.
@@ -71,7 +71,7 @@ export default function Projects() {
                         width={'100%'}
                         height={'100%'}
                     />
-                    <div className='flex gap-2 pt-6'>
+                    <div className='flex gap-2 pt-8 pb-2'>
                         <span className='tech-used'>
                             React
                         </span>
@@ -92,7 +92,7 @@ export default function Projects() {
                         width={'100%'}
                         height={'100%'}
                     />
-                    <div className='flex gap-2 pt-6'>
+                    <div className='flex gap-2 pt-8 pb-2'>
                         <span className='tech-used'>
                             CakePHP
                         </span>

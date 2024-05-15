@@ -12,23 +12,23 @@ import { motion, useAnimation } from "framer-motion";
 export default function Tools() {
     return (
         <section
-            className='pt-18 mb-10 pb-20 px-10 md:px-20 relative scroll-mt-28 snap-start'
+            className='pt-18 mb-10 pb-20 px-8 md:px-20 relative scroll-mt-28 snap-start'
             id='tools'
         >
             <Image
                 src={ellipseYellow}
                 alt="Decorative yellow ellipse."
-                width="800"
-                height="800"
-                className="ellipse-yellow absolute opacity-60"
+                width="900"
+                height="900"
+                className="ellipse-yellow absolute opacity-50"
             />
 
             <Image
                 src={vectorCyan}
                 alt="Decorative cyan vector."
-                width="700"
-                height="700"
-                className="vector-cyan absolute opacity-50"
+                width="1000"
+                height="1000"
+                className="vector-cyan absolute opacity-30"
             />
 
             <div className='pb-3'>
