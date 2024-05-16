@@ -18,11 +18,11 @@
   }
 
   .menu-item {
-    @apply text-slate-800 hover:text-purple-900 dark:text-teal-100 dark:hover:text-teal-200 font-bold cursor-pointer transition-all duration-300
+    @apply text-slate-800 hover:text-purple-900 dark:text-teal-100 dark:hover:text-teal-200 font-semibold cursor-pointer transition-all duration-300
   }
 
   .icon-link {
-    @apply text-slate-800 hover:text-purple-900 text-xl dark:text-teal-100 dark:hover:text-teal-200 transition-all duration-300
+    @apply text-slate-800 hover:text-purple-900 text-lg dark:text-teal-100 dark:hover:text-teal-200 transition-all duration-300
   }
 
   .tech-item {

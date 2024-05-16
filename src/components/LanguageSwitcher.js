@@ -10,7 +10,11 @@ export default function LanguageSwitcher() {
     };
 
     return (
-        <select value={i18n.language} onChange={handleLanguageChange}>
+        <select
+            value={i18n.language}
+            onChange={handleLanguageChange}
+            className="bg-transparent menu-item focus:outline-none"
+        >
             <option value="en">EN</option>
             <option value="es">ES</option>
         </select>
