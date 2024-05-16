@@ -2,7 +2,7 @@ import './globals.css';
 
 export const metadata = {
   title: 'Ekaterina Kushnir | Web Development',
-  description: 'Wep Development portfolio web page',
+  description: 'Wep development: portfolio web page.',
 }
 
 export default function RootLayout({ children }) {

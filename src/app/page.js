@@ -11,45 +11,53 @@ import About from '@/components/About';
 import Tools from '@/components/Tools';
 import Projects from '@/components/Projects';
 import Header from '@/components/Header';
+import { I18nextProvider } from "react-i18next";
+import i18next from "i18next";
+
+i18next.init({
+  interpolation: { escapeValue: false },
+});
 
 export default function Home() {
 
   const [darkMode, setDarkMode] = useState(false);
 
   return (
-    <div className={darkMode ? "dark" : ""}>
-      <Head>
-        <title>Web Developer Portfolio</title>
-        <meta name="description" content="Web developer portfolio, modern web development with React, Angular and Vue." />
-        <link rel="icon" href="icon.png" />
-      </Head>
+    <I18nextProvider i18n={i18next}>
+      <div className={darkMode ? "dark" : ""}>
+        <Head>
+          <title>Web Developer Portfolio</title>
+          <meta name="description" content="Web developer portfolio, modern web development with React, Angular and Vue." />
+          <link rel="icon" href="icon.png" />
+        </Head>
 
-      <main
-        id="main"
-        className='scroll-smooth snap-y relative select-none bg-slate-100 pb-10 dark:bg-gray-900 transition-all duration-300 w-screen overflow-hidden'
-      >
+        <main
+          id="main"
+          className='scroll-smooth snap-y relative select-none bg-slate-100 pb-10 dark:bg-gray-900 transition-all duration-300 w-screen overflow-hidden'
+        >
 
-        <div id="background" className='absolute w-full z-0'>
-          <Image
-            src={background}
-            alt="Futuristic background of purple, yellow and cyan colored blocks"
-            className='opacity-90'
+          <div id="background" className='absolute w-full z-0'>
+            <Image
+              src={background}
+              alt="Futuristic background of purple, yellow and cyan colored blocks"
+              className='opacity-90'
+            />
+          </div>
+          
+          {/* <Cursor /> */}
+
+          <Header
+              darkMode={ darkMode }
+              toggleDarkMode={ () => setDarkMode(prevMode => !prevMode) }
           />
-        </div>
-        
-        {/* <Cursor /> */}
 
-        <Header
-            darkMode={ darkMode }
-            toggleDarkMode={ () => setDarkMode(prevMode => !prevMode) }
-        />
-
-        <Hero />
-        <About />
-        <Tools />
-        <Projects />
-        <Footer />
-      </main>
-    </div>
+          <Hero />
+          <About />
+          <Tools />
+          <Projects />
+          <Footer />
+        </main>
+      </div>
+    </I18nextProvider>
   )
 }

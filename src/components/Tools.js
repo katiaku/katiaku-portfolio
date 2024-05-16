@@ -7,32 +7,62 @@ import vectorCyan from '../../public/vectorCyan.png';
 import { IoLogoCss3, IoLogoAngular, IoLogoHtml5 } from "react-icons/io";
 import { FaBootstrap, FaSass, FaJira, FaReact, FaFigma, FaVuejs, FaPhp, FaNodeJs, FaGitAlt, FaGithub, FaGitlab } from "react-icons/fa";
 import { SiJest, SiCypress, SiPostman, SiStorybook, SiTailwindcss, SiTypescript, SiJavascript, SiJquery, SiThreedotjs, SiCakephp, SiExpress, SiMysql, SiMongodb } from "react-icons/si";
-import { motion, useAnimation } from "framer-motion";
+import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
+import i18n from "i18next";
+import { initReactI18next } from "react-i18next";
+import translationEN from "../locales/en/translation.json";
+import translationES from "../locales/es/translation.json";
+
+const resources = {
+    en: {
+        translation: translationEN,
+    },
+    es: {
+        translation: translationES,
+    },
+};
+
+i18n.use(initReactI18next).init({
+    resources,
+    lng: "en",
+    fallbackLng: "en",
+    interpolation: {
+        escapeValue: false,
+    },
+});
 
 export default function Tools() {
+
+    const { t } = useTranslation();
+
     return (
         <section
             className='pt-18 mb-10 pb-20 px-8 md:px-20 relative scroll-mt-28 snap-start'
             id='tools'
         >
-            <Image
-                src={ellipseYellow}
-                alt="Decorative yellow ellipse."
-                width="900"
-                height="900"
-                className="ellipse-yellow absolute opacity-50"
-            />
+            <div className='ellipse-yellow absolute'>
+                <Image
+                    src={ellipseYellow}
+                    alt="Decorative yellow ellipse."
+                    width="900"
+                    height="900"
+                    className="opacity-50"
+                />
+            </div>
 
-            <Image
-                src={vectorCyan}
-                alt="Decorative cyan vector."
-                width="1000"
-                height="1000"
-                className="vector-cyan absolute opacity-30"
-            />
+            <div className='vector-cyan absolute'>
+                <Image
+                    src={vectorCyan}
+                    alt="Decorative cyan vector."
+                    width="900"
+                    height="900"
+                    className="opacity-30"
+                />
+            </div>
 
             <div className='pb-3'>
-                <h3 className='section-title uppercase'>technologies and tools i use</h3>
+                <h3 className='section-title uppercase'>{ t("section_header_tools") }</h3>
             </div>
             
             <div className='lg:flex lg:justify-between gap-6'>
@@ -43,7 +73,7 @@ export default function Tools() {
                     className='tech-group glass'
                 >
                     <Image src={front} width={100} height={100} alt="Frontend development illustration." />
-                    <h6 className='tech-group-title uppercase'>Frontend</h6>
+                    <h6 className='tech-group-title uppercase'>{ t("tools_frontend") }</h6>
                     <div className='flex flex-col md:flex-row lg:flex-col md:flex-wrap md:gap-y-2 md:justify-center md:gap-8 lg:gap-2 pb-2'>
                         <div className="tech-subj"><IoLogoHtml5 className="text-xl"/><p className='tech-item'>HTML</p></div>
                         <div className="tech-subj"><IoLogoCss3 className="text-xl" /><p className='tech-item'>CSS</p></div>
@@ -67,7 +97,7 @@ export default function Tools() {
                     className='tech-group glass'
                 >
                     <Image src={back} width={100} height={100} alt="Backend development illustration." />
-                    <h6 className='tech-group-title uppercase'>Backend</h6>
+                    <h6 className='tech-group-title uppercase'>{ t("tools_backend") }</h6>
                     <div className='flex flex-col md:flex-row lg:flex-col md:flex-wrap md:gap-y-2 md:justify-center md:gap-8 lg:gap-2 pb-2'>
                         <div className="tech-subj"><FaPhp className="text-xl" /><p className='tech-item'>PHP</p></div>
                         <div className="tech-subj"><SiCakephp className="text-l" /><p className='tech-item'>CakePHP</p></div>
@@ -85,7 +115,7 @@ export default function Tools() {
                     className='tech-group glass'
                 >
                     <Image src={webDesign} width={90} height={90} className="pt-1" alt="Web development illustration." />
-                    <h6 className='tech-group-title uppercase'>Others</h6>
+                    <h6 className='tech-group-title uppercase'>{ t("tools_others") }</h6>
                     <div className='flex flex-col md:flex-row lg:flex-col md:flex-wrap md:gap-y-2 md:justify-center md:gap-8 lg:gap-2 pb-2'>
                         <div className="tech-subj"><SiJest className="text-x" /><p className='tech-item'>Jest</p></div>
                         <div className="tech-subj"><SiCypress className="text-x" /><p className='tech-item'>Cypress</p></div>
