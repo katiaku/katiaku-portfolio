@@ -40,7 +40,7 @@ export default function Header({ darkMode, toggleDarkMode }) {
                 <li>
                     <Image
                         src={logo}
-                        alt="personal E.K. logo"
+                        alt={ t("logo") }
                         width={30}
                         height={30}
                         className='m-3'

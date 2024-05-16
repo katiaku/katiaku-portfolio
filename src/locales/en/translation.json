@@ -24,5 +24,16 @@
     "project_description_task_manager": " is a web app that allows users to manage their tasks in a simple and efficient way. Users can add new tasks to the list, edit or remove existing tasks. Each task in the app includes a description and a priority level that indicates its relative importance or urgency.",
     "project_description_birthday_planner": " is a web application designed to help parents plan and manage their children's birthday parties. The app provides an intuitive interface that allows users to organize party details including lists of guests and presents.",
     "footer_motto": "Making your vision reality",
-    "footer_copy": "© 2024 Ekaterina Kushnir. All rights reserved."
+    "footer_copy": "© 2024 Ekaterina Kushnir. All rights reserved.",
+    "logo": "The app logo consists of purple uppercase letters E and K.",
+    "ellipse_purple": "Decorative purple ellipse.",
+    "ellipse_yellow": "Decorative yellow ellipse.",
+    "cyan_vector": "Decorative cyan vector.",
+    "frontend_dev_illustration": "Frontend development illustration.",
+    "backend_dev_illustration": "Backend development illustration.",
+    "web_dev_illustration": "Web development illustration.",
+    "kanban_vue_screenshot": "KanbanVue app screenshot.",
+    "js_code_gamer_vue_screenshot": "JsCodeGamer app screenshot.",
+    "task_manager_screenshot": "Task Manager app screenshot.",
+    "birthday_planner_screenshot": "Birthday Planner app screenshot."
 }

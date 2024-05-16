@@ -38,7 +38,7 @@ export default function About() {
             <div className='ellipse-purple absolute'>
                 <Image
                     src={ellipsePurple}
-                    alt="Decorative purple ellipse."
+                    alt={ t("ellipse_purple") }
                     width="1000"
                     height="1000"
                     className="opacity-30"

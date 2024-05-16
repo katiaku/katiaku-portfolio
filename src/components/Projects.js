@@ -44,7 +44,7 @@ export default function Projects() {
                 <div className='basis-1/3 flex-1'>
                     <Image
                         src={kanbanVue}
-                        alt="KanbanVue app screenshot."
+                        alt={ t("kanban_vue_screenshot") }
                         className='glass-project hover-scale object-cover'
                         width={'100%'}
                         height={'100%'}
@@ -68,7 +68,7 @@ export default function Projects() {
                 <div className='basis-1/3 flex-1'>
                     <Image
                         src={jsCodeGamer}
-                        alt="JsCodeGamer app screenshot."
+                        alt={ t("js_code_gamer_vue_screenshot") }
                         className='glass-project hover-scale object-cover'
                         width={'100%'}
                         height={'100%'}
@@ -92,7 +92,7 @@ export default function Projects() {
                 <div className='basis-1/3 flex-1'>
                     <Image
                         src={taskManager}
-                        alt="Task Manager app screenshot."
+                        alt={ t("task_manager_screenshot") }
                         className='glass-project hover-scale object-cover'
                         width={'100%'}
                         height={'100%'}
@@ -113,7 +113,7 @@ export default function Projects() {
                 <div className='basis-1/3 flex-1'>
                     <Image
                         src={birthdayPlanner}
-                        alt="Birthday Planner app screenshot."
+                        alt={ t("birthday_planner_screenshot") }
                         className='glass-project hover-scale object-cover'
                         width={'100%'}
                         height={'100%'}
