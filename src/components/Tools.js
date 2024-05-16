@@ -73,7 +73,7 @@ export default function Tools() {
                     className='tech-group glass'
                 >
                     <Image src={front} width={100} height={100} alt={ t("frontend_dev_illustration") } />
-                    <h6 className='tech-group-title uppercase'>{ t("tools_frontend") }</h6>
+                    <h4 className='tech-group-title uppercase'>{ t("tools_frontend") }</h4>
                     <div className='flex flex-col md:flex-row lg:flex-col md:flex-wrap md:gap-y-2 md:justify-center md:gap-8 lg:gap-2 pb-2'>
                         <div className="tech-subj"><IoLogoHtml5 className="text-xl"/><p className='tech-item'>HTML</p></div>
                         <div className="tech-subj"><IoLogoCss3 className="text-xl" /><p className='tech-item'>CSS</p></div>
@@ -97,7 +97,7 @@ export default function Tools() {
                     className='tech-group glass'
                 >
                     <Image src={back} width={100} height={100} alt={ t("backend_dev_illustration") } />
-                    <h6 className='tech-group-title uppercase'>{ t("tools_backend") }</h6>
+                    <h4 className='tech-group-title uppercase'>{ t("tools_backend") }</h4>
                     <div className='flex flex-col md:flex-row lg:flex-col md:flex-wrap md:gap-y-2 md:justify-center md:gap-8 lg:gap-2 pb-2'>
                         <div className="tech-subj"><FaPhp className="text-xl" /><p className='tech-item'>PHP</p></div>
                         <div className="tech-subj"><SiCakephp className="text-l" /><p className='tech-item'>CakePHP</p></div>
@@ -115,7 +115,7 @@ export default function Tools() {
                     className='tech-group glass'
                 >
                     <Image src={webDesign} width={90} height={90} className="pt-1" alt={ t("web_dev_illustration") } />
-                    <h6 className='tech-group-title uppercase'>{ t("tools_others") }</h6>
+                    <h4 className='tech-group-title uppercase'>{ t("tools_others") }</h4>
                     <div className='flex flex-col md:flex-row lg:flex-col md:flex-wrap md:gap-y-2 md:justify-center md:gap-8 lg:gap-2 pb-2'>
                         <div className="tech-subj"><SiJest className="text-x" /><p className='tech-item'>Jest</p></div>
                         <div className="tech-subj"><SiCypress className="text-x" /><p className='tech-item'>Cypress</p></div>

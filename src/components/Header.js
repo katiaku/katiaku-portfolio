@@ -67,6 +67,7 @@ export default function Header({ darkMode, toggleDarkMode }) {
             <ul className='flex items-center gap-6'>
                 <li>
                     <a
+                        aria-label="LinkedIn"
                         className="icon-link"
                         target="_blank"
                         href="https://www.linkedin.com/in/ekaterina-kushnir-mikhaylova">
@@ -75,6 +76,7 @@ export default function Header({ darkMode, toggleDarkMode }) {
                 </li>
                 <li>
                     <a
+                        aria-label="GitHub"
                         className="icon-link"
                         target="_blank"
                         href="https://github.com/katiaku">

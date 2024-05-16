@@ -30,7 +30,7 @@
   }
 
   .tech-used {
-    @apply bg-blue-500 text-white text-xs cursor-default rounded-xl px-2 py-1
+    @apply bg-slate-700 dark:bg-blue-500 text-white text-xs cursor-default rounded-xl px-2 py-1
   }
 
   .tech-subj {
@@ -42,7 +42,7 @@
   }
 
   .tech-group-title {
-    @apply cursor-default font-bold text-lg md:text-xl lg:text-xl pt-8 pb-4 text-blue-500 dark:text-teal-100
+    @apply cursor-default font-semibold text-lg md:text-xl lg:text-xl py-4 text-slate-800 dark:text-teal-100
   }
 
   .section-title {

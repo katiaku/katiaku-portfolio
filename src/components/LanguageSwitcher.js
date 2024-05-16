@@ -14,6 +14,7 @@ export default function LanguageSwitcher() {
             value={i18n.language}
             onChange={handleLanguageChange}
             className="bg-transparent menu-item focus:outline-none"
+            aria-label="Choose language: English or Spanish"
         >
             <option value="en">EN</option>
             <option value="es">ES</option>

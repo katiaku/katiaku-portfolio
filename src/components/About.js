@@ -57,24 +57,24 @@ export default function About() {
             >
                 <div className={`lg:w-1/3 text-left leading-7 lg:leading-8 text-gray-700 md:text-xl dark:text-white`}>
                     <div className='flex pb-2 items-start gap-4'>
-                    <AiFillCheckCircle className="mt-[4px] text-xl shrink-0 text-blue-500 dark:text-teal-100"/>
-                    <h6 className='font-bold uppercase text-blue-500 dark:text-teal-100'>{ t("about_attention_to_detail_header") }</h6>
+                    <AiFillCheckCircle className="mt-[4px] text-xl shrink-0 text-slate-800 dark:text-teal-100"/>
+                    <h4 className='font-semibold uppercase text-slate-800 dark:text-teal-100'>{ t("about_attention_to_detail_header") }</h4>
                     </div>
                     <p>{ t("about_attention_to_detail_content") }</p>
                 </div>
 
                 <div className={`lg:w-1/3 text-left text-md leading-7 lg:leading-8 text-gray-700 md:text-xl dark:text-white`}>
                     <div className='flex pb-2 items-start gap-4'>
-                    <AiFillCheckCircle className="mt-[4px] text-xl shrink-0 text-blue-500 dark:text-teal-100"/>
-                    <h6 className='font-bold uppercase text-blue-500 dark:text-teal-100'>{ t("about_innovative_problem_solving_header") }</h6>
+                    <AiFillCheckCircle className="mt-[4px] text-xl shrink-0 text-slate-800 dark:text-teal-100"/>
+                    <h4 className='font-semibold uppercase text-slate-800 dark:text-teal-100'>{ t("about_innovative_problem_solving_header") }</h4>
                     </div>
                     <p>{ t("about_innovative_problem_solving_content") }</p>
                 </div>
 
                 <div className={`lg:w-1/3 text-left text-md leading-7 lg:leading-8 text-gray-700 md:text-xl dark:text-white`}>
                     <div className='flex pb-2 items-start gap-4'>
-                    <AiFillCheckCircle className="mt-[4px] text-xl shrink-0 text-blue-500 dark:text-teal-100"/>
-                    <h6 className='font-bold uppercase text-blue-500 dark:text-teal-100'>{ t("about_adaptability_header") }</h6>
+                    <AiFillCheckCircle className="mt-[4px] text-xl shrink-0 text-slate-800 dark:text-teal-100"/>
+                    <h4 className='font-semibold uppercase text-slate-800 dark:text-teal-100'>{ t("about_adaptability_header") }</h4>
                     </div>
                     <p>{ t("about_adaptability_content") }</p>
                 </div>

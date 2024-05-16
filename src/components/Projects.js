@@ -61,7 +61,7 @@ export default function Projects() {
                         </span>
                     </div>
                     <p className='dark:text-white pt-2 cursor-default'>
-                        <a className="text-blue-500 dark:text-blue-400 font-bold" target="_blank" href="https://kanban-vue-ruby.vercel.app/">KanbanVue</a>{ t("project_description_kanban_vue") }
+                        <a className="text-slate-800 dark:text-blue-400 font-bold uppercase" target="_blank" href="https://kanban-vue-ruby.vercel.app/">KanbanVue</a>{ t("project_description_kanban_vue") }
                     </p>
                 </div>
 
@@ -85,7 +85,7 @@ export default function Projects() {
                         </span>
                     </div>
                     <p className='dark:text-white pt-2 cursor-default'>
-                        <a className="text-blue-500 dark:text-blue-400 font-bold" target="_blank" href="https://jscodegamer.vercel.app">JSCODEGAMER </a>{ t("project_description_js_code_gamer") }
+                        <a className="text-slate-800 dark:text-blue-400 font-bold uppercase" target="_blank" href="https://jscodegamer.vercel.app">JSCODEGAMER </a>{ t("project_description_js_code_gamer") }
                     </p>
                 </div>
 
@@ -106,7 +106,7 @@ export default function Projects() {
                         </span>
                     </div>
                     <p className='dark:text-white pt-2 cursor-default'>
-                        <a className="text-blue-500 dark:text-blue-400 font-bold" target="_blank" href="https://github.com/katiaku/task-manager">Task Manager App</a>{ t("project_description_task_manager") }
+                        <a className="text-slate-800 dark:text-blue-400 font-bold uppercase" target="_blank" href="https://github.com/katiaku/task-manager">Task Manager App</a>{ t("project_description_task_manager") }
                     </p>
                 </div>
 
@@ -130,7 +130,7 @@ export default function Projects() {
                         </span>
                     </div>
                     <p className='dark:text-white pt-2 cursor-default'>
-                        <a className="text-blue-500 dark:text-blue-400 font-bold" target="_blank" href="https://github.com/katiaku/my-birthday">Birthday Planner</a>{ t("project_description_birthday_planner") }
+                        <a className="text-slate-800 dark:text-blue-400 font-bold uppercase" target="_blank" href="https://github.com/katiaku/my-birthday">Birthday Planner</a>{ t("project_description_birthday_planner") }
                     </p>
                 </div>
             </div>
