@@ -44,7 +44,7 @@ export default function Projects() {
 
             <div className='flex flex-col md:gap-32 py-14'>
                 <div className='relative lg:h-[470px]'>
-                    <div className='mb-2 md:mb-0 glass p-6 lg:p-10 md:w-2/3 md:absolute md:right-0 md:top-8 hover-scale'>
+                    <div className='opacity-60 mb-4 md:mb-0 glass p-6 lg:p-10 md:w-2/3 md:absolute md:right-0 md:top-8 hover-scale'>
                         <Image
                             src={kanbanVue}
                             alt={ t("kanban_vue_screenshot") }
@@ -76,21 +76,21 @@ export default function Projects() {
                         <div className='flex flex-col items-center gap-8'>
                             <a
                                 aria-label="KanbanVue app GitHub repository"
-                                className="text-2xl lg:text-3xl text-slate-600"
+                                className="text-2xl lg:text-3xl text-slate-600 dark:text-slate-800 hover:text-purple-700 dark:hover:text-blue-400 transition-all duration-300"
                                 target="_blank"
                                 href="">
                                 <FaGithub />
                             </a>
                             <a
                                 aria-label="KanbanVue app web page"
-                                className="text-2xl lg:text-3xl text-slate-600"
+                                className="text-2xl lg:text-3xl text-slate-600 dark:text-slate-800 hover:text-purple-700 dark:hover:text-blue-400 transition-all duration-300"
                                 target="_blank"
                                 href="">
                                 <FaPlay />
                             </a>
                             <a
                                 aria-label="KanbanVue app web page"
-                                className="text-2xl lg:text-3xl text-slate-600"
+                                className="text-2xl lg:text-3xl text-slate-600 dark:text-slate-800 hover:text-purple-700 dark:hover:text-blue-400 transition-all duration-300"
                                 target="_blank"
                                 href="">
                                 <FaExternalLinkAlt />
@@ -100,7 +100,7 @@ export default function Projects() {
                 </div>
 
                 <div className='relative lg:h-[470px]'>
-                    <div className='mb-2 md:mb-0 glass p-6 lg:p-10 md:w-2/3 md:absolute md:right-0 md:top-8 hover-scale'>
+                    <div className='opacity-60 mb-4 md:mb-0 glass p-6 lg:p-10 md:w-2/3 md:absolute md:right-0 md:top-8 hover-scale'>
                         <Image
                             src={jsCodeGamer}
                             alt={ t("js_code_gamer_vue_screenshot") }
@@ -132,21 +132,21 @@ export default function Projects() {
                         <div className='flex flex-col items-center gap-8'>
                             <a
                                 aria-label="JSCodeGamer app GitHub repository"
-                                className="text-2xl lg:text-3xl text-white"
+                                className="text-2xl lg:text-3xl text-slate-600 md:text-white dark:text-slate-800 md:dark:text-white  hover:text-purple-700 dark:hover:text-blue-400 transition-all duration-300"
                                 target="_blank"
                                 href="">
                                 <FaGithub />
                             </a>
                             <a
                                 aria-label="JSCodeGamer app web page"
-                                className="text-2xl lg:text-3xl text-white"
+                                className="text-2xl lg:text-3xl text-slate-600 md:text-white dark:text-slate-800 md:dark:text-white  hover:text-purple-700 dark:hover:text-blue-400 transition-all duration-300"
                                 target="_blank"
                                 href="">
                                 <FaPlay />
                             </a>
                             <a
                                 aria-label="JSCodeGamer app web page"
-                                className="text-2xl lg:text-3xl text-white"
+                                className="text-2xl lg:text-3xl text-slate-600 md:text-white dark:text-slate-800 md:dark:text-white  hover:text-purple-700 dark:hover:text-blue-400 transition-all duration-300"
                                 target="_blank"
                                 href="">
                                 <FaExternalLinkAlt />
@@ -156,11 +156,11 @@ export default function Projects() {
                 </div>
 
                 <div className='relative lg:h-[470px]'>
-                    <div className='mb-2 md:mb-0 glass p-6 lg:p-10 md:w-2/3 md:absolute md:right-0 md:top-8 hover-scale'>
+                    <div className='opacity-60 mb-4 md:mb-0 glass p-6 lg:p-10 md:w-2/3 md:absolute md:right-0 md:top-8 hover-scale'>
                         <Image
                             src={taskManager}
                             alt={ t("task_manager_screenshot") }
-                            className='mb-2 md:mb-0 object-cover'
+                            className='mb-4 md:mb-0 object-cover'
                             width={'100%'}
                             height={'100%'}
                         />
@@ -185,21 +185,21 @@ export default function Projects() {
                         <div className='flex flex-col items-center gap-8'>
                             <a
                                 aria-label="Task Manager app GitHub repository"
-                                className="text-2xl lg:text-3xl text-slate-600"
+                                className="text-2xl lg:text-3xl text-slate-600 dark:text-slate-800 hover:text-purple-700 dark:hover:text-blue-400 transition-all duration-300"
                                 target="_blank"
                                 href="">
                                 <FaGithub />
                             </a>
                             <a
                                 aria-label="Task Manager app web page"
-                                className="text-2xl lg:text-3xl text-slate-600"
+                                className="text-2xl lg:text-3xl text-slate-600 dark:text-slate-800 hover:text-purple-700 dark:hover:text-blue-400 transition-all duration-300"
                                 target="_blank"
                                 href="">
                                 <FaPlay />
                             </a>
                             <a
                                 aria-label="Task Manager app web page"
-                                className="text-2xl lg:text-3xl text-slate-600"
+                                className="text-2xl lg:text-3xl text-slate-600 dark:text-slate-800 hover:text-purple-700 dark:hover:text-blue-400 transition-all duration-300"
                                 target="_blank"
                                 href="">
                                 <FaExternalLinkAlt />
@@ -209,7 +209,7 @@ export default function Projects() {
                 </div>
 
                 <div className='relative lg:h-[470px]'>
-                    <div className='mb-2 md:mb-0 glass p-6 lg:p-10 md:w-2/3 md:absolute md:right-0 md:top-8 hover-scale'>
+                    <div className='opacity-60 mb-4 md:mb-0 glass p-6 lg:p-10 md:w-2/3 md:absolute md:right-0 md:top-8 hover-scale'>
                         <Image
                             src={birthdayPlanner}
                             alt={ t("birthday_planner_screenshot") }
@@ -241,21 +241,21 @@ export default function Projects() {
                         <div className='flex flex-col items-center gap-8'>
                             <a
                                 aria-label="Birthday Planner app GitHub repository"
-                                className="text-2xl lg:text-3xl text-slate-600"
+                                className="text-2xl lg:text-3xl text-slate-600 dark:text-slate-800 hover:text-purple-700 dark:hover:text-blue-400 transition-all duration-300"
                                 target="_blank"
                                 href="">
                                 <FaGithub />
                             </a>
                             <a
                                 aria-label="Birthday Planner app web page"
-                                className="text-2xl lg:text-3xl text-slate-600"
+                                className="text-2xl lg:text-3xl text-slate-600 dark:text-slate-800 hover:text-purple-700 dark:hover:text-blue-400 transition-all duration-300"
                                 target="_blank"
                                 href="">
                                 <FaPlay />
                             </a>
                             <a
                                 aria-label="Birthday Planner app web page"
-                                className="text-2xl lg:text-3xl text-slate-600"
+                                className="text-2xl lg:text-3xl text-slate-600 dark:text-slate-800 hover:text-purple-700 dark:hover:text-blue-400 transition-all duration-300"
                                 target="_blank"
                                 href="">
                                 <FaExternalLinkAlt />
