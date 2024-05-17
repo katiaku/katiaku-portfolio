@@ -30,7 +30,7 @@
   }
 
   .tech-used {
-    @apply bg-slate-700 dark:bg-blue-500 text-white text-xs cursor-default rounded-xl px-2 py-1
+    @apply bg-slate-600 dark:bg-blue-500 text-white text-[0.6rem] lg:text-[0.7rem] lg:font-semibold cursor-default rounded-xl px-2 py-1
   }
 
   .tech-subj {
@@ -46,7 +46,7 @@
   }
 
   .section-title {
-    @apply cursor-default text-3xl px-10 mb-8 text-purple-700 dark:text-blue-400 font-bold text-center
+    @apply cursor-default text-3xl md:text-4xl px-10 mb-8 text-purple-700 dark:text-blue-400 font-bold text-center
   }
 
   .about-card {
@@ -84,12 +84,6 @@
   border-radius: 10px;
 }
 
-.glass-project {
-  background: rgba( 255, 255, 255, 0.25 );
-  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-  border-radius: 10px;
-}
-
 .ellipse-purple {
   right: -10rem;
   top: 0;
@@ -112,6 +106,7 @@
 .hover-scale:hover,
 .hover-scale:active {
   transform: scale(1.1);
+  z-index: 99;
 }
 
 @media (max-width: 1200px) {

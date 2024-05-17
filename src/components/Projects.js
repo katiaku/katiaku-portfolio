@@ -8,6 +8,8 @@ import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
 import translationEN from "../locales/en/translation.json";
 import translationES from "../locales/es/translation.json";
+import { FaGithub, FaExternalLinkAlt, FaPlay } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 const resources = {
     en: {
@@ -34,104 +36,232 @@ export default function Projects() {
     return (
         <section
             id="projects"
-            className="relative scroll-mt-28 snap-start px-8 md:px-20"
+            className="relative scroll-mt-28 snap-start pt-20 mb-20 px-8 md:px-20"
         >
             <div>
                 <h3 className='section-title uppercase'>{ t("section_header_my_work") }</h3>
             </div>
 
-            <div className='flex flex-col gap-20 lg:gap-12 py-10 lg:flex-row lg:flex-wrap'>
-                <div className='basis-1/3 flex-1'>
-                    <Image
-                        src={kanbanVue}
-                        alt={ t("kanban_vue_screenshot") }
-                        className='glass-project hover-scale object-cover'
-                        width={'100%'}
-                        height={'100%'}
-                    />
-                    <div className='flex gap-2 pt-8 pb-2'>
-                        <span className='tech-used'>
-                            Nuxt3
-                        </span>
-                        <span className='tech-used'>
-                            TypeScript
-                        </span>
-                        <span className='tech-used'>
-                            Tailwind CSS
-                        </span>
+            <div className='flex flex-col md:gap-32 py-14'>
+                <div className='relative lg:h-[470px]'>
+                    <div className='mb-2 md:mb-0 glass p-6 lg:p-10 md:w-2/3 md:absolute md:right-0 md:top-8 hover-scale'>
+                        <Image
+                            src={kanbanVue}
+                            alt={ t("kanban_vue_screenshot") }
+                            className='object-cover'
+                            width={'100%'}
+                            height={'100%'}
+                        />
                     </div>
-                    <p className='dark:text-white pt-2 cursor-default'>
-                        <a className="text-slate-800 dark:text-blue-400 font-bold uppercase" target="_blank" href="https://kanban-vue-ruby.vercel.app/">KanbanVue</a>{ t("project_description_kanban_vue") }
-                    </p>
+
+                    <div className='mb-20 md:mb-0 glass p-6 lg:p-10 md:w-3/5 lg:w-1/2 flex gap-6 lg:gap-10 items-center'>
+                        <div className='flex flex-col gap-6'>
+                            <p className='dark:text-white pt-2 cursor-default'>
+                                <a className="text-slate-800 dark:text-blue-400 font-bold uppercase text-2xl mr-2" target="_blank" href="https://kanban-vue-ruby.vercel.app/">KanbanVue</a>{ t("project_description_kanban_vue") }
+                            </p>
+
+                            <div className='flex gap-2'>
+                                <span className='tech-used'>
+                                    Nuxt3
+                                </span>
+                                <span className='tech-used'>
+                                    TypeScript
+                                </span>
+                                <span className='tech-used'>
+                                    Tailwind CSS
+                                </span>
+                            </div>
+                        </div>
+
+                        <div className='flex flex-col items-center gap-8'>
+                            <a
+                                aria-label="KanbanVue app GitHub repository"
+                                className="text-2xl lg:text-3xl text-slate-600"
+                                target="_blank"
+                                href="">
+                                <FaGithub />
+                            </a>
+                            <a
+                                aria-label="KanbanVue app web page"
+                                className="text-2xl lg:text-3xl text-slate-600"
+                                target="_blank"
+                                href="">
+                                <FaPlay />
+                            </a>
+                            <a
+                                aria-label="KanbanVue app web page"
+                                className="text-2xl lg:text-3xl text-slate-600"
+                                target="_blank"
+                                href="">
+                                <FaExternalLinkAlt />
+                            </a>
+                        </div>
+                    </div>
                 </div>
 
-                <div className='basis-1/3 flex-1'>
-                    <Image
-                        src={jsCodeGamer}
-                        alt={ t("js_code_gamer_vue_screenshot") }
-                        className='glass-project hover-scale object-cover'
-                        width={'100%'}
-                        height={'100%'}
-                    />
-                    <div className='flex gap-2 pt-8 pb-2'>
-                        <span className='tech-used'>
-                            Angular
-                        </span>
-                        <span className='tech-used'>
-                            Express.js
-                        </span>
-                        <span className='tech-used'>
-                            MySQL
-                        </span>
+                <div className='relative lg:h-[470px]'>
+                    <div className='mb-2 md:mb-0 glass p-6 lg:p-10 md:w-2/3 md:absolute md:right-0 md:top-8 hover-scale'>
+                        <Image
+                            src={jsCodeGamer}
+                            alt={ t("js_code_gamer_vue_screenshot") }
+                            className='object-cover'
+                            width={'100%'}
+                            height={'100%'}
+                        />
                     </div>
-                    <p className='dark:text-white pt-2 cursor-default'>
-                        <a className="text-slate-800 dark:text-blue-400 font-bold uppercase" target="_blank" href="https://jscodegamer.vercel.app">JSCODEGAMER </a>{ t("project_description_js_code_gamer") }
-                    </p>
+    
+                    <div className='mb-20 md:mb-0 glass p-6 lg:p-10 md:w-3/5 lg:w-1/2 flex gap-6 lg:gap-10 items-center'>
+                        <div className='flex flex-col gap-6'>
+                            <p className='dark:text-white pt-2 cursor-default'>
+                                <a className="text-slate-800 dark:text-blue-400 font-bold uppercase text-2xl mr-2" target="_blank" href="https://jscodegamer.vercel.app">JSCODEGAMER </a>{ t("project_description_js_code_gamer") }
+                            </p>
+
+                            <div className='flex gap-2'>
+                                <span className='tech-used'>
+                                    Angular
+                                </span>
+                                <span className='tech-used'>
+                                    Express.js
+                                </span>
+                                <span className='tech-used'>
+                                    MySQL
+                                </span>
+                            </div>
+                        </div>
+
+                        <div className='flex flex-col items-center gap-8'>
+                            <a
+                                aria-label="JSCodeGamer app GitHub repository"
+                                className="text-2xl lg:text-3xl text-white"
+                                target="_blank"
+                                href="">
+                                <FaGithub />
+                            </a>
+                            <a
+                                aria-label="JSCodeGamer app web page"
+                                className="text-2xl lg:text-3xl text-white"
+                                target="_blank"
+                                href="">
+                                <FaPlay />
+                            </a>
+                            <a
+                                aria-label="JSCodeGamer app web page"
+                                className="text-2xl lg:text-3xl text-white"
+                                target="_blank"
+                                href="">
+                                <FaExternalLinkAlt />
+                            </a>
+                        </div>
+                    </div>
                 </div>
 
-                <div className='basis-1/3 flex-1'>
-                    <Image
-                        src={taskManager}
-                        alt={ t("task_manager_screenshot") }
-                        className='glass-project hover-scale object-cover'
-                        width={'100%'}
-                        height={'100%'}
-                    />
-                    <div className='flex gap-2 pt-8 pb-2'>
-                        <span className='tech-used'>
-                            React
-                        </span>
-                        <span className='tech-used'>
-                            Bootstrap
-                        </span>
+                <div className='relative lg:h-[470px]'>
+                    <div className='mb-2 md:mb-0 glass p-6 lg:p-10 md:w-2/3 md:absolute md:right-0 md:top-8 hover-scale'>
+                        <Image
+                            src={taskManager}
+                            alt={ t("task_manager_screenshot") }
+                            className='mb-2 md:mb-0 object-cover'
+                            width={'100%'}
+                            height={'100%'}
+                        />
                     </div>
-                    <p className='dark:text-white pt-2 cursor-default'>
-                        <a className="text-slate-800 dark:text-blue-400 font-bold uppercase" target="_blank" href="https://github.com/katiaku/task-manager">Task Manager App</a>{ t("project_description_task_manager") }
-                    </p>
+    
+                    <div className='mb-20 md:mb-0 glass p-6 lg:p-10 md:w-3/5 lg:w-1/2 flex gap-6 lg:gap-10 items-center'>
+                        <div className='flex flex-col gap-6'>
+                            <p className='dark:text-white pt-2 cursor-default'>
+                                <a className="text-slate-800 dark:text-blue-400 font-bold uppercase text-2xl mr-2" target="_blank" href="https://github.com/katiaku/task-manager">Task Manager</a>{ t("project_description_task_manager") }
+                            </p>
+
+                            <div className='flex gap-2'>
+                                <span className='tech-used'>
+                                    React
+                                </span>
+                                <span className='tech-used'>
+                                    Bootstrap
+                                </span>
+                            </div>
+                        </div>
+
+                        <div className='flex flex-col items-center gap-8'>
+                            <a
+                                aria-label="Task Manager app GitHub repository"
+                                className="text-2xl lg:text-3xl text-slate-600"
+                                target="_blank"
+                                href="">
+                                <FaGithub />
+                            </a>
+                            <a
+                                aria-label="Task Manager app web page"
+                                className="text-2xl lg:text-3xl text-slate-600"
+                                target="_blank"
+                                href="">
+                                <FaPlay />
+                            </a>
+                            <a
+                                aria-label="Task Manager app web page"
+                                className="text-2xl lg:text-3xl text-slate-600"
+                                target="_blank"
+                                href="">
+                                <FaExternalLinkAlt />
+                            </a>
+                        </div>
+                    </div>
                 </div>
 
-                <div className='basis-1/3 flex-1'>
-                    <Image
-                        src={birthdayPlanner}
-                        alt={ t("birthday_planner_screenshot") }
-                        className='glass-project hover-scale object-cover'
-                        width={'100%'}
-                        height={'100%'}
-                    />
-                    <div className='flex gap-2 pt-8 pb-2'>
-                        <span className='tech-used'>
-                            CakePHP
-                        </span>
-                        <span className='tech-used'>
-                            MySQL
-                        </span>
-                        <span className='tech-used'>
-                            Bootstrap
-                        </span>
+                <div className='relative lg:h-[470px]'>
+                    <div className='mb-2 md:mb-0 glass p-6 lg:p-10 md:w-2/3 md:absolute md:right-0 md:top-8 hover-scale'>
+                        <Image
+                            src={birthdayPlanner}
+                            alt={ t("birthday_planner_screenshot") }
+                            className='object-cover'
+                            width={'100%'}
+                            height={'100%'}
+                        />
                     </div>
-                    <p className='dark:text-white pt-2 cursor-default'>
-                        <a className="text-slate-800 dark:text-blue-400 font-bold uppercase" target="_blank" href="https://github.com/katiaku/my-birthday">Birthday Planner</a>{ t("project_description_birthday_planner") }
-                    </p>
+    
+                    <div className='glass p-6 lg:p-10 md:w-3/5 lg:w-1/2 flex gap-6 lg:gap-10 items-center'>
+                        <div className='flex flex-col gap-6'>
+                            <p className='dark:text-white pt-2 cursor-default'>
+                                <a className="text-slate-800 dark:text-blue-400 font-bold uppercase text-2xl mr-2" target="_blank" href="https://github.com/katiaku/my-birthday">Birthday Planner</a>{ t("project_description_birthday_planner") }
+                            </p>
+
+                            <div className='flex gap-2'>
+                                <span className='tech-used'>
+                                    CakePHP
+                                </span>
+                                <span className='tech-used'>
+                                    MySQL
+                                </span>
+                                <span className='tech-used'>
+                                    Bootstrap
+                                </span>
+                            </div>
+                        </div>
+
+                        <div className='flex flex-col items-center gap-8'>
+                            <a
+                                aria-label="Birthday Planner app GitHub repository"
+                                className="text-2xl lg:text-3xl text-slate-600"
+                                target="_blank"
+                                href="">
+                                <FaGithub />
+                            </a>
+                            <a
+                                aria-label="Birthday Planner app web page"
+                                className="text-2xl lg:text-3xl text-slate-600"
+                                target="_blank"
+                                href="">
+                                <FaPlay />
+                            </a>
+                            <a
+                                aria-label="Birthday Planner app web page"
+                                className="text-2xl lg:text-3xl text-slate-600"
+                                target="_blank"
+                                href="">
+                                <FaExternalLinkAlt />
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
