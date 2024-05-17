@@ -9,7 +9,7 @@ import { initReactI18next } from "react-i18next";
 import translationEN from "../locales/en/translation.json";
 import translationES from "../locales/es/translation.json";
 import { FaGithub, FaExternalLinkAlt, FaPlay } from "react-icons/fa";
-import { motion } from "framer-motion";
+
 
 const resources = {
     en: {
@@ -57,7 +57,7 @@ export default function Projects() {
                     <div className='mb-20 md:mb-0 glass p-6 lg:p-10 md:w-3/5 lg:w-1/2 flex gap-6 lg:gap-10 items-center'>
                         <div className='flex flex-col gap-6'>
                             <p className='dark:text-white pt-2 cursor-default'>
-                                <a className="text-slate-800 dark:text-blue-400 font-bold uppercase text-2xl mr-2" target="_blank" href="https://kanban-vue-ruby.vercel.app/">KanbanVue</a>{ t("project_description_kanban_vue") }
+                                <span className="text-slate-800 dark:text-blue-400 font-bold uppercase text-2xl mr-2">KanbanVue</span>{ t("project_description_kanban_vue") }
                             </p>
 
                             <div className='flex gap-2'>
@@ -78,21 +78,21 @@ export default function Projects() {
                                 aria-label="KanbanVue app GitHub repository"
                                 className="text-2xl lg:text-3xl text-slate-600 dark:text-slate-800 hover:text-purple-700 dark:hover:text-blue-400 transition-all duration-300"
                                 target="_blank"
-                                href="">
+                                href="https://github.com/katiaku/kanban-vue">
                                 <FaGithub />
                             </a>
-                            <a
-                                aria-label="KanbanVue app web page"
+                            {/* <a
+                                aria-label="KanbanVue app demo"
                                 className="text-2xl lg:text-3xl text-slate-600 dark:text-slate-800 hover:text-purple-700 dark:hover:text-blue-400 transition-all duration-300"
                                 target="_blank"
                                 href="">
                                 <FaPlay />
-                            </a>
+                            </a> */}
                             <a
-                                aria-label="KanbanVue app web page"
+                                aria-label="KanbanVue app page"
                                 className="text-2xl lg:text-3xl text-slate-600 dark:text-slate-800 hover:text-purple-700 dark:hover:text-blue-400 transition-all duration-300"
                                 target="_blank"
-                                href="">
+                                href="https://kanban-vue-ruby.vercel.app">
                                 <FaExternalLinkAlt />
                             </a>
                         </div>
@@ -113,7 +113,7 @@ export default function Projects() {
                     <div className='mb-20 md:mb-0 glass p-6 lg:p-10 md:w-3/5 lg:w-1/2 flex gap-6 lg:gap-10 items-center'>
                         <div className='flex flex-col gap-6'>
                             <p className='dark:text-white pt-2 cursor-default'>
-                                <a className="text-slate-800 dark:text-blue-400 font-bold uppercase text-2xl mr-2" target="_blank" href="https://jscodegamer.vercel.app">JSCODEGAMER </a>{ t("project_description_js_code_gamer") }
+                                <span className="text-slate-800 dark:text-blue-400 font-bold uppercase text-2xl mr-2">JSCODEGAMER </span>{ t("project_description_js_code_gamer") }
                             </p>
 
                             <div className='flex gap-2'>
@@ -134,21 +134,21 @@ export default function Projects() {
                                 aria-label="JSCodeGamer app GitHub repository"
                                 className="text-2xl lg:text-3xl text-slate-600 md:text-white dark:text-slate-800 md:dark:text-white  hover:text-purple-700 dark:hover:text-blue-400 transition-all duration-300"
                                 target="_blank"
-                                href="">
+                                href="https://github.com/katiaku/js_code_gamer">
                                 <FaGithub />
                             </a>
                             <a
-                                aria-label="JSCodeGamer app web page"
+                                aria-label="JSCodeGamer app demo"
                                 className="text-2xl lg:text-3xl text-slate-600 md:text-white dark:text-slate-800 md:dark:text-white  hover:text-purple-700 dark:hover:text-blue-400 transition-all duration-300"
                                 target="_blank"
-                                href="">
+                                href="https://www.loom.com/share/cc5bf9b206104f21807e8880e24d04fd?sid=d4bf0933-0423-47b3-ac8d-82ef959aae15">
                                 <FaPlay />
                             </a>
                             <a
-                                aria-label="JSCodeGamer app web page"
+                                aria-label="JSCodeGamer app page"
                                 className="text-2xl lg:text-3xl text-slate-600 md:text-white dark:text-slate-800 md:dark:text-white  hover:text-purple-700 dark:hover:text-blue-400 transition-all duration-300"
                                 target="_blank"
-                                href="">
+                                href="https://jscodegamer.vercel.app">
                                 <FaExternalLinkAlt />
                             </a>
                         </div>
@@ -187,23 +187,23 @@ export default function Projects() {
                                 aria-label="Task Manager app GitHub repository"
                                 className="text-2xl lg:text-3xl text-slate-600 dark:text-slate-800 hover:text-purple-700 dark:hover:text-blue-400 transition-all duration-300"
                                 target="_blank"
-                                href="">
+                                href="https://github.com/katiaku/task-manager">
                                 <FaGithub />
                             </a>
-                            <a
-                                aria-label="Task Manager app web page"
+                            {/* <a
+                                aria-label="Task Manager app demo"
                                 className="text-2xl lg:text-3xl text-slate-600 dark:text-slate-800 hover:text-purple-700 dark:hover:text-blue-400 transition-all duration-300"
                                 target="_blank"
                                 href="">
                                 <FaPlay />
-                            </a>
-                            <a
-                                aria-label="Task Manager app web page"
+                            </a> */}
+                            {/* <a
+                                aria-label="Task Manager app page"
                                 className="text-2xl lg:text-3xl text-slate-600 dark:text-slate-800 hover:text-purple-700 dark:hover:text-blue-400 transition-all duration-300"
                                 target="_blank"
                                 href="">
                                 <FaExternalLinkAlt />
-                            </a>
+                            </a> */}
                         </div>
                     </div>
                 </div>
@@ -243,23 +243,23 @@ export default function Projects() {
                                 aria-label="Birthday Planner app GitHub repository"
                                 className="text-2xl lg:text-3xl text-slate-600 dark:text-slate-800 hover:text-purple-700 dark:hover:text-blue-400 transition-all duration-300"
                                 target="_blank"
-                                href="">
+                                href="https://github.com/katiaku/my-birthday">
                                 <FaGithub />
                             </a>
-                            <a
-                                aria-label="Birthday Planner app web page"
+                            {/* <a
+                                aria-label="Birthday Planner app demo"
                                 className="text-2xl lg:text-3xl text-slate-600 dark:text-slate-800 hover:text-purple-700 dark:hover:text-blue-400 transition-all duration-300"
                                 target="_blank"
                                 href="">
                                 <FaPlay />
-                            </a>
-                            <a
-                                aria-label="Birthday Planner app web page"
+                            </a> */}
+                            {/* <a
+                                aria-label="Birthday Planner app page"
                                 className="text-2xl lg:text-3xl text-slate-600 dark:text-slate-800 hover:text-purple-700 dark:hover:text-blue-400 transition-all duration-300"
                                 target="_blank"
                                 href="">
                                 <FaExternalLinkAlt />
-                            </a>
+                            </a> */}
                         </div>
                     </div>
                 </div>
