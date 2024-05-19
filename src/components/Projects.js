@@ -44,7 +44,7 @@ export default function Projects() {
 
             <div className='flex flex-col md:gap-32 py-14'>
                 <div className='relative lg:h-[470px]'>
-                    <div className='opacity-60 mb-4 md:mb-0 glass p-6 lg:p-10 md:w-2/3 md:absolute md:right-0 md:top-8 hover-scale'>
+                    <div className='md:opacity-60 mb-4 md:mb-0 glass p-6 lg:p-10 md:w-2/3 md:absolute md:right-0 md:top-8 hover-scale'>
                         <Image
                             src={kanbanVue}
                             alt={ t("kanban_vue_screenshot") }
@@ -57,7 +57,7 @@ export default function Projects() {
                     <div className='mb-20 md:mb-0 glass p-6 lg:p-10 md:w-3/5 lg:w-1/2 flex gap-6 lg:gap-10 items-center'>
                         <div className='flex flex-col gap-6'>
                             <p className='dark:text-white pt-2 cursor-default'>
-                                <span className="text-slate-800 dark:text-blue-400 font-bold uppercase text-2xl mr-2">KanbanVue</span>{ t("project_description_kanban_vue") }
+                                <span className="text-slate-800 dark:text-blue-400 font-bold uppercase text-2xl mr-1">KanbanVue</span>{ t("project_description_kanban_vue") }
                             </p>
 
                             <div className='flex gap-2'>
@@ -100,7 +100,7 @@ export default function Projects() {
                 </div>
 
                 <div className='relative lg:h-[470px]'>
-                    <div className='opacity-60 mb-4 md:mb-0 glass p-6 lg:p-10 md:w-2/3 md:absolute md:right-0 md:top-8 hover-scale'>
+                    <div className='md:opacity-60 mb-4 md:mb-0 glass p-6 lg:p-10 md:w-2/3 md:absolute md:right-0 md:top-8 hover-scale'>
                         <Image
                             src={jsCodeGamer}
                             alt={ t("js_code_gamer_vue_screenshot") }
@@ -113,7 +113,7 @@ export default function Projects() {
                     <div className='mb-20 md:mb-0 glass p-6 lg:p-10 md:w-3/5 lg:w-1/2 flex gap-6 lg:gap-10 items-center'>
                         <div className='flex flex-col gap-6'>
                             <p className='dark:text-white pt-2 cursor-default'>
-                                <span className="text-slate-800 dark:text-blue-400 font-bold uppercase text-2xl mr-2">JSCODEGAMER </span>{ t("project_description_js_code_gamer") }
+                                <span className="text-slate-800 dark:text-blue-400 font-bold uppercase text-2xl mr-1">JSCODEGAMER</span>{ t("project_description_js_code_gamer") }
                             </p>
 
                             <div className='flex gap-2'>
@@ -156,11 +156,11 @@ export default function Projects() {
                 </div>
 
                 <div className='relative lg:h-[470px]'>
-                    <div className='opacity-60 mb-4 md:mb-0 glass p-6 lg:p-10 md:w-2/3 md:absolute md:right-0 md:top-8 hover-scale'>
+                    <div className='md:opacity-60 mb-4 md:mb-0 glass p-6 lg:p-10 md:w-2/3 md:absolute md:right-0 md:top-8 hover-scale'>
                         <Image
                             src={taskManager}
                             alt={ t("task_manager_screenshot") }
-                            className='mb-4 md:mb-0 object-cover'
+                            className='object-cover'
                             width={'100%'}
                             height={'100%'}
                         />
@@ -169,7 +169,7 @@ export default function Projects() {
                     <div className='mb-20 md:mb-0 glass p-6 lg:p-10 md:w-3/5 lg:w-1/2 flex gap-6 lg:gap-10 items-center'>
                         <div className='flex flex-col gap-6'>
                             <p className='dark:text-white pt-2 cursor-default'>
-                                <a className="text-slate-800 dark:text-blue-400 font-bold uppercase text-2xl mr-2" target="_blank" href="https://github.com/katiaku/task-manager">Task Manager</a>{ t("project_description_task_manager") }
+                                <a className="text-slate-800 dark:text-blue-400 font-bold uppercase text-2xl mr-1" target="_blank" href="https://github.com/katiaku/task-manager">Task Manager</a>{ t("project_description_task_manager") }
                             </p>
 
                             <div className='flex gap-2'>
@@ -209,7 +209,7 @@ export default function Projects() {
                 </div>
 
                 <div className='relative lg:h-[470px]'>
-                    <div className='opacity-60 mb-4 md:mb-0 glass p-6 lg:p-10 md:w-2/3 md:absolute md:right-0 md:top-8 hover-scale'>
+                    <div className='md:opacity-60 mb-4 md:mb-0 glass p-6 lg:p-10 md:w-2/3 md:absolute md:right-0 md:top-8 hover-scale'>
                         <Image
                             src={birthdayPlanner}
                             alt={ t("birthday_planner_screenshot") }
@@ -222,7 +222,7 @@ export default function Projects() {
                     <div className='glass p-6 lg:p-10 md:w-3/5 lg:w-1/2 flex gap-6 lg:gap-10 items-center'>
                         <div className='flex flex-col gap-6'>
                             <p className='dark:text-white pt-2 cursor-default'>
-                                <a className="text-slate-800 dark:text-blue-400 font-bold uppercase text-2xl mr-2" target="_blank" href="https://github.com/katiaku/my-birthday">Birthday Planner</a>{ t("project_description_birthday_planner") }
+                                <a className="text-slate-800 dark:text-blue-400 font-bold uppercase text-2xl mr-1" target="_blank" href="https://github.com/katiaku/my-birthday">Birthday Planner</a>{ t("project_description_birthday_planner") }
                             </p>
 
                             <div className='flex gap-2'>
