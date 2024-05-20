@@ -13,6 +13,8 @@ import Projects from '@/components/Projects';
 import Header from '@/components/Header';
 import { I18nextProvider } from "react-i18next";
 import i18next from "i18next";
+import Sidebar from '@/components/Sidebar';
+
 
 i18next.init({
   interpolation: { escapeValue: false },
@@ -35,6 +37,7 @@ export default function Home() {
           id="main"
           className='scroll-smooth snap-y relative select-none bg-slate-100 pb-10 dark:bg-gray-900 transition-all duration-300 w-screen overflow-hidden'
         >
+          <Sidebar />
 
           <div id="background" className='absolute w-full z-0'>
             <Image

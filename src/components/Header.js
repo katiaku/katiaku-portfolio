@@ -2,6 +2,7 @@ import { useState } from 'react';
 import Image from 'next/image';
 import logo from '../app/icon.png';
 import { AiFillLinkedin, AiFillGithub } from 'react-icons/ai';
+import { GiHamburgerMenu } from "react-icons/gi";
 import { Expand } from "@theme-toggles/react";
 import LanguageSwitcher from './LanguageSwitcher';
 import { useTranslation } from "react-i18next";
@@ -35,18 +36,17 @@ export default function Header({ darkMode, toggleDarkMode }) {
     const [isToggled, setToggle] = useState(true);
 
     return (
-        <nav className='header-glass fixed w-full z-10 py-3 px-5 flex'>
+        <nav className='header-glass fixed w-full z-20 py-3 px-5 flex'>
             <div className='flex justify-center items-center'>
                 <Image
                     src={logo}
                     alt={ t("logo") }
                     width={30}
                     height={30}
-                    className=''
                 />
             </div>
 
-            <ul className='flex items-center w-full justify-evenly'>
+            <ul className='hidden md:flex items-center w-full justify-evenly'>
                 <li className='menu-item'>
                     <a className='uppercase' href="#about">
                         { t("header_about") }
@@ -64,25 +64,36 @@ export default function Header({ darkMode, toggleDarkMode }) {
                 </li>
             </ul>
 
-            <ul className='flex items-center gap-6'>
-                <li>
+            <ul className='flex items-center gap-6 ml-auto md:ml-0'>
+                <li className='hidden md:flex'>
                     <a
                         aria-label="LinkedIn"
                         className="icon-link"
                         target="_blank"
-                        href="https://www.linkedin.com/in/ekaterina-kushnir-mikhaylova">
+                        href="https://www.linkedin.com/in/ekaterina-kushnir-mikhaylova"
+                    >
                         <AiFillLinkedin />
                     </a>
                 </li>
-                <li>
+                <li className='hidden md:flex'>
                     <a
                         aria-label="GitHub"
                         className="icon-link"
                         target="_blank"
-                        href="https://github.com/katiaku">
+                        href="https://github.com/katiaku"
+                    >
                         <AiFillGithub />
                     </a>
                 </li>
+
+                <li className='md:hidden'>
+                    <div
+                        className="icon-link"
+                    >
+                        <GiHamburgerMenu />
+                    </div>
+                </li>
+
                 <li className='flex justify-center'>
                     <Expand  
                         toggled={isToggled} 
@@ -95,7 +106,7 @@ export default function Header({ darkMode, toggleDarkMode }) {
                 </li>
             </ul>
 
-            <div className='flex justify-center items-center ml-4 pt-[2px]'>
+            <div className='flex justify-center items-center ml-5 md:ml-4 pt-[2px]'>
                 <LanguageSwitcher />
             </div>
         </nav>
