@@ -23,30 +23,29 @@ i18n.use(initReactI18next).init({
     },
 });
 
-export default function Sidebar() {
+export default function Sidebar({ isOpen, onClose }) {
 
     const { t } = useTranslation();
 
     return (
-        <nav className='md:hidden header-glass fixed h-full w-2/3 z-10 py-3 px-10 flex flex-col justify-center'>
-
-            <ul className='flex flex-col items-start gap-10'>
-                <li className='menu-item text-xl'>
+        <nav className={`sidebar ${isOpen ? 'open' : ''}`}>
+            <ul className='flex flex-col items-start gap-12'>
+                <li className='menu-item text-xl' onClick={onClose}>
                     <a className='uppercase' href="#about">
                         { t("header_about") }
                     </a>
                 </li>
-                <li className='menu-item text-xl'>
+                <li className='menu-item text-xl' onClick={onClose}>
                     <a className='uppercase' href="#tools">
                         { t("header_tools") }
                     </a>
                 </li>
-                <li className='menu-item text-xl'>
+                <li className='menu-item text-xl' onClick={onClose}>
                     <a className='uppercase' href="#projects">
                         { t("header_my_work") }
                     </a>
                 </li>
-                <li>
+                <li onClick={onClose}>
                     <a
                         aria-label="LinkedIn"
                         className="flex items-center gap-2 text-xl menu-item"
@@ -57,7 +56,7 @@ export default function Sidebar() {
                         <span className='uppercase font-semibold pt-1'>LinkedIn</span>
                     </a>
                 </li>
-                <li>
+                <li onClick={onClose}>
                     <a
                         aria-label="GitHub"
                         className="flex items-center gap-2 text-xl menu-item"

@@ -29,7 +29,7 @@ i18n.use(initReactI18next).init({
     },
 });
 
-export default function Header({ darkMode, toggleDarkMode }) {
+export default function Header({ toggleDarkMode, onHamburgerClick, isSidebarOpen }) {
 
     const { t } = useTranslation();
 
@@ -88,7 +88,8 @@ export default function Header({ darkMode, toggleDarkMode }) {
 
                 <li className='md:hidden'>
                     <div
-                        className="icon-link"
+                        className="cursor-pointer icon-link"
+                        onClick={ onHamburgerClick }
                     >
                         <GiHamburgerMenu />
                     </div>
@@ -96,11 +97,11 @@ export default function Header({ darkMode, toggleDarkMode }) {
 
                 <li className='flex justify-center'>
                     <Expand  
-                        toggled={isToggled} 
+                        toggled={ isToggled } 
                         toggle={() => {
                             setToggle(!isToggled);
                             toggleDarkMode();
-                        }} 
+                        }}
                         className='cursor-pointer icon-link'
                     />
                 </li>

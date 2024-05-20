@@ -14,7 +14,7 @@
 
 @layer components {
   .btn {
-    @apply w-full md:w-36 font-bold bg-teal-200 dark:bg-teal-100 dark:hover:bg-teal-200 hover:bg-teal-300 text-slate-800 py-1 leading-8 rounded-3xl transition-all duration-300 text-center
+    @apply w-full md:w-36 h-12 font-bold bg-teal-200 dark:bg-teal-100 dark:hover:bg-teal-200 hover:bg-teal-300 text-slate-800 py-2 leading-8 rounded-3xl transition-all duration-300 text-center
   }
 
   .menu-item {
@@ -72,7 +72,8 @@
 }
 
 .glass,
-.header-glass {
+.header-glass,
+.sidebar {
   background: rgba( 255, 255, 255, 0.25 );
   box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
   backdrop-filter: blur( 10px );
@@ -108,6 +109,25 @@
   transform: scale(1.1);
   z-index: 99;
   opacity: 1;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 250px;
+  height: 100%;
+  z-index: 9;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  padding-top: 7rem;
+  padding-inline: 2rem;
+  transition: left .7s ease-in-out;
+}
+
+.sidebar.open {
+  left: 0;
 }
 
 @media (max-width: 1200px) {

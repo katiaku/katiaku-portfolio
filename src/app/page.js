@@ -23,10 +23,15 @@ i18next.init({
 export default function Home() {
 
   const [darkMode, setDarkMode] = useState(false);
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+
+  const toggleSidebar = () => {
+    setIsSidebarOpen(!isSidebarOpen);
+  };
 
   return (
     <I18nextProvider i18n={i18next}>
-      <div className={darkMode ? "dark" : ""}>
+      <div className={ darkMode ? "dark" : "" }>
         <Head>
           <title>Web Developer Portfolio</title>
           <meta name="description" content="Web developer portfolio, modern web development with React, Angular and Vue." />
@@ -37,7 +42,7 @@ export default function Home() {
           id="main"
           className='scroll-smooth snap-y relative select-none bg-slate-100 pb-10 dark:bg-gray-900 transition-all duration-300 w-screen overflow-hidden'
         >
-          <Sidebar />
+          <Sidebar isOpen={ isSidebarOpen } onClose={ toggleSidebar } />
 
           <div id="background" className='absolute w-full z-0'>
             <Image
@@ -52,6 +57,7 @@ export default function Home() {
           <Header
               darkMode={ darkMode }
               toggleDarkMode={ () => setDarkMode(prevMode => !prevMode) }
+              onHamburgerClick={ toggleSidebar }
           />
 
           <Hero />
