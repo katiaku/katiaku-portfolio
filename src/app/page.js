@@ -58,6 +58,7 @@ export default function Home() {
               darkMode={ darkMode }
               toggleDarkMode={ () => setDarkMode(prevMode => !prevMode) }
               onHamburgerClick={ toggleSidebar }
+              isSidebarOpen={isSidebarOpen}
           />
 
           <Hero />

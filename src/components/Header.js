@@ -3,6 +3,7 @@ import Image from 'next/image';
 import logo from '../app/icon.png';
 import { AiFillLinkedin, AiFillGithub } from 'react-icons/ai';
 import { GiHamburgerMenu } from "react-icons/gi";
+import { FaRegWindowClose } from "react-icons/fa";
 import { Expand } from "@theme-toggles/react";
 import LanguageSwitcher from './LanguageSwitcher';
 import { useTranslation } from "react-i18next";
@@ -91,7 +92,7 @@ export default function Header({ toggleDarkMode, onHamburgerClick, isSidebarOpen
                         className="cursor-pointer icon-link"
                         onClick={ onHamburgerClick }
                     >
-                        <GiHamburgerMenu />
+                        {isSidebarOpen ? <FaRegWindowClose /> : <GiHamburgerMenu />}
                     </div>
                 </li>
 
@@ -107,7 +108,7 @@ export default function Header({ toggleDarkMode, onHamburgerClick, isSidebarOpen
                 </li>
             </ul>
 
-            <div className='flex justify-center items-center ml-5 md:ml-4 pt-[2px]'>
+            <div className='flex justify-center items-center ml-5 md:ml-4 md:pt-[1px]'>
                 <LanguageSwitcher />
             </div>
         </nav>
