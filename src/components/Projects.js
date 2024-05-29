@@ -81,13 +81,13 @@ export default function Projects() {
                                 href="https://github.com/katiaku/kanban-vue">
                                 <FaGithub />
                             </a>
-                            {/* <a
+                            <a
                                 aria-label="KanbanVue app demo"
                                 className="text-2xl lg:text-3xl text-slate-600 dark:text-slate-800 hover:text-purple-700 dark:hover:text-blue-400 transition-all duration-300"
                                 target="_blank"
-                                href="">
+                                href="https://www.linkedin.com/feed/update/urn:li:activity:7194297394845335554/">
                                 <FaPlay />
-                            </a> */}
+                            </a>
                             <a
                                 aria-label="KanbanVue app page"
                                 className="text-2xl lg:text-3xl text-slate-600 dark:text-slate-800 hover:text-purple-700 dark:hover:text-blue-400 transition-all duration-300"
