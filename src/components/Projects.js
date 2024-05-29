@@ -1,8 +1,8 @@
 import Image from 'next/image';
-import taskManager from '../../public/taskManager.png';
-import birthdayPlanner from '../../public/birthdayPlanner.png';
-import jsCodeGamer from '../../public/jscodegamer_game.png';
-import kanbanVue from '../../public/kanbanVue.png';
+import taskManager from '../../public/TaskManager_screen.png';
+import birthdayPlanner from '../../public/BirthdayPlanner_screen.png';
+import jsCodeGamer from '../../public/JsCodeGamer_screen.png';
+import kanbanVue from '../../public/KanbanVue_screen.png';
 import { useTranslation } from "react-i18next";
 import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
@@ -132,21 +132,21 @@ export default function Projects() {
                         <div className='flex flex-col items-center gap-8'>
                             <a
                                 aria-label="JSCodeGamer app GitHub repository"
-                                className="text-2xl lg:text-3xl text-slate-600 md:text-white dark:text-slate-800 md:dark:text-white  hover:text-purple-700 dark:hover:text-blue-400 transition-all duration-300"
+                                className="text-2xl lg:text-3xl text-slate-600 dark:text-slate-800 hover:text-purple-700 dark:hover:text-blue-400 transition-all duration-300"
                                 target="_blank"
                                 href="https://github.com/katiaku/js_code_gamer">
                                 <FaGithub />
                             </a>
                             <a
                                 aria-label="JSCodeGamer app demo"
-                                className="text-2xl lg:text-3xl text-slate-600 md:text-white dark:text-slate-800 md:dark:text-white  hover:text-purple-700 dark:hover:text-blue-400 transition-all duration-300"
+                                className="text-2xl lg:text-3xl text-slate-600 dark:text-slate-800 hover:text-purple-700 dark:hover:text-blue-400 transition-all duration-300"
                                 target="_blank"
                                 href="https://www.loom.com/share/cc5bf9b206104f21807e8880e24d04fd?sid=d4bf0933-0423-47b3-ac8d-82ef959aae15">
                                 <FaPlay />
                             </a>
                             <a
                                 aria-label="JSCodeGamer app page"
-                                className="text-2xl lg:text-3xl text-slate-600 md:text-white dark:text-slate-800 md:dark:text-white  hover:text-purple-700 dark:hover:text-blue-400 transition-all duration-300"
+                                className="text-2xl lg:text-3xl text-slate-600 dark:text-slate-800 hover:text-purple-700 dark:hover:text-blue-400 transition-all duration-300"
                                 target="_blank"
                                 href="https://jscodegamer.vercel.app">
                                 <FaExternalLinkAlt />
