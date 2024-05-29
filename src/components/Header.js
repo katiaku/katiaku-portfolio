@@ -4,6 +4,7 @@ import logo from '../app/icon.png';
 import { AiFillLinkedin, AiFillGithub } from 'react-icons/ai';
 import { GiHamburgerMenu } from "react-icons/gi";
 import { FaRegWindowClose } from "react-icons/fa";
+import { FiCodepen } from "react-icons/fi"; 
 import { Expand } from "@theme-toggles/react";
 import LanguageSwitcher from './LanguageSwitcher';
 import { useTranslation } from "react-i18next";
@@ -84,6 +85,16 @@ export default function Header({ toggleDarkMode, onHamburgerClick, isSidebarOpen
                         href="https://github.com/katiaku"
                     >
                         <AiFillGithub />
+                    </a>
+                </li>
+                <li className='hidden md:flex'>
+                    <a
+                        aria-label="Codepen"
+                        className="icon-link"
+                        target="_blank"
+                        href="https://codepen.io/katiaku/pens/public"
+                    >
+                        <FiCodepen />
                     </a>
                 </li>
 

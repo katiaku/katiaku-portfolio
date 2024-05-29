@@ -1,4 +1,5 @@
 import { AiFillLinkedin, AiFillGithub } from 'react-icons/ai';
+import { FiCodepen } from "react-icons/fi";
 import { useTranslation } from "react-i18next";
 import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
@@ -65,6 +66,17 @@ export default function Sidebar({ isOpen, onClose }) {
                     >
                         <AiFillGithub />
                         <span className='uppercase font-semibold pt-1'>GitHub</span>
+                    </a>
+                </li>
+                <li onClick={onClose}>
+                    <a
+                        aria-label="Codepen"
+                        className="flex items-center gap-2 text-xl menu-item"
+                        target="_blank"
+                        href="https://codepen.io/katiaku/pens/public"
+                    >
+                        <FiCodepen />
+                        <span className='uppercase font-semibold pt-1'>Codepen</span>
                     </a>
                 </li>
             </ul>
