@@ -42,9 +42,9 @@ export default function Projects() {
                 <h3 className='section-title uppercase'>{ t("section_header_my_work") }</h3>
             </div>
 
-            <div className='flex flex-col md:gap-32 py-14'>
+            <div className='flex flex-col md:gap-32 py-14 xl:mx-[10rem]'>
                 <div className='relative lg:h-[470px]'>
-                    <div className='md:opacity-60 mb-4 md:mb-0 glass p-6 lg:p-10 md:w-2/3 md:absolute md:right-0 md:top-8 hover-scale'>
+                    <div className='md:opacity-60 mb-4 md:mb-0 glass p-6 md:w-2/3 md:absolute md:right-0 md:top-8 hover-scale'>
                         <Image
                             src={kanbanVue}
                             alt={ t("kanban_vue_screenshot") }
@@ -100,7 +100,7 @@ export default function Projects() {
                 </div>
 
                 <div className='relative lg:h-[470px]'>
-                    <div className='md:opacity-60 mb-4 md:mb-0 glass p-6 lg:p-10 md:w-2/3 md:absolute md:right-0 md:top-8 hover-scale'>
+                    <div className='md:opacity-60 mb-4 md:mb-0 glass p-6 md:w-2/3 md:absolute md:right-0 md:top-8 hover-scale'>
                         <Image
                             src={jsCodeGamer}
                             alt={ t("js_code_gamer_vue_screenshot") }
@@ -156,7 +156,7 @@ export default function Projects() {
                 </div>
 
                 <div className='relative lg:h-[470px]'>
-                    <div className='md:opacity-60 mb-4 md:mb-0 glass p-6 lg:p-10 md:w-2/3 md:absolute md:right-0 md:top-8 hover-scale'>
+                    <div className='md:opacity-60 mb-4 md:mb-0 glass p-6 md:w-2/3 md:absolute md:right-0 md:top-8 hover-scale'>
                         <Image
                             src={taskManager}
                             alt={ t("task_manager_screenshot") }
@@ -209,7 +209,7 @@ export default function Projects() {
                 </div>
 
                 <div className='relative lg:h-[470px]'>
-                    <div className='md:opacity-60 mb-4 md:mb-0 glass p-6 lg:p-10 md:w-2/3 md:absolute md:right-0 md:top-8 hover-scale'>
+                    <div className='md:opacity-60 mb-4 md:mb-0 glass p-6 md:w-2/3 md:absolute md:right-0 md:top-8 hover-scale'>
                         <Image
                             src={birthdayPlanner}
                             alt={ t("birthday_planner_screenshot") }
