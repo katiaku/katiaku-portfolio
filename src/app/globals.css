@@ -81,8 +81,16 @@
   border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
-.glass {
+.glass,
+.image-glass {
   border-radius: 10px;
+}
+
+.image-glass {
+  background: rgba( 255, 255, 255, 0.25 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 10px );
+  -webkit-backdrop-filter: blur( 10px );
 }
 
 .ellipse-purple {
@@ -101,13 +109,12 @@
 }
 
 .hover-scale {
-  transition: transform 1s ease-in-out;
+  transition: transform 2.3s ease-in-out;
 }
 
 .hover-scale:hover,
 .hover-scale:active {
-  transform: scale(1.1);
-  z-index: 99;
+  transform: scale(1.4);
   opacity: 1;
 }
 
