@@ -218,7 +218,7 @@ export default function Projects() {
                         />
                     </div>
     
-                    <div className='mb-20 lg:mb-0 glass p-8 lg:w-[480px] flex gap-6 lg:gap-10 items-center'>
+                    <div className='mb-0 glass p-8 lg:w-[480px] flex gap-6 lg:gap-10 items-center'>
                         <div className='flex flex-col gap-6'>
                             <p className='dark:text-white pt-2 cursor-default'>
                                 <a className="text-slate-800 dark:text-blue-400 font-bold uppercase text-2xl mr-1" target="_blank" href="https://github.com/katiaku/my-birthday">Birthday Planner</a>{ t("project_description_birthday_planner") }
