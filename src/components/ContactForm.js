@@ -1,7 +1,33 @@
 import React, { useRef } from 'react';
 // import emailjs from '@emailjs/browser';
+import { useTranslation } from "react-i18next";
+import i18n from "i18next";
+import { initReactI18next } from "react-i18next";
+import translationEN from "../locales/en/translation.json";
+import translationES from "../locales/es/translation.json";
+
+const resources = {
+    en: {
+        translation: translationEN,
+    },
+    es: {
+        translation: translationES,
+    },
+};
+
+i18n.use(initReactI18next).init({
+    resources,
+    lng: "en",
+    fallbackLng: "en",
+    interpolation: {
+        escapeValue: false,
+    },
+});
 
 export const ContactForm = () => {
+
+    const { t } = useTranslation();
+
     const form = useRef();
 
     const sendEmail = (e) => {
@@ -25,11 +51,11 @@ export const ContactForm = () => {
         <div className='flex flex-col gap-10 lg:gap-0 lg:flex-row w-full'>
             <div className='bg-yellow-200 lg:bg-purple-400 xl w-full h-[350px] lg:h-[400px] lg:w-1/2 p-8 px-8 md:px-20 relative'>
                 <div className='glass p-8 absolute -top-10'>
-                    <p className='uppercase cursor-default text-3xl md:text-4xl text-slate-800 font-bold text-center'>Let's talk!</p>
+                    <p className='uppercase cursor-default text-3xl md:text-4xl text-slate-800 font-bold text-center'>{ t("contact_header") }</p>
                 </div>
                 <div className='text-slate-800 px-10 lg:px-0 w-full h-full flex flex-col start-center justify-center gap-8 font-semibold text-lg md:text-xl'>
-                    <p>Whether you have a question, want to start a project or simply want to connect.</p>
-                    <p>Feel free to send me a message in the contact form and I will get back to you promptly.</p>
+                    <p>{ t("contact_p1") }</p>
+                    <p>{ t("contact_p2") }</p>
                 </div>
             </div>
 
@@ -37,11 +63,11 @@ export const ContactForm = () => {
                 <form
                     ref={form}
                     onSubmit={sendEmail}
-                    className='flex flex-col gap-4 items-start glass p-8 w-full text-lg text-slate-800'
+                    className='flex flex-col gap-4 items-start glass p-8 w-full text-md text-slate-800'
                 >
                     <div className='w-full'>
                         <label className='font-semibold'>
-                            Name
+                            { t("form_name") }
                         </label>
                         <input
                             type="text"
@@ -52,7 +78,7 @@ export const ContactForm = () => {
 
                     <div className='w-full'>
                         <label className='font-semibold'>
-                            Email
+                            { t("form_email") }
                         </label>
                         <input
                             type="email"
@@ -63,7 +89,7 @@ export const ContactForm = () => {
 
                     <div className='w-full'>
                         <label className='font-semibold'>
-                            Message
+                            { t("form_message") }
                         </label>
                         <input
                             type="text"
@@ -74,7 +100,7 @@ export const ContactForm = () => {
 
                     <input
                         type="submit"
-                        value="Send"
+                        value={ t("btn_send") }
                         className='btn mt-6 self-end'
                     />
                 </form>
