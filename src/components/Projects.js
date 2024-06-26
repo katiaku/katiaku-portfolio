@@ -3,6 +3,7 @@ import taskManager from '../../public/TaskManager_screen.png';
 import birthdayPlanner from '../../public/BirthdayPlanner_screen.png';
 import jsCodeGamer from '../../public/JsCodeGamer_screen.png';
 import kanbanVue from '../../public/KanbanVue_screen.png';
+import bookShelve from '../../public/BookShelve_screen.png';
 import { useTranslation } from "react-i18next";
 import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
@@ -43,6 +44,68 @@ export default function Projects() {
             </div>
 
             <div className='flex flex-col items-center md:gap-10 lg:gap-32 py-14 lg:py-20'>
+                <div className='lg:relative lg:w-[880px] flex lg:block flex-col gap-2 md:gap-8'>
+                    <div className='image-glass overflow-hidden mb-4 md:mb-0 lg:w-[480px] lg:absolute lg:right-0 lg:top-8'>
+                        <Image
+                            src={bookShelve}
+                            alt={ t("book_shelve_screenshot") }
+                            className='object-cover hover-scale dark:opacity-80'
+                            width={'100%'}
+                            height={'100%'}
+                        />
+                    </div>
+
+                    <div className='mb-20 lg:mb-0 glass p-8 lg:w-[480px] flex gap-6 lg:gap-10 items-center'>
+                        <div className='flex flex-col gap-6'>
+                            <p className='dark:text-white pt-2 cursor-default'>
+                                <span className="text-slate-800 dark:text-blue-400 font-bold uppercase text-2xl mr-1">BookShelve</span>{ t("project_description_book_shelve") }
+                            </p>
+
+                            <div className='flex gap-2'>
+                                <span className='tech-used'>
+                                    React
+                                </span>
+                                <span className='tech-used'>
+                                    TypeScript
+                                </span>
+                                <span className='tech-used'>
+                                    Tailwind CSS
+                                </span>
+                                <span className='tech-used'>
+                                    Express
+                                </span>
+                                <span className='tech-used'>
+                                    MySQL
+                                </span>
+                            </div>
+                        </div>
+
+                        <div className='flex flex-col items-center gap-8'>
+                            <a
+                                aria-label="BookShelve app GitHub repository"
+                                className="text-2xl lg:text-3xl text-slate-600 dark:text-slate-800 hover:text-purple-700 dark:hover:text-blue-400 transition-all duration-300"
+                                target="_blank"
+                                href="https://github.com/katiaku/bookstore">
+                                <FaGithub />
+                            </a>
+                            <a
+                                aria-label="BookShelve app demo"
+                                className="text-2xl lg:text-3xl text-slate-600 dark:text-slate-800 hover:text-purple-700 dark:hover:text-blue-400 transition-all duration-300"
+                                target="_blank"
+                                href="https://www.linkedin.com/feed/update/urn:li:activity:7211679313782308864/">
+                                <FaPlay />
+                            </a>
+                            <a
+                                aria-label="BookShelve app page"
+                                className="text-2xl lg:text-3xl text-slate-600 dark:text-slate-800 hover:text-purple-700 dark:hover:text-blue-400 transition-all duration-300"
+                                target="_blank"
+                                href="https://bookshelve-two.vercel.app/">
+                                <FaExternalLinkAlt />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
                 <div className='lg:relative lg:w-[880px] flex lg:block flex-col gap-2 md:gap-8'>
                     <div className='image-glass overflow-hidden mb-4 md:mb-0 lg:w-[480px] lg:absolute lg:right-0 lg:top-8'>
                         <Image
