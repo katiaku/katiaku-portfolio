@@ -58,7 +58,7 @@ export default function Projects() {
                     <div className='mb-20 lg:mb-0 glass p-8 lg:w-[480px] flex gap-6 lg:gap-10 items-center'>
                         <div className='flex flex-col gap-6'>
                             <p className='dark:text-white pt-2 cursor-default'>
-                                <span className="text-slate-800 dark:text-blue-400 font-bold uppercase text-2xl mr-1">BookShelve</span>{ t("project_description_book_shelve") }
+                                <span className="text-slate-800 dark:text-blue-400 font-bold uppercase text-2xl mr-1">Book Shelve </span>{ t("project_description_book_shelve") }
                             </p>
 
                             <div className='flex gap-2'>
@@ -120,7 +120,7 @@ export default function Projects() {
                     <div className='mb-20 lg:mb-0 glass p-8 lg:w-[480px] flex gap-6 lg:gap-10 items-center'>
                         <div className='flex flex-col gap-6'>
                             <p className='dark:text-white pt-2 cursor-default'>
-                                <span className="text-slate-800 dark:text-blue-400 font-bold uppercase text-2xl mr-1">KanbanVue</span>{ t("project_description_kanban_vue") }
+                                <span className="text-slate-800 dark:text-blue-400 font-bold uppercase text-2xl mr-1">Kanban Vue </span>{ t("project_description_kanban_vue") }
                             </p>
 
                             <div className='flex gap-2'>
@@ -176,7 +176,7 @@ export default function Projects() {
                     <div className='mb-20 lg:mb-0 glass p-8 lg:w-[480px] flex gap-6 lg:gap-10 items-center'>
                         <div className='flex flex-col gap-6'>
                             <p className='dark:text-white pt-2 cursor-default'>
-                                <span className="text-slate-800 dark:text-blue-400 font-bold uppercase text-2xl mr-1">JSCODEGAMER</span>{ t("project_description_js_code_gamer") }
+                                <span className="text-slate-800 dark:text-blue-400 font-bold uppercase text-2xl mr-1">JS Code Gamer </span>{ t("project_description_js_code_gamer") }
                             </p>
 
                             <div className='flex gap-2'>
