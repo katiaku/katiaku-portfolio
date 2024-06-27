@@ -80,9 +80,10 @@ export const ContactForm = () => {
                             { t("form_name") }
                         </label>
                         <input
+                            required
                             type="text"
                             name="user_name"
-                            className='focus:outline-none bg-transparent border-[1px] border-slate-800 rounded-xl px-4 py-2 w-full'
+                            className='focus:outline-none focus:ring-1 focus:ring-slate-800 bg-transparent border-[1px] border-slate-800 rounded-xl px-4 py-2 w-full'
                         />
                     </div>
 
@@ -91,9 +92,10 @@ export const ContactForm = () => {
                             { t("form_email") }
                         </label>
                         <input
+                            required
                             type="email"
                             name="user_email"
-                            className='focus:outline-none bg-transparent border-[1px] border-slate-800 rounded-xl px-4 py-2 w-full'
+                            className='focus:outline-none focus:ring-1 focus:ring-slate-800 bg-transparent border-[1px] border-slate-800 rounded-xl px-4 py-2 w-full'
                         />
                     </div>
 
@@ -107,9 +109,10 @@ export const ContactForm = () => {
                             className='focus:outline-none bg-transparent border-[1px] border-slate-800 rounded-full px-4 py-2 w-full'
                         /> */}
                         <textarea
+                            required
                             name="message"
                             rows="4"
-                            class="focus:outline-none bg-transparent border-[1px] border-slate-800 rounded-xl px-4 py-2 w-full resize-none"
+                            class="focus:outline-none focus:ring-1 focus:ring-slate-800 bg-transparent border-[1px] border-slate-800 rounded-xl px-4 py-2 w-full resize-none"
                         />
                     </div>
 
