@@ -5,6 +5,7 @@ import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
 import translationEN from "../locales/en/translation.json";
 import translationES from "../locales/es/translation.json";
+import { toast } from "react-toastify";
 
 const resources = {
     en: {
@@ -39,11 +40,19 @@ export const ContactForm = () => {
         })
         .then(
             () => {
-            console.log('SUCCESS!');
-            form.current.reset();
+                console.log('SUCCESS!');
+                toast.success("Your message is sent successfully", {
+                    position: "bottom-right",
+                    theme: "colored"
+                });
+                form.current.reset();
             },
             (error) => {
-            console.log('FAILED...', error.text);
+                console.log('FAILED...', error.text);
+                toast.error("There was an error...", {
+                    position: "bottom-right",
+                    theme: "colored"
+                });
             },
         );
     };
