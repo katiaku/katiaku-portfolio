@@ -48,8 +48,8 @@ export const ContactForm = () => {
     };
 
     return (
-        <div className='flex flex-col gap-10 lg:gap-0 lg:flex-row w-full'>
-            <div className='bg-yellow-200 lg:bg-purple-400 xl w-full h-[350px] lg:h-[400px] lg:w-1/2 p-8 px-8 md:px-20 relative'>
+        <div className='flex flex-col lg:gap-0 lg:flex-row w-full'>
+            <div className='bg-yellow-200 lg:bg-purple-400 lg:border-b-[3rem] lg:border-yellow-200 xl w-full h-[350px] lg:h-[400px] lg:w-1/2 p-8 px-8 md:px-20 relative'>
                 <div className='glass p-8 absolute -top-10'>
                     <p className='uppercase cursor-default text-3xl md:text-4xl text-slate-800 font-bold text-center'>{ t("contact_header") }</p>
                 </div>
@@ -59,7 +59,7 @@ export const ContactForm = () => {
                 </div>
             </div>
 
-            <div className='w-full h-[400px] lg:w-1/2 bg-purple-400 p-8 px-8 mb-20 md:px-20'>
+            <div className='w-full h-[400px] lg:w-1/2 bg-purple-400 lg:border-b-[3rem] lg:border-yellow-200 p-8 px-8 mb-20 md:px-20'>
                 <form
                     ref={form}
                     onSubmit={sendEmail}
