@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-// import emailjs from '@emailjs/browser';
+import emailjs from '@emailjs/browser';
 import { useTranslation } from "react-i18next";
 import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
@@ -33,18 +33,19 @@ export const ContactForm = () => {
     const sendEmail = (e) => {
         e.preventDefault();
 
-    // emailjs
-    //     .sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, {
-    //         publicKey: 'YOUR_PUBLIC_KEY',
-    //     })
-    //     .then(
-    //         () => {
-    //         console.log('SUCCESS!');
-    //         },
-    //         (error) => {
-    //         console.log('FAILED...', error.text);
-    //         },
-    //     );
+    emailjs
+        .sendForm(process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID, process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID, form.current, {
+            publicKey: process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY,
+        })
+        .then(
+            () => {
+            console.log('SUCCESS!');
+            form.current.reset();
+            },
+            (error) => {
+            console.log('FAILED...', error.text);
+            },
+        );
     };
 
     return (
@@ -106,7 +107,7 @@ export const ContactForm = () => {
                     <input
                         type="submit"
                         value={ t("btn_send") }
-                        className='btn mt-6 self-end'
+                        className='btn mt-6 self-end cursor-pointer'
                     />
                 </form>
             </div>
