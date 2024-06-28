@@ -14,6 +14,9 @@ import Header from '@/components/Header';
 import { I18nextProvider } from "react-i18next";
 import i18next from "i18next";
 import Sidebar from '@/components/Sidebar';
+import { ContactForm } from '@/components/ContactForm';
+import { Flip, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 i18next.init({
@@ -65,7 +68,9 @@ export default function Home() {
           <About />
           <Tools />
           <Projects />
+          <ContactForm />
           <Footer />
+          <ToastContainer transition={Flip} />
         </main>
       </div>
     </I18nextProvider>

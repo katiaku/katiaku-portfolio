@@ -9,8 +9,10 @@
     "deploy": "next build && next export --outdir out && npx gh-pages -d out"
   },
   "dependencies": {
+    "@emailjs/browser": "^4.3.3",
     "@theme-toggles/react": "^4.1.0",
     "autoprefixer": "10.4.14",
+    "emailjs-com": "^3.2.0",
     "eslint": "8.38.0",
     "eslint-config-next": "13.3.0",
     "framer-motion": "^10.16.4",
@@ -20,7 +22,8 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-i18next": "^14.1.1",
-    "react-icons": "^4.8.0"
+    "react-icons": "^4.8.0",
+    "react-toastify": "^10.0.5"
   },
   "devDependencies": {
     "gh-pages": "^5.0.0",

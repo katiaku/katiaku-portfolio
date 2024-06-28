@@ -37,5 +37,12 @@
     "kanban_vue_screenshot": "Captura de pantalla de aplicación KanbanVue.",
     "js_code_gamer_vue_screenshot": "Captura de pantalla de aplicación JsCodeGamer.",
     "task_manager_screenshot": "Captura de pantalla de aplicación Task Manager.",
-    "birthday_planner_screenshot": "Captura de pantalla de aplicación Birthday Planner."
+    "birthday_planner_screenshot": "Captura de pantalla de aplicación Birthday Planner.",
+    "contact_header": "¿Hablamos?",
+    "contact_p1": "Si tienes una pregunta, quieres iniciar un proyecto o simplemente quieres conectarte...",
+    "contact_p2": "No dudes en enviarme un mensaje en el formulario y me pondré en contacto contigo lo antes posible.",
+    "form_name": "Nombre",
+    "form_email": "Email",
+    "form_message": "Mensaje",
+    "btn_send": "Enviar"
 }
