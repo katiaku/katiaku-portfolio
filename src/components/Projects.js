@@ -76,7 +76,7 @@ export default function Projects() {
 
                         <div className="flex flex-col items-center gap-8">
                             <a
-                                aria-label="BookShelve app GitHub repository"
+                                aria-label={t('aria_label_book_shelve_1')}
                                 className="text-2xl lg:text-3xl text-slate-600 dark:text-slate-800 hover:text-purple-700 dark:hover:text-blue-400 transition-all duration-300"
                                 target="_blank"
                                 href="https://github.com/katiaku/bookstore"
@@ -84,7 +84,7 @@ export default function Projects() {
                                 <FaGithub />
                             </a>
                             <a
-                                aria-label="BookShelve app demo"
+                                aria-label={t('aria_label_book_shelve_2')}
                                 className="text-2xl lg:text-3xl text-slate-600 dark:text-slate-800 hover:text-purple-700 dark:hover:text-blue-400 transition-all duration-300"
                                 target="_blank"
                                 href="https://www.linkedin.com/feed/update/urn:li:activity:7211679313782308864/"
@@ -92,7 +92,7 @@ export default function Projects() {
                                 <FaPlay />
                             </a>
                             <a
-                                aria-label="BookShelve app page"
+                                aria-label={t('aria_label_book_shelve_3')}
                                 className="text-2xl lg:text-3xl text-slate-600 dark:text-slate-800 hover:text-purple-700 dark:hover:text-blue-400 transition-all duration-300"
                                 target="_blank"
                                 href="https://bookshelve-two.vercel.app/"
@@ -132,7 +132,7 @@ export default function Projects() {
 
                         <div className="flex flex-col items-center gap-8">
                             <a
-                                aria-label="KanbanVue app GitHub repository"
+                                aria-label={t('aria_label_kanban_vue_1')}
                                 className="text-2xl lg:text-3xl text-slate-600 dark:text-slate-800 hover:text-purple-700 dark:hover:text-blue-400 transition-all duration-300"
                                 target="_blank"
                                 href="https://github.com/katiaku/kanban-vue"
@@ -140,7 +140,7 @@ export default function Projects() {
                                 <FaGithub />
                             </a>
                             <a
-                                aria-label="KanbanVue app demo"
+                                aria-label={t('aria_label_kanban_vue_2')}
                                 className="text-2xl lg:text-3xl text-slate-600 dark:text-slate-800 hover:text-purple-700 dark:hover:text-blue-400 transition-all duration-300"
                                 target="_blank"
                                 href="https://www.linkedin.com/feed/update/urn:li:activity:7194297394845335554/"
@@ -148,7 +148,7 @@ export default function Projects() {
                                 <FaPlay />
                             </a>
                             <a
-                                aria-label="KanbanVue app page"
+                                aria-label={t('aria_label_kanban_vue_3')}
                                 className="text-2xl lg:text-3xl text-slate-600 dark:text-slate-800 hover:text-purple-700 dark:hover:text-blue-400 transition-all duration-300"
                                 target="_blank"
                                 href="https://kanban-vue-ruby.vercel.app"
@@ -188,7 +188,7 @@ export default function Projects() {
 
                         <div className="flex flex-col items-center gap-8">
                             <a
-                                aria-label="JSCodeGamer app GitHub repository"
+                                aria-label={t('aria_label_js_code_gamer_1')}
                                 className="text-2xl lg:text-3xl text-slate-600 dark:text-slate-800 hover:text-purple-700 dark:hover:text-blue-400 transition-all duration-300"
                                 target="_blank"
                                 href="https://github.com/katiaku/js_code_gamer"
@@ -196,7 +196,7 @@ export default function Projects() {
                                 <FaGithub />
                             </a>
                             <a
-                                aria-label="JSCodeGamer app demo"
+                                aria-label={t('aria_label_js_code_gamer_2')}
                                 className="text-2xl lg:text-3xl text-slate-600 dark:text-slate-800 hover:text-purple-700 dark:hover:text-blue-400 transition-all duration-300"
                                 target="_blank"
                                 href="https://www.loom.com/share/cc5bf9b206104f21807e8880e24d04fd?sid=d4bf0933-0423-47b3-ac8d-82ef959aae15"
@@ -204,7 +204,7 @@ export default function Projects() {
                                 <FaPlay />
                             </a>
                             <a
-                                aria-label="JSCodeGamer app page"
+                                aria-label={t('aria_label_js_code_gamer_3')}
                                 className="text-2xl lg:text-3xl text-slate-600 dark:text-slate-800 hover:text-purple-700 dark:hover:text-blue-400 transition-all duration-300"
                                 target="_blank"
                                 href="https://jscodegamer.vercel.app"
@@ -242,7 +242,7 @@ export default function Projects() {
 
                         <div className="flex flex-col items-center gap-8">
                             <a
-                                aria-label="Task Manager app GitHub repository"
+                                aria-label={t('aria_label_task_manager')}
                                 className="text-2xl lg:text-3xl text-slate-600 dark:text-slate-800 hover:text-purple-700 dark:hover:text-blue-400 transition-all duration-300"
                                 target="_blank"
                                 href="https://github.com/katiaku/task-manager"
@@ -296,7 +296,7 @@ export default function Projects() {
 
                         <div className="flex flex-col items-center gap-8">
                             <a
-                                aria-label="Birthday Planner app GitHub repository"
+                                aria-label={t('aria_label_birthday_planner')}
                                 className="text-2xl lg:text-3xl text-slate-600 dark:text-slate-800 hover:text-purple-700 dark:hover:text-blue-400 transition-all duration-300"
                                 target="_blank"
                                 href="https://github.com/katiaku/my-birthday"
@@ -350,7 +350,7 @@ export default function Projects() {
 
                         <div className="flex flex-col items-center gap-8">
                             <a
-                                aria-label="Calm Mate app GitHub repository"
+                                aria-label={t('aria_label_calm_mate')}
                                 className="text-2xl lg:text-3xl text-slate-600 dark:text-slate-800 hover:text-purple-700 dark:hover:text-blue-400 transition-all duration-300"
                                 target="_blank"
                                 href="https://github.com/katiaku/calm-mate"
