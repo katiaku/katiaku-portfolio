@@ -228,13 +228,9 @@ export default function Projects() {
                     <div className="mb-20 lg:mb-0 glass p-8 lg:w-[480px] flex gap-6 lg:gap-10 items-center">
                         <div className="flex flex-col gap-6">
                             <p className="dark:text-white pt-2 cursor-default">
-                                <a
-                                    className="text-slate-800 dark:text-blue-400 font-bold uppercase text-2xl mr-1"
-                                    target="_blank"
-                                    href="https://github.com/katiaku/task-manager"
-                                >
+                                <span className="text-slate-800 dark:text-blue-400 font-bold uppercase text-2xl mr-1">
                                     Task Manager
-                                </a>
+                                </span>
                                 {t('project_description_task_manager')}
                             </p>
 
@@ -285,13 +281,9 @@ export default function Projects() {
                     <div className="mb-0 glass p-8 lg:w-[480px] flex gap-6 lg:gap-10 items-center">
                         <div className="flex flex-col gap-6">
                             <p className="dark:text-white pt-2 cursor-default">
-                                <a
-                                    className="text-slate-800 dark:text-blue-400 font-bold uppercase text-2xl mr-1"
-                                    target="_blank"
-                                    href="https://github.com/katiaku/my-birthday"
-                                >
+                                <span className="text-slate-800 dark:text-blue-400 font-bold uppercase text-2xl mr-1">
                                     Birthday Planner
-                                </a>
+                                </span>
                                 {t('project_description_birthday_planner')}
                             </p>
 
@@ -343,13 +335,9 @@ export default function Projects() {
                     <div className="mb-0 glass p-8 lg:w-[480px] flex gap-6 lg:gap-10 items-center">
                         <div className="flex flex-col gap-6">
                             <p className="dark:text-white pt-2 cursor-default">
-                                <a
-                                    className="text-slate-800 dark:text-blue-400 font-bold uppercase text-2xl mr-1"
-                                    target="_blank"
-                                    href="https://github.com/katiaku/calm-mate"
-                                >
+                                <span className="text-slate-800 dark:text-blue-400 font-bold uppercase text-2xl mr-1">
                                     Calm Mate
-                                </a>
+                                </span>
                                 {t('project_description_calm_mate')}
                             </p>
 
