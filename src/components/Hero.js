@@ -40,7 +40,7 @@ export default function Hero() {
                 <h2 className="py-2 gradient-text font-extrabold text-5xl md:text-6xl lg:text-7xl text-left">
                     {t('hero_header')}
                 </h2>
-                <h3 className="text-2xl md:text-3xl font-bold text-slate-800 dark:text-teal-100 pt-5 text-left">
+                <h3 className="text-2xl md:text-3xl font-semibold text-slate-800 dark:text-teal-100 pt-5 text-left">
                     {t('hero_subheader')}
                 </h3>
                 <div className="flex flex-col sm:flex-row items-center justify-start gap-7 mt-20">

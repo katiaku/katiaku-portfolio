@@ -137,22 +137,26 @@ export default function Tools() {
                             <SiTypescript className="text-x" />
                             <p className="tech-item">TypeScript</p>
                         </div>
-                        <div className="tech-subj">
+                        {/* <div className="tech-subj">
                             <IoLogoAngular className="text-xl" />
                             <p className="tech-item">Angular</p>
-                        </div>
+                        </div> */}
                         <div className="tech-subj">
                             <FaReact className="text-xl" />
                             <p className="tech-item">React</p>
                         </div>
                         <div className="tech-subj">
+                            <FaReact className="text-xl" />
+                            <p className="tech-item">React Native</p>
+                        </div>
+                        <div className="tech-subj">
                             <FaVuejs className="text-xl" />
                             <p className="tech-item">Vue</p>
                         </div>
-                        <div className="tech-subj">
+                        {/* <div className="tech-subj">
                             <SiJquery className="text-x" />
                             <p className="tech-item">jQuery</p>
-                        </div>
+                        </div> */}
                         <div className="tech-subj">
                             <SiThreedotjs className="text-x" />
                             <p className="tech-item">Three.js</p>
