@@ -62,6 +62,11 @@ export default function Header({
                         {t('header_my_work')}
                     </a>
                 </li>
+                <li className="menu-item">
+                    <a className="uppercase" href="#contact">
+                        {t('header_contact')}
+                    </a>
+                </li>
             </ul>
 
             <ul className="flex items-center gap-6 ml-auto md:ml-0">
