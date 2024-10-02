@@ -45,6 +45,11 @@ export default function Sidebar({ isOpen, onClose }) {
                         {t('header_my_work')}
                     </a>
                 </li>
+                <li className="menu-item text-xl" onClick={onClose}>
+                    <a className="uppercase" href="#contact">
+                        {t('header_contact')}
+                    </a>
+                </li>
                 <li onClick={onClose}>
                     <a
                         aria-label="LinkedIn"
