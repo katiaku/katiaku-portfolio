@@ -63,15 +63,15 @@ export const ContactForm = () => {
 
     return (
         <div id="contact" className="flex flex-col lg:gap-0 lg:flex-row w-full">
-            <div className="bg-yellow-200 lg:bg-purple-400 lg:border-b-[3rem] lg:border-yellow-200 xl w-full h-[350px] lg:h-[400px] lg:w-1/2 p-8 px-8 md:px-20 relative">
-                <div className="glass p-8 absolute -top-10">
+            <div className="bg-yellow-200 lg:bg-purple-400 lg:border-b-[3rem] lg:border-yellow-200 xl w-full h-[400px] lg:w-1/2 p-8 px-8 md:px-20 relative">
+                <div className="glass p-8 absolute -top-20 md:-top-10">
                     <p className="uppercase cursor-default text-3xl md:text-4xl text-slate-800 font-bold text-center">
                         {t('contact_header')}
                     </p>
                 </div>
                 <div className="text-slate-800 px-10 lg:px-0 w-full h-full flex flex-col start-center justify-center gap-8 font-semibold text-lg md:text-xl">
-                    <p>{t('contact_p1')}</p>
-                    <p>{t('contact_p2')}</p>
+                    <p className="">{t('contact_p1')}</p>
+                    <p className="">{t('contact_p2')}</p>
                 </div>
             </div>
 
