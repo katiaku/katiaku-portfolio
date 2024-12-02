@@ -5,6 +5,7 @@ import jsCodeGamer from '../../public/JsCodeGamer_screen.png'
 import kanbanVue from '../../public/KanbanVue_screen.png'
 import bookShelve from '../../public/BookShelve_screen.png'
 import calmMate from '../../public/CalmMate.png'
+import helpHub from '../../public/HelpHub.png'
 import { useTranslation } from 'react-i18next'
 import i18n from 'i18next'
 import { initReactI18next } from 'react-i18next'
@@ -60,7 +61,7 @@ export default function Projects() {
                         <div className="flex flex-col gap-6">
                             <p className="dark:text-white pt-2 cursor-default">
                                 <span className="text-slate-800 dark:text-blue-400 font-bold uppercase text-2xl mr-1">
-                                    Book Shelve{' '}
+                                    BookShelve{' '}
                                 </span>
                                 {t('project_description_book_shelve')}
                             </p>
@@ -118,7 +119,7 @@ export default function Projects() {
                         <div className="flex flex-col gap-6">
                             <p className="dark:text-white pt-2 cursor-default">
                                 <span className="text-slate-800 dark:text-blue-400 font-bold uppercase text-2xl mr-1">
-                                    Kanban Vue{' '}
+                                    KanbanVue{' '}
                                 </span>
                                 {t('project_description_kanban_vue')}
                             </p>
@@ -174,7 +175,7 @@ export default function Projects() {
                         <div className="flex flex-col gap-6">
                             <p className="dark:text-white pt-2 cursor-default">
                                 <span className="text-slate-800 dark:text-blue-400 font-bold uppercase text-2xl mr-1">
-                                    JS Code Gamer{' '}
+                                    JSCodeGamer{' '}
                                 </span>
                                 {t('project_description_js_code_gamer')}
                             </p>
@@ -336,15 +337,16 @@ export default function Projects() {
                         <div className="flex flex-col gap-6">
                             <p className="dark:text-white pt-2 cursor-default">
                                 <span className="text-slate-800 dark:text-blue-400 font-bold uppercase text-2xl mr-1">
-                                    Calm Mate
+                                    CalmMate
                                 </span>
                                 {t('project_description_calm_mate')}
                             </p>
 
                             <div className="flex gap-2">
                                 <span className="tech-used">React Native</span>
+                                <span className="tech-used">Expo</span>
                                 <span className="tech-used">TypeScript</span>
-                                <span className="tech-used">Native Wind</span>
+                                <span className="tech-used">NativeWind</span>
                             </div>
                         </div>
 
@@ -364,6 +366,54 @@ export default function Projects() {
                                 href="">
                                 <FaPlay />
                             </a> */}
+                        </div>
+                    </div>
+                </div>
+
+                <div className="lg:relative lg:w-[880px] flex lg:block flex-col gap-2 md:gap-8">
+                    <div className="image-glass overflow-hidden mb-4 md:mb-0 lg:w-[480px] lg:absolute lg:right-0 lg:top-8">
+                        <Image
+                            src={helpHub}
+                            alt={t('helphub_screenshot')}
+                            className="object-cover hover-scale dark:opacity-80"
+                            width={'100%'}
+                            height={'100%'}
+                        />
+                    </div>
+
+                    <div className="mb-0 glass p-8 lg:w-[480px] flex gap-6 lg:gap-10 items-center">
+                        <div className="flex flex-col gap-6">
+                            <p className="dark:text-white pt-2 cursor-default">
+                                <span className="text-slate-800 dark:text-blue-400 font-bold uppercase text-2xl mr-1">
+                                    HelpHub
+                                </span>
+                                {t('project_description_helphub')}
+                            </p>
+
+                            <div className="flex gap-2">
+                                <span className="tech-used">React Native</span>
+                                <span className="tech-used">Expo</span>
+                                <span className="tech-used">NativeWind</span>
+                                <span className="tech-used">Socket.io</span>
+                            </div>
+                        </div>
+
+                        <div className="flex flex-col items-center gap-8">
+                            <a
+                                aria-label={t('aria_label_helphub_1')}
+                                className="text-2xl lg:text-3xl text-slate-600 dark:text-slate-800 hover:text-purple-700 dark:hover:text-blue-400 transition-all duration-300"
+                                target="_blank"
+                                href="https://github.com/katiaku/GT-Helphub-iOs"
+                            >
+                                <FaGithub />
+                            </a>
+                            <a
+                                aria-label={t('aria_label_helphub_2')}
+                                className="text-2xl lg:text-3xl text-slate-600 dark:text-slate-800 hover:text-purple-700 dark:hover:text-blue-400 transition-all duration-300"
+                                target="_blank"
+                                href="">
+                                <FaPlay />
+                            </a>
                         </div>
                     </div>
                 </div>
