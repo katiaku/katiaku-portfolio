@@ -1,7 +1,7 @@
 import './globals.css'
 
 export const metadata = {
-    title: 'Ekaterina Kushnir | Web Development',
+    title: 'Ekaterina Kushnir | Software Development',
     description: 'Wep development: portfolio web page.',
 }
 
