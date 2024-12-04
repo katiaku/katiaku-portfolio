@@ -370,7 +370,7 @@ export default function Projects() {
                     </div>
                 </div>
 
-                <div className="lg:relative lg:w-[880px] flex lg:block flex-col gap-2 md:gap-8">
+                {/* <div className="lg:relative lg:w-[880px] flex lg:block flex-col gap-2 md:gap-8">
                     <div className="image-glass overflow-hidden mb-4 md:mb-0 lg:w-[480px] lg:absolute lg:right-0 lg:top-8">
                         <Image
                             src={helpHub}
@@ -416,7 +416,7 @@ export default function Projects() {
                             </a>
                         </div>
                     </div>
-                </div>
+                </div> */}
             </div>
         </section>
     )
