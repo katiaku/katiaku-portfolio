@@ -47,7 +47,7 @@ export default function Projects() {
 
             <div className="flex flex-col items-center md:gap-10 lg:gap-32 py-14 lg:py-20">
                 <div className="lg:relative lg:w-[880px] flex lg:block flex-col gap-2 md:gap-8">
-                    <div className="image-glass overflow-hidden mb-4 md:mb-0 lg:w-[480px] lg:absolute lg:right-0 lg:top-8">
+                    <div className="image-glass overflow-hidden hover:z-10 mb-4 md:mb-0 lg:w-[480px] lg:absolute lg:right-0 lg:top-8">
                         <Image
                             src={bookShelve}
                             alt={t('book_shelve_screenshot')}
@@ -105,7 +105,7 @@ export default function Projects() {
                 </div>
 
                 <div className="lg:relative lg:w-[880px] flex lg:block flex-col gap-2 md:gap-8">
-                    <div className="image-glass overflow-hidden mb-4 md:mb-0 lg:w-[480px] lg:absolute lg:right-0 lg:top-8">
+                    <div className="image-glass overflow-hidden hover:z-10 mb-4 md:mb-0 lg:w-[480px] lg:absolute lg:right-0 lg:top-8">
                         <Image
                             src={kanbanVue}
                             alt={t('kanban_vue_screenshot')}
@@ -161,7 +161,7 @@ export default function Projects() {
                 </div>
 
                 <div className="lg:relative lg:w-[880px] flex lg:block flex-col gap-2 md:gap-8">
-                    <div className="image-glass overflow-hidden mb-4 md:mb-0 lg:w-[480px] lg:absolute lg:right-0 lg:top-8">
+                    <div className="image-glass overflow-hidden hover:z-10 mb-4 md:mb-0 lg:w-[480px] lg:absolute lg:right-0 lg:top-8">
                         <Image
                             src={jsCodeGamer}
                             alt={t('js_code_gamer_vue_screenshot')}
@@ -217,7 +217,7 @@ export default function Projects() {
                 </div>
 
                 <div className="lg:relative lg:w-[880px] flex lg:block flex-col gap-2 md:gap-8">
-                    <div className="image-glass overflow-hidden mb-4 md:mb-0 lg:w-[480px] lg:absolute lg:right-0 lg:top-8">
+                    <div className="image-glass overflow-hidden hover:z-10 mb-4 md:mb-0 lg:w-[480px] lg:absolute lg:right-0 lg:top-8">
                         <Image
                             src={taskManager}
                             alt={t('task_manager_screenshot')}
@@ -269,7 +269,7 @@ export default function Projects() {
                 </div>
 
                 <div className="lg:relative lg:w-[880px] flex lg:block flex-col gap-2 md:gap-8">
-                    <div className="image-glass overflow-hidden mb-4 md:mb-0 lg:w-[480px] lg:absolute lg:right-0 lg:top-8">
+                    <div className="image-glass overflow-hidden hover:z-10 mb-4 md:mb-0 lg:w-[480px] lg:absolute lg:right-0 lg:top-8">
                         <Image
                             src={birthdayPlanner}
                             alt={t('birthday_planner_screenshot')}
@@ -323,7 +323,7 @@ export default function Projects() {
                 </div>
 
                 <div className="lg:relative lg:w-[880px] flex lg:block flex-col gap-2 md:gap-8">
-                    <div className="image-glass overflow-hidden mb-4 md:mb-0 lg:w-[480px] lg:absolute lg:right-0 lg:top-8">
+                    <div className="image-glass overflow-hidden hover:z-10 mb-4 md:mb-0 lg:w-[480px] lg:absolute lg:right-0 lg:top-8">
                         <Image
                             src={calmMate}
                             alt={t('calm_mate_screenshot')}
@@ -370,8 +370,8 @@ export default function Projects() {
                     </div>
                 </div>
 
-                {/* <div className="lg:relative lg:w-[880px] flex lg:block flex-col gap-2 md:gap-8">
-                    <div className="image-glass overflow-hidden mb-4 md:mb-0 lg:w-[480px] lg:absolute lg:right-0 lg:top-8">
+                <div className="lg:relative lg:w-[880px] flex lg:block flex-col gap-2 md:gap-8">
+                    <div className="image-glass overflow-hidden hover:z-10 mb-4 md:mb-0 lg:w-[480px] lg:absolute lg:right-0 lg:top-8">
                         <Image
                             src={helpHub}
                             alt={t('helphub_screenshot')}
@@ -416,7 +416,7 @@ export default function Projects() {
                             </a>
                         </div>
                     </div>
-                </div> */}
+                </div>
             </div>
         </section>
     )
