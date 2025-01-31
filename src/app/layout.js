@@ -5,7 +5,7 @@ const GA_TRACKING_ID = 'G-Q0X9VMJ09F';
 
 export const metadata = {
     title: 'Ekaterina Kushnir | Software Development',
-    description: 'Wep development: portfolio web page.',
+    description: 'Web development: portfolio web page.',
 }
 
 export default function RootLayout({ children }) {
