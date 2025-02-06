@@ -37,8 +37,11 @@ import {
     SiPostman,
     SiCypress,
     SiExpress,
-    SiThreedotjs
+    SiThreedotjs,
+    SiNextdotjs
 } from 'react-icons/si';
+import { RiNextjsLine } from "react-icons/ri";
+import { TbBrandReactNative } from "react-icons/tb";
 
 const frontend = [
     { Icon: IoLogoHtml5, name: 'HTML' },
@@ -49,13 +52,13 @@ const frontend = [
     { Icon: SiJavascript, name: 'JavaScript' },
     { Icon: SiTypescript, name: 'TypeScript' },
     { Icon: FaReact, name: 'React' },
-    { Icon: FaReact, name: 'ReactNative' },
+    { Icon: TbBrandReactNative, name: 'ReactNative' },
+    { Icon: SiNextdotjs, name: 'Next.js' },
     { Icon: FaVuejs, name: 'Vue' },
     { Icon: SiThreedotjs, name: 'Three.js' },
 ];
 
 const backend = [
-    { Icon: FaPhp, name: 'PHP' },
     { Icon: FaNodeJs, name: 'Node.js' },
     { Icon: SiExpress, name: 'Express.js' },
     { Icon: SiMysql, name: 'MySQL' },
